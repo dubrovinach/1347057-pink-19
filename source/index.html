@@ -5,161 +5,152 @@
   <title>HTML Academy: Пинк</title>
 </head>
 <body>
-  <div class="wrapper">
-    <header>
-      <nav class="nav">
-        <a href="#" class="logo">
-          <svg xmlns="http://www.w3.org/2000/svg" width="74.426" height="22.859" version="1" viewBox="0 0 74.426 22.859"><g fill="#fff">
-            <path d="M0 1.449C0 .741.58.161 1.256.161h7.18c5.087 0 8.436 2.704 8.436 7.147v.064c0 4.861-4.057 7.373-8.854 7.373H2.544v6.825c0 .708-.58 1.288-1.288 1.288C.58 22.859 0 22.279 0 21.571V1.449zm8.114 10.979c3.734 0 6.182-1.996 6.182-4.958v-.065c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917h5.57zM21.729 1.288C21.729.58 22.308 0 22.983 0c.709 0 1.288.58 1.288 1.288v20.283c0 .708-.579 1.288-1.288 1.288-.676 0-1.255-.58-1.255-1.288V1.288zM30.87 1.32c0-.676.579-1.256 1.256-1.256h.354c.58 0 .934.29 1.288.74l13.684 17.45V1.256A1.256 1.256 0 0 1 48.707 0c.676 0 1.223.58 1.223 1.256v20.348c0 .676-.482 1.191-1.158 1.191h-.129c-.548 0-.934-.322-1.32-.772L33.349 4.153v17.45c0 .676-.547 1.256-1.255 1.256-.677 0-1.224-.58-1.224-1.256V1.32zM56.3 1.288C56.3.58 56.879 0 57.556 0c.708 0 1.287.58 1.287 1.288v12.331L71.689.451c.29-.258.58-.451.999-.451.676 0 1.224.612 1.224 1.256 0 .354-.161.644-.419.901l-7.984 7.92 8.564 10.561c.225.29.354.547.354.934 0 .676-.579 1.288-1.287 1.288-.483 0-.806-.258-1.03-.58l-8.403-10.463-4.862 4.861v4.894c0 .708-.579 1.288-1.287 1.288-.677 0-1.256-.58-1.256-1.288V1.288z" /></g>
-          </svg>
+  <header>
+    <nav class="nav">
+      <div class="nav__wrapper">
+        <a href="#" class="nav__logo">
+          <img src="img/logo.svg" class="nav__img" alt="Логотип Pink">
         </a>
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#" class="nav__link">Главная</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Фотографии</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Конкурс</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Html Academy</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="promo">
-        <h1 class="promo__head">Взгляните на жизнь иначе!</h1>
-        <img src="img/iphone-in-hand.png" class="promo__img" width="320" height="314" alt="Картинка телефона">
-      </section>
-      <section class="install">
-        <a href="#" class="install__button">Скачать приложение</a>
-        <div class="install__wrapper">
-          <ul class="install__list">
-            <li class="install__item">
-              <a href="#" class="install__link">
-                <img src="img/apple-logo-svg.svg" class="install__img" width="47" height="56" alt="Логотип Apple">
-              </a>
-            </li>
-            <li class="install__item">
-              <a href="#" class="install__link">
-                <img src="img/android-logo-svg.svg" class="install__img" width="43" height="47" alt="Логотип Android">
-              </a>
-            </li>
-            <li class="install__item">
-              <a href="#" class="install__link">
-                <img src="img/microsoft-logo-svg.svg" class="install__img" width="44" height="41" alt="Логотип Microsoft">
-              </a>
-            </li>
-          </ul>
+        <button class="nav__close hamburger"></button>
+      </div>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link">Главная</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Фотографии</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Конкурс</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Html Academy</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="promo">
+      <h1 class="promo__head">Взгляните на жизнь иначе!</h1>
+      <img src="img/iphone-in-hand.png" class="promo__img" width="320" height="314" alt="Картинка телефона">
+    </section>
+    <section class="install">
+      <a href="#" class="install__button global-button">Скачать приложение</a>
+      <ul class="install__list">
+        <li class="install__item">
+          <a href="#" class="install__link">
+            <img src="img/apple-logo-svg.svg" class="install__img" width="47" height="56" alt="Логотип Apple">
+          </a>
+        </li>
+        <li class="install__item">
+          <a href="#" class="install__link">
+            <img src="img/android-logo-svg.svg" class="install__img" width="43" height="47" alt="Логотип Android">
+          </a>
+        </li>
+        <li class="install__item">
+          <a href="#" class="install__link">
+            <img src="img/microsoft-logo-svg.svg" class="install__img" width="44" height="41" alt="Логотип Microsoft">
+          </a>
+        </li>
+      </ul>
+      <p class="install__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+    </section>
+  </header>
+  <main>
+    <div class="page-titles">
+      <p class="page-titles__head">Устали от серости мегаполиса?</p>
+      <p class="page-titles__head">Нам есть, что вам предложить!</p>
+    </div>
+    <section class="offers">
+      <ul class="offers__list">
+        <li class="offers__item">
+          <h3 class="offers__subtitle">Поднимает настроение</h3>
+          <p class="offers__desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </li>
+        <li class="offers__item">
+          <h3 class="offers__subtitle">Меняет мир вокруг</h3>
+          <p class="offers__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </li>
+        <li class="offers__item">
+          <h3 class="offers__subtitle">Заводит новых друзей</h3>
+          <p class="offers__desc">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </li>
+      </ul>
+    </section>
+    <section class="reviews">
+      <div class="reviews__wrapper slider">
+        <h2 class="reviews__title">Отзывы о нас</h2>
+        <div class="reviews__list slider__list">
+          <blockquote class="reviews__item slider__item">
+            <cite class="reviews__author-name">Николай Петров</cite>
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
         </div>
-        <p class="install__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </section>
-      <section class="offers">
-        <h2 class="offers__head">Устали от серости мегаполиса?</h2>
-        <h2 class="offers__head">Нам есть, что вам предложить!</h2>
-        <h3 class="offers__subtitle">Поднимает настроение</h3>
-        <p class="offers__desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-        <h3 class="offers__subtitle">Меняет мир вокруг</h3>
-        <p class="offers__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        <h3 class="offers__subtitle">Заводит новых друзей</h3>
-        <p class="offers__desc">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-        <img src="img/iphone-pic.jpg" class="offers__img" width="157" height="320" alt="Картинка IPhone">
-      </section>
-      <section class="reviews">
-        <div class="reviews__wrapper slider">
-          <h2 class="reviews__title">Отзывы о нас</h2>
-          <div class="reviews__list slider__list">
-            <blockquote class="reviews__item slider__item">
-              <cite class="reviews__author-name">Николай Петров</cite>
-              <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-            </blockquote>
-          </div>
-          <div class="reviews__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </div>
-        </div>
-      </section>
-      <section class="tariffs">
-        <table class="tariffs__table">
-          <tr class="tarrifs__head">
-            <td class="tarrifs__main-cell">
-              <h3 class="tariffs__name">Стандарт</h3>
-              <p class="tariffs__price">3,99 USD</p>
-            </td>
-            <td class="tarrifs__main-cell">
-              <h3 class="tariffs__name">Стандарт</h3>
-              <p class="tariffs__price">3,99 USD</p>
-            </td>
-            <td class="tarrifs__main-cell">
-              <h3 class="tariffs__name">Стандарт</h3>
-              <p class="tariffs__price">3,99 USD</p>
-            </td>
-          </tr>
-          <tr class="tarrifs__row">
-            <td class="tarrifs__cell">Розовый фильтр</td>
-            <td class="tarrifs__cell">Розовый фильтр
-              <svg xmlns="http://www.w3.org/2000/svg" class="tarrifs__svg-yes" width="31" height="21" version="1" viewBox="-82.357 4.875 21.698 16.09">
-                <path d="M-60.953 5.167a.999.999 0 0 0-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 1 0-1.414 1.414l5.607 5.607a.997.997 0 0 0 1.414 0l14.09-14c.391-.481.391-1.114 0-1.505z" fill="#3dc644" />
-              </svg>
-            </td>
-            <td class="tarrifs__cell">Розовый фильтр</td>
-          </tr>
-          <tr class="tarrifs__row">
-            <td class="tarrifs__cell">Смайлики</td>
-            <td class="tarrifs__cell">Смайлики
-              <svg xmlns="http://www.w3.org/2000/svg" class="tarrifs__svg-yes" width="31" height="21" version="1" viewBox="-82.357 4.875 21.698 16.09">
-                <path d="M-60.953 5.167a.999.999 0 0 0-1.414 0L-75.75 18.551l-4.9-4.9a.999.999 0 1 0-1.414 1.414l5.607 5.607a.997.997 0 0 0 1.414 0l14.09-14c.391-.481.391-1.114 0-1.505z" fill="#3dc644" />
-              </svg>
-            </td>
-            <td class="tarrifs__cell">Смайлики</td>
-          </tr>
-          <tr class="tarrifs__row">
-            <td class="tarrifs__cell">Комментарии</td>
-            <td class="tarrifs__cell">Комментарии
-              <svg xmlns="http://www.w3.org/2000/svg" class="tarrifs__svg-no" width="27" height="26" version="1" viewBox="0 0 26.752 26.752">
-                <path d="M15.497 13.376L26.312 2.562A1.5 1.5 0 1 0 24.191.441L13.376 11.255 2.562.439A1.5 1.5 0 1 0 .441 2.56l10.814 10.815L.439 24.19a1.5 1.5 0 1 0 2.122 2.121l10.815-10.814L24.19 26.312c.293.293.677.439 1.061.439s.768-.146 1.061-.439a1.5 1.5 0 0 0 0-2.121L15.497 13.376z" fill="#f25b26" />
-              </svg>
-            </td>
-            <td class="tarrifs__cell">Комментарии</td>
-          </tr>
-        </table>
-        <div class="tarrifs__toggles slider__toggles">
-          <button class="slider__toggle" type="button">1</button>
+        <div class="reviews__toggles slider__toggles">
+          <button class="slider__toggle slider__toggle--active" type="button">1</button>
           <button class="slider__toggle" type="button">2</button>
           <button class="slider__toggle" type="button">3</button>
         </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <h2>Наши контакты</h2>
-      <h2 class="footer__head">Остались вопросы? Свяжитесь с нами!</h2>
-      <div class="footer__wrapper">
-        <h3 class="footer__subtitle">Звоните:</h3>
-        <a href="tel:+7 (812) 555-66-66" class="footer__phone">+7 (812) 555-66-66</a>
       </div>
-      <div class="footer__wrapper">
-        <h3 class="footer__subtitle">Пишите:</h3>
-        <a href="mail@htmlacademy.ru" class="footer__mail">mail@htmlacademy.ru</a>
+    </section>
+    <section class="tariffs">
+      <table class="tariffs__table">
+        <tr class="tarrifs__head">
+          <td class="tarrifs__main-cell">
+            <h3 class="tariffs__name">Стандарт</h3>
+            <p class="tariffs__price">3,99 USD</p>
+          </td>
+          <td class="tarrifs__main-cell">
+            <h3 class="tariffs__name">Стандарт</h3>
+            <p class="tariffs__price">3,99 USD</p>
+          </td>
+          <td class="tarrifs__main-cell">
+            <h3 class="tariffs__name">Стандарт</h3>
+            <p class="tariffs__price">3,99 USD</p>
+          </td>
+        </tr>
+        <tr class="tarrifs__row">
+          <td class="tarrifs__cell">Розовый фильтр</td>
+          <td class="tarrifs__cell">Розовый фильтр</td>
+          <td class="tarrifs__cell">Розовый фильтр</td>
+        </tr>
+        <tr class="tarrifs__row">
+          <td class="tarrifs__cell">Смайлики</td>
+          <td class="tarrifs__cell">Смайлики</td>
+          <td class="tarrifs__cell">Смайлики</td>
+        </tr>
+        <tr class="tarrifs__row">
+          <td class="tarrifs__cell">Комментарии</td>
+          <td class="tarrifs__cell">Комментарии</td>
+          <td class="tarrifs__cell">Комментарии</td>
+        </tr>
+      </table>
+      <div class="tarrifs__toggles slider__toggles">
+        <button class="slider__toggle" type="button">1</button>
+        <button class="slider__toggle" type="button">2</button>
+        <button class="slider__toggle" type="button">3</button>
       </div>
-      <div class="footer__wrapper">
-        <h3 class="footer__subtitle">Приезжайте в гости:</h3>
-        <address>
-          <a href="ул. Большая Конюшенная, 19/8" class="footer__mail">ул. Большая Конюшенная, 19/8</a>
-        </address>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" width="320" height="123" version="1" viewBox="0 0 595.28 61.905">
-        <path d="M297.64 61.905L0 0h595.28z" fill="#ffffff" />
-      </svg>
-      <section class="footer__map">
-        <h2>Наш адрес на карте</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6013579603214!2d30.32103037725659!3d59.93875678950162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1585389271061!5m2!1sru!2sru" width="320" height="645"></iframe>
-      </section>
-    </footer>
-  </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <h2>Наши контакты</h2>
+    <h2 class="footer__head">Остались вопросы? Свяжитесь с нами!</h2>
+    <div class="footer__item">
+      <h3 class="footer__subtitle">Звоните:</h3>
+      <a href="tel:+7 (812) 555-66-66" class="footer__phone">+7 (812) 555-66-66</a>
+    </div>
+    <div class="footer__item">
+      <h3 class="footer__subtitle">Пишите:</h3>
+      <a href="mail@htmlacademy.ru" class="footer__mail">mail@htmlacademy.ru</a>
+    </div>
+    <div class="footer__item">
+      <h3 class="footer__subtitle">Приезжайте в гости:</h3>
+      <address>
+        <a href="ул. Большая Конюшенная, 19/8" class="footer__mail">ул. Большая Конюшенная, 19/8</a>
+      </address>
+    </div>
+    <section class="map">
+      <h2>Наш адрес на карте</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6013579603214!2d30.32103037725659!3d59.93875678950162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1585389271061!5m2!1sru!2sru" width="320" height="645"></iframe>
+    </section>
+  </footer>
 </body>
 </html>
