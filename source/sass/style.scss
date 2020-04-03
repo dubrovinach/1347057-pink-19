@@ -1,1 +1,12 @@
-body { background: red; }
+@import "vars";
+@import "fonts";
+@import "../sass/blocks/main.scss";
+@import "../sass/blocks/nav.scss";
+@import "../sass/mixins/mixins.scss";
+@import "../sass/blocks/promo.scss";
+@import "../sass/blocks/install.scss";
+@import "../sass/blocks/page-titles.scss";
+@import "../sass/blocks/offers.scss";
+@import "../sass/blocks/global.scss";
+@import "../sass/blocks/photo/gallery.scss";
+@import "../sass/blocks/photo/photo-card.scss";
