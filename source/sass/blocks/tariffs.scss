@@ -1,0 +1,43 @@
+.tariffs {
+  background-color: $background-grey;
+  &__main-cell {
+    background-color: $text-blue;
+    color: $text-white;
+    border-right: 2px solid $background-grey;
+    padding-top: 23px;
+    padding-bottom: 21px;
+    padding-left: 90px;
+    padding-right: 90px;
+    background-image: url(../../img/bg-hit.svg);
+    background-repeat: no-repeat;
+  }
+  &__name {
+    padding-bottom: 12px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+  &__price {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 30px;
+  }
+  &__cell {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-left: 22px;
+    padding-right: 124px;
+    background-color: $text-white;
+    color: $text-blue;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+}
+.tariffs__main-cell:last-child {
+  border-right: none;
+}

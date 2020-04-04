@@ -1,0 +1,72 @@
+.photo-card {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  &__item {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  &__img--panorama {
+    position: relative;
+  }
+  &__panorama {
+    position: absolute;
+    right: 20px;
+    padding-top: 13px;
+    padding-left: 20px;
+    padding-bottom: 11px;
+    padding-right: 21px;
+    background-color: $pink;
+    color: $text-white;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+  &__blockquote {
+    padding-left: 17px;
+    padding-right: 13px;
+    padding-top: 25px;
+    padding-bottom: 28px;
+    margin: auto;
+    width: 280px;
+    background-color: $background-grey;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  &__author-name {
+    padding-right: 5px;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    color: $text-blue;
+    font-style: normal;
+  }
+  &__time {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 24px;
+    color: $text-blue;
+  }
+  &__comment {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $text-blue;
+    text-align: left;
+  }
+  &__number {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $pink;
+    text-align: left;
+  }
+}

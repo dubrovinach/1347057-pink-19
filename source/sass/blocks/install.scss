@@ -1,0 +1,27 @@
+.install {
+  background-color: $install-color;
+  padding-top: 30px;
+  text-align: center;
+  &__button {
+    padding-top: 10px;
+    padding-bottom: 9px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  &__list {
+    list-style: none;
+    padding: 0;
+    padding-top: 32px;
+    margin: 0;
+  }
+  &__desc {
+    padding-top: 29px;
+    padding-bottom: 35px;
+    padding-left: 45px;
+    padding-right: 45px;
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 24px;
+    color: $text-white;
+  }
+}
