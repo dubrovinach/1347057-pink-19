@@ -1,11 +1,11 @@
-.promo{
+.promo {
   background-color: $navColor;
   background-image: url(../../img/bg-back-mobile@1x.jpg);
   background-position: left 0 top -70px;
   background-repeat: no-repeat;
   height: 400px;
   position: relative;
-  &__head{
+  &__head {
     padding-top: 29px;
     padding-bottom: 30px;
     padding-left: 50px;
@@ -16,18 +16,17 @@
     text-align: center;
     color: $text-white;
   }
-  &__img{
+  &__img {
     position: absolute;
     bottom: 0;
   }
 }
 
-.promo--height{
+.promo--height {
   height: 200px;
 }
 
-.promo__head--height{
+.promo__head--height {
   padding-left: 46px;
   padding-right: 46px;
 }
-
