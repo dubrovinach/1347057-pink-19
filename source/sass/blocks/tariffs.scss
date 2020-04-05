@@ -10,6 +10,15 @@
     padding-right: 90px;
     background-image: url(../../img/bg-hit.svg);
     background-repeat: no-repeat;
+    position: relative;
+  }
+  &__hit{
+    position: absolute;
+    top: -5px;
+    left: 50px;
+    bottom: 10px;
+    transform: rotate(-45deg);
+    text-transform: uppercase;
   }
   &__name {
     padding-bottom: 12px;
