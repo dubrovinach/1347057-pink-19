@@ -1,6 +1,6 @@
 @import "vars";
 @import "fonts";
-@import "helpers/visually-hidden.scss";
+@import "blocks/helpers.scss";
 @import "blocks/main.scss";
 @import "blocks/nav.scss";
 @import "mixins/mixins.scss";
@@ -14,3 +14,7 @@
 @import "blocks/reviews.scss";
 @import "blocks/tariffs.scss";
 @import "blocks/footer.scss";
+@import "blocks/map.scss";
+@import "blocks/photo/publication.scss";
+@import "blocks/form/your-impressions.scss";
+@import "blocks/form/form.scss";
