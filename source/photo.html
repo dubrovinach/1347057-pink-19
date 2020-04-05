@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
   <header>
     <nav class="nav">
@@ -35,17 +37,20 @@
   </header>
   <main>
     <section class="gallery">
-      <p class="gallery__desc">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      <p class="gallery__desc">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
+      </p>
       <ul class="photo-card">
         <li class="photo-card__item">
-          <img src="img/panorama-mobile.jpg" class="photo-card__img photo-card__img--panorama" width="320" height="137" alt="Фото Анны">
+          <img src="img/panorama-mobile.jpg" class="photo-card__img photo-card__img--panorama" width="320" height="137"
+            alt="Фото Анны">
           <span class="photo-card__panorama">Панорама дня</span>
           <blockquote class="photo-card__blockquote">
             <div class="photo-card__wrapper">
               <cite class="photo-card__author-name">Анна</cite>
               <p class="photo-card__time">(5 минут назад)</p>
             </div>
-            <p class="photo-card__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <p class="photo-card__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую
+              трансляцию в перископе, задавайте свои вопросы!</p>
             <p class="photo-card__number">Нравится: 215</p>
           </blockquote>
         </li>
@@ -116,7 +121,7 @@
           </blockquote>
         </li>
       </ul>
-      <p class="gallery__recommendation">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+      <p class="gallery__recommendation">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
     </section>
     <section class="publication">
       <form action="https://echo.htmlacademy.ru" class="publication__form" method="post">
@@ -134,8 +139,10 @@
             </li>
           </ul>
         </div>
-        <a href="#" class="publication__button-post global-button">Запостить</a>
-        <a href="#" class="publication__button-cancel global-button">Отмена</a>
+        <div class="publication__buttons">
+          <a href="#" class="publication__button publication__button-post global-button">Запостить</a>
+          <a href="#" class="publication__button publication__button-cancel global-button">Отмена</a>
+        </div>
       </form>
     </section>
   </main>
@@ -166,4 +173,5 @@
     </div>
   </footer>
 </body>
+
 </html>
