@@ -3,27 +3,118 @@
   text-align: center;
   padding-left: 30px;
   padding-right: 30px;
+
   &__list {
     list-style: none;
     padding: 0;
     margin: 0;
   }
+
   &__subtitle {
+    padding: 0;
+    margin: 0;
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
     color: $text-black;
   }
+
   &__desc {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
     color: #283645;
   }
-  &__pic {
+
+  &__pic-one {
     height: 280px;
     background-image: url(../../img/iphone-screen-mobile@1x.png);
     background-repeat: no-repeat;
     background-position: 50% 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .offers {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
+  }
+
+  .offers__list {
+    padding-left: 41px;
+  }
+
+  .offers__desc {
+    width: 293px;
+  }
+
+  .offers__pic-one {
+    height: 480px;
+    width: 400px;
+    background-image: url(../../img/iphone-screen-3-tablet@1x.png);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .offers {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .offers__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .offers__item {
+    padding-right: 90px;
+  }
+
+  .offers__desc {
+    width: 190px;
+    padding-left: 40px;
+  }
+
+  .offers__subtitle {
+    width: 180px;
+    padding-left: 50px;
+  }
+
+  .offers__container-pic {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 895px;
+  }
+
+  .offers__pic {
+    padding-right: 137px;
+  }
+
+  .offers__pic-one {
+    height: 382px;
+    width: 286px;
+    background-image: url(../../img/iphone-screen-3-desktop@1x.png);
+    background-repeat: no-repeat;
+    background-position: left 0 top 0;
+  }
+
+  .offers__pic-two {
+    height: 382px;
+    width: 286px;
+    background-image: url(../../img/iphone-screen-2-desktop@1x.png);
+    background-repeat: no-repeat;
+    background-position: left 0 top 0;
+  }
+
+  .offers__pic-three {
+    height: 382px;
+    width: 286px;
+    background-image: url(../../img/iphone-screen-1-desktop@1x.png);
+    background-repeat: no-repeat;
+    background-position: left 0 top 0;
   }
 }
