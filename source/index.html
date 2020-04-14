@@ -10,12 +10,12 @@
 <body>
   <header class="header">
     <div class="container">
-      <nav class="nav">
+      <nav class="nav nav--closed">
         <div class="nav__wrapper">
           <a href="#" class="nav__logo">
             <img src="img/logo-pink-white-mobile.svg" class="nav__img-mobile" alt="Логотип Pink">
           </a>
-          <button class="nav__close hamburger"></button>
+          <button class="nav__toggle hamburger"></button>
         </div>
         <ul class="nav__list">
           <li class="nav__item">
@@ -90,12 +90,24 @@
         <div class="offers__pic offers__pic-three"></div>
       </div>
     </section>
+    <section class="twenty-four-hours">
+      <div class="twenty-four-hours__pic"></div>
+      <div class="twenty-four-hours__wrapper">
+        <h2 class="twenty-four-hours__head">Эффект на 24 часа!</h2>
+        <p class="twenty-four-hours__desc">Британские ученые провели исследования и доказали, что положительный эффект
+          от использования приложения длится целые сутки!</p>
+        <a href="#" class="twenty-four-hours__link">Узнать больше об исследовании</a>
+      </div>
+    </section>
     <section class="reviews">
       <div class="reviews__wrapper slider">
         <h2 class="reviews__title visually-hidden">Отзывы о нас</h2>
         <div class="reviews__list slider__list">
           <blockquote class="reviews__item slider__item">
-            <cite class="reviews__author-name">Николай Петров</cite>
+            <div class="reviews__data">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__author-data">25 лет, водитель трамвая</p>
+            </div>
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
               серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </blockquote>
@@ -110,34 +122,38 @@
     <section class="tariffs">
       <table class="tariffs__table">
         <tr class="tariffs__head">
-          <td class="tariffs__main-cell visually-hidden">
-            <h3 class="tariffs__name">Стандарт</h3>
-            <p class="tariffs__price">3,99 USD</p>
-          </td>
+          <td class="tariffs__main-cell tariffs__main-cell--empty"></td>
           <td class="tariffs__main-cell">
+            <h3 class="tariffs__name">База</h3>
+            <p class="tariffs__price">1,99 USD</p>
+          </td>
+          <td class="tariffs__main-cell tariffs__main-cell--standart">
             <h3 class="tariffs__name">Стандарт</h3>
             <p class="tariffs__price">3,99 USD</p>
             <div class="tariffs__hit">Хит</div>
           </td>
-          <td class="tariffs__main-cell visually-hidden">
-            <h3 class="tariffs__name">Стандарт</h3>
-            <p class="tariffs__price">3,99 USD</p>
+          <td class="tariffs__main-cell">
+            <h3 class="tariffs__name">Анлим</h3>
+            <p class="tariffs__price">9,99 USD</p>
           </td>
         </tr>
         <tr class="tariffs__row">
-          <td class="tariffs__cell visually-hidden">Розовый фильтр</td>
+          <td class="tariffs__cell tariffs__cell--first">Розовый фильтр</td>
           <td class="tariffs__cell">Розовый фильтр</td>
-          <td class="tariffs__cell visually-hidden">Розовый фильтр</td>
+          <td class="tariffs__cell">Розовый фильтр</td>
+          <td class="tariffs__cell">Розовый фильтр</td>
         </tr>
         <tr class="tariffs__row">
-          <td class="tariffs__cell visually-hidden">Смайлики</td>
+          <td class="tariffs__cell tariffs__cell--first">Смайлики</td>
           <td class="tariffs__cell">Смайлики</td>
-          <td class="tariffs__cell visually-hidden">Смайлики</td>
+          <td class="tariffs__cell">Смайлики</td>
+          <td class="tariffs__cell">Смайлики</td>
         </tr>
         <tr class="tariffs__row">
-          <td class="tariffs__cell visually-hidden">Комментарии</td>
+          <td class="tariffs__cell tariffs__cell--first">Комментарии</td>
           <td class="tariffs__cell">Комментарии</td>
-          <td class="tariffs__cell visually-hidden">Комментарии</td>
+          <td class="tariffs__cell">Комментарии</td>
+          <td class="tariffs__cell">Комментарии</td>
         </tr>
       </table>
       <div class="tariffs__toggles slider__toggles">
@@ -150,19 +166,21 @@
   <footer class="footer">
     <h2 class="visually-hidden">Наши контакты</h2>
     <h2 class="footer__head">Остались вопросы? Свяжитесь с нами!</h2>
-    <div class="footer__item">
-      <h3 class="footer__subtitle">Звоните:</h3>
-      <a href="tel:+7 (812) 555-66-66" class="footer__contact">+7 (812) 555-66-66</a>
-    </div>
-    <div class="footer__item">
-      <h3 class="footer__subtitle">Пишите:</h3>
-      <a href="mail@htmlacademy.ru" class="footer__contact">mail@htmlacademy.ru</a>
-    </div>
-    <div class="footer__item">
-      <h3 class="footer__subtitle">Приезжайте в гости:</h3>
-      <address>
-        <a href="ул. Большая Конюшенная, 19/8" class="footer__contact">ул. Большая Конюшенная, 19/8</a>
-      </address>
+    <div class="footer__wrapper">
+      <div class="footer__item footer__item--call">
+        <h3 class="footer__subtitle">Звоните:</h3>
+        <a href="tel:+7 (812) 555-66-66" class="footer__contact">+7 (812) 555-66-66</a>
+      </div>
+      <div class="footer__item footer__item--write">
+        <h3 class="footer__subtitle">Пишите:</h3>
+        <a href="mail@htmlacademy.ru" class="footer__contact">mail@htmlacademy.ru</a>
+      </div>
+      <div class="footer__item footer__item--come">
+        <h3 class="footer__subtitle">Приезжайте в гости:</h3>
+        <address>
+          <a href="ул. Большая Конюшенная, 19/8" class="footer__contact">ул. Большая Конюшенная, 19/8</a>
+        </address>
+      </div>
     </div>
     <section class="map">
       <h2 class="visually-hidden">Наш адрес на карте</h2>
