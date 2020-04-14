@@ -1,5 +1,6 @@
 .tariffs {
   background-color: $background-grey;
+
   &__main-cell {
     background-color: $text-blue;
     color: $text-white;
@@ -8,11 +9,15 @@
     padding-bottom: 21px;
     padding-left: 90px;
     padding-right: 90px;
-    background-image: url(../../img/bg-hit.svg);
-    background-repeat: no-repeat;
     position: relative;
   }
-  &__hit{
+
+  &__main-cell--standart {
+    background-image: url(../../img/bg-hit.svg);
+    background-repeat: no-repeat;
+  }
+
+  &__hit {
     position: absolute;
     top: -5px;
     left: 50px;
@@ -20,6 +25,7 @@
     transform: rotate(-45deg);
     text-transform: uppercase;
   }
+
   &__name {
     padding-bottom: 12px;
     margin: 0;
@@ -28,12 +34,14 @@
     line-height: 30px;
     text-transform: uppercase;
   }
+
   &__price {
     margin: 0;
     font-size: 24px;
     font-weight: 200;
     line-height: 30px;
   }
+
   &__cell {
     padding-top: 22px;
     padding-bottom: 22px;
@@ -47,6 +55,36 @@
     text-transform: uppercase;
   }
 }
+
 .tariffs__main-cell:last-child {
   border-right: none;
+}
+
+.tariffs__main-cell--empty {
+  display: none;
+}
+
+.tariffs__cell--first {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .tariffs__table {
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 70px;
+  }
+
+  .tariffs__main-cell--empty {
+    display: block;
+    background-color: inherit;
+  }
+
+  .tariffs__cell--first {
+    display: block;
+  }
+
+  .tariffs__toggles {
+    display: none;
+  }
 }
