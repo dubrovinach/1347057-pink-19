@@ -1,9 +1,38 @@
 .map {
   height: 200px;
   background-image: url(../../img/bg-map-mobile@1x.png);
+  background-repeat: no-repeat;
   background-position: left 0 top -440px;
   background-color: $navColor;
+
   &__pic {
     border: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    background-image: url(../../img/bg-map-tablet@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: top -400px left 0;
+    width: 100%;
+  }
+
+  .map__pic {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    background-image: url(../../img/bg-map-desktop@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: top -360px left 0;
+    width: 100%;
+  }
+
+  .map__pic {
+    height: 450px;
   }
 }
