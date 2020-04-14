@@ -1,11 +1,17 @@
 .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+
   &__item {
     padding-left: 44px;
     padding-right: 39px;
     padding-bottom: 28px;
   }
+
   &__head {
+    width: 250px;
     padding-top: 50px;
     padding-bottom: 44px;
     font-size: 24px;
@@ -13,12 +19,14 @@
     line-height: 30px;
     color: $text-blue;
   }
+
   &__subtitle {
     margin: 0;
     font-size: 18px;
     font-weight: 700;
     line-height: 30px;
   }
+
   &__contact {
     text-decoration: none;
     color: $pink;
@@ -31,4 +39,32 @@
 
 .footer__item:last-child {
   padding-bottom: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer__item--call {
+    flex-grow: 1;
+  }
+
+  .footer__item--write {
+    flex-grow: 1;
+  }
+
+  .footer__item--come {
+    flex-grow: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer__item--write {
+    flex-grow: 1;
+    order: 2;
+  }
 }
