@@ -1,7 +1,7 @@
 .promo {
   background-color: $navColor;
   background-image: url(../../img/bg-back-mobile@1x.jpg);
-  background-position: left 50% top -70px;
+  background-position: left 50% top -65px;
   background-repeat: no-repeat;
 
   &__wrapper {
@@ -29,9 +29,7 @@
   .promo {
     min-height: 530px;
     background: url(../../img/iphone-hand-tablet@1x.png) no-repeat -25px 84px,
-      url(../../img/bg-back-tablet@1x.jpg) no-repeat -280px -100px;
-    display: flex;
-    flex-direction: column;
+      url(../../img/bg-back-tablet@1x.jpg) no-repeat -280px -108px;
     padding-top: 103px;
   }
 
