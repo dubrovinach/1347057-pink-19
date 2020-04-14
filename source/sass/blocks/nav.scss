@@ -1,5 +1,19 @@
 .nav {
   background-color: $navColor;
+  position: relative;
+
+  &__toggle {
+    position: absolute;
+    top: 21px;
+    right: 19px;
+    z-index: 2;
+    display: block;
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+  }
 
   &__wrapper {
     border-bottom: 1px solid #000000;
@@ -7,10 +21,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  }
-
-  &__close {
-    margin-right: 20px;
   }
 
   &__logo {
@@ -46,17 +56,50 @@
   }
 }
 
+.nav--closed .nav__toggle::before {
+  content: url(../../img/icon-menu-burger.svg);
+}
+
+.nav--opened .nav__toggle::before {
+  content: url(../../img/icon-menu-cross.svg);
+}
+
+.nav--closed .nav__wrapper {
+  background-image: url(../../img/bg-back-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: top 5px left 92px;
+  border: none;
+  box-shadow: none;
+}
+
 @media (min-width: $tablet-width) {
   .nav__img-mobile {
     display: none;
   }
 
+  .nav__wrapper {
+    min-height: 109px;
+  }
+
   .nav__logo {
     background-image: url(../../img/logo-pink-white-tablet.svg);
     background-repeat: no-repeat;
-    background-position: left 0 top 50%;
+    background-position: left 20px top 27px;
     width: 147px;
     height: 40px;
+  }
+
+  .nav__toggle {
+    top: 45px;
+  }
+
+  .nav--closed .nav__wrapper {
+    background-image: url(../../img/bg-back-tablet@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: top 0 left -280px;
+    background-color: rgba(29, 38, 50, 0.3);
+    border: none;
+    box-shadow: none;
   }
 }
 
@@ -70,6 +113,10 @@
     background: transparent;
   }
 
+  .nav__wrapper {
+    border: none;
+  }
+
   .nav__img-mobile {
     display: none;
   }
@@ -80,12 +127,6 @@
     background-position: left 0 top 50%;
     width: 147px;
     height: 40px;
-  }
-
-  .nav__wrapper {
-    width: 200px;
-    border: none;
-    box-shadow: none;
   }
 
   .nav__list {
@@ -108,6 +149,18 @@
   }
 
   .nav__close {
+    display: none;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .nav--closed .nav__item {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nav__toggle {
     display: none;
   }
 }
