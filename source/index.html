@@ -8,59 +8,63 @@
 </head>
 
 <body>
-  <header>
-    <nav class="nav">
-      <div class="nav__wrapper">
-        <a href="#" class="nav__logo">
-          <img src="img/logo.svg" class="nav__img" alt="Логотип Pink">
-        </a>
-        <button class="nav__close hamburger"></button>
-      </div>
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a href="#" class="nav__link">Главная</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Фотографии</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Конкурс</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Html Academy</a>
-        </li>
-      </ul>
-    </nav>
-    <section class="promo">
-      <h1 class="promo__head">Взгляните на жизнь иначе!</h1>
-      <img src="img/iphone-hand-mobile@1x.png" class="promo__img" width="260" height="290" alt="Картинка телефона">
-    </section>
-    <section class="install">
-      <a href="#" class="install__button global-button">Скачать приложение</a>
-      <ul class="install__list">
-        <li class="install__item">
-          <a href="#" class="install__link">
-            <img src="img/apple-logo-svg.svg" class="install__img" width="47" height="56" alt="Логотип Apple">
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <div class="nav__wrapper">
+          <a href="#" class="nav__logo">
+            <img src="img/logo-pink-white-mobile.svg" class="nav__img-mobile" alt="Логотип Pink">
           </a>
-        </li>
-        <li class="install__item">
-          <a href="#" class="install__link">
-            <img src="img/android-logo-svg.svg" class="install__img" width="43" height="47" alt="Логотип Android">
-          </a>
-        </li>
-        <li class="install__item">
-          <a href="#" class="install__link">
-            <img src="img/microsoft-logo-svg.svg" class="install__img" width="44" height="41" alt="Логотип Microsoft">
-          </a>
-        </li>
-      </ul>
-      <p class="install__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-    </section>
+          <button class="nav__close hamburger"></button>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Фотографии</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Конкурс</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Html Academy</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="promo">
+        <div class="promo__wrapper">
+          <h1 class="promo__head">Взгляните на жизнь иначе!</h1>
+        </div>
+        <div class="install">
+          <a href="#" class="install__button global-button">Скачать приложение</a>
+          <ul class="install__list">
+            <li class="install__item install__item--apple">
+              <a href="#" class="install__link">
+                <img src="img/apple-logo-svg.svg" class="install__img" width="47" height="56" alt="Логотип Apple">
+              </a>
+            </li>
+            <li class="install__item install__item--android">
+              <a href="#" class="install__link">
+                <img src="img/android-logo-svg.svg" class="install__img" width="43" height="47" alt="Логотип Android">
+              </a>
+            </li>
+            <li class="install__item install__item--windows">
+              <a href="#" class="install__link">
+                <img src="img/microsoft-logo-svg.svg" class="install__img" width="44" height="41"
+                  alt="Логотип Microsoft">
+              </a>
+            </li>
+          </ul>
+          <p class="install__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </section>
+    </div>
   </header>
   <main>
     <div class="page-titles">
-      <p class="page-titles__head">Устали от серости мегаполиса?</p>
-      <p class="page-titles__head">Нам есть, что вам предложить!</p>
+      <p class="page-titles__head page-titles__head--answer">Устали от серости мегаполиса?</p>
+      <p class="page-titles__head page-titles__head--offer">Нам есть, что вам предложить!</p>
     </div>
     <section class="offers">
       <ul class="offers__list">
@@ -71,7 +75,8 @@
         </li>
         <li class="offers__item">
           <h3 class="offers__subtitle">Меняет мир вокруг</h3>
-          <p class="offers__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+          <p class="offers__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
+            эффект
           </p>
         </li>
         <li class="offers__item">
@@ -79,7 +84,11 @@
           <p class="offers__desc">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
         </li>
       </ul>
-      <div class="offers__pic"></div>
+      <div class="offers__container-pic">
+        <div class="offers__pic offers__pic-one"></div>
+        <div class="offers__pic offers__pic-two"></div>
+        <div class="offers__pic offers__pic-three"></div>
+      </div>
     </section>
     <section class="reviews">
       <div class="reviews__wrapper slider">

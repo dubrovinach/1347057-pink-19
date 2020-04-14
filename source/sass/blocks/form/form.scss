@@ -3,12 +3,14 @@
     margin-top: 44px;
     margin-bottom: 41px;
   }
+
   &__button {
     margin-top: 52px;
     margin-bottom: 46px;
     margin-left: 22px;
     margin-right: 22px;
   }
+
   &__prompt {
     padding-bottom: 64px;
     text-align: center;
@@ -18,16 +20,20 @@
     text-transform: uppercase;
     color: $text-blue;
   }
+
   &__star {
     color: $pink;
   }
 }
+
 .form-item {
   border: none;
+
   &__wrapper {
     display: flex;
     flex-direction: column;
   }
+
   &__label {
     padding-left: 10px;
     font-size: 14px;
@@ -35,6 +41,7 @@
     line-height: 30px;
     color: $pink;
   }
+
   &__input {
     margin-bottom: 29px;
     padding-top: 18px;
@@ -55,6 +62,7 @@
 .form-checkbox {
   border: none;
   background-color: $background-grey;
+
   &__head {
     margin: 0;
     padding-top: 41px;
@@ -68,12 +76,14 @@
     text-transform: uppercase;
     text-align: center;
   }
+
   &__wrapper {
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
     padding-bottom: 47px;
   }
+
   &__label {
     font-size: 18px;
     font-weight: 400;
@@ -82,9 +92,11 @@
     padding-left: 33px;
   }
 }
+
 .form-text {
   text-align: center;
   border: none;
+
   &__legend {
     font-size: 14px;
     font-weight: 400;
@@ -92,6 +104,7 @@
     text-transform: uppercase;
     color: $pink;
   }
+
   &__textarea {
     box-sizing: border-box;
     width: 100%;
