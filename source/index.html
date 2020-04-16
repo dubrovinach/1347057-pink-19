@@ -9,7 +9,7 @@
 
 <body>
   <header class="header">
-    <div class="container">
+    <div class="header__container">
       <nav class="nav nav--closed">
         <div class="nav__wrapper">
           <a href="#" class="nav__logo">
@@ -33,30 +33,32 @@
         </ul>
       </nav>
       <section class="promo">
-        <div class="promo__wrapper">
-          <h1 class="promo__head">Взгляните на жизнь иначе!</h1>
-        </div>
-        <div class="install">
-          <a href="#" class="install__button global-button">Скачать приложение</a>
-          <ul class="install__list">
-            <li class="install__item install__item--apple">
-              <a href="#" class="install__link">
-                <img src="img/apple-logo-svg.svg" class="install__img" width="47" height="56" alt="Логотип Apple">
-              </a>
-            </li>
-            <li class="install__item install__item--android">
-              <a href="#" class="install__link">
-                <img src="img/android-logo-svg.svg" class="install__img" width="43" height="47" alt="Логотип Android">
-              </a>
-            </li>
-            <li class="install__item install__item--windows">
-              <a href="#" class="install__link">
-                <img src="img/microsoft-logo-svg.svg" class="install__img" width="44" height="41"
-                  alt="Логотип Microsoft">
-              </a>
-            </li>
-          </ul>
-          <p class="install__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <div class="promo__container container">
+          <div class="promo__wrapper">
+            <h1 class="promo__head">Взгляните на жизнь иначе!</h1>
+          </div>
+          <div class="install">
+            <a href="#" class="install__button global-button">Скачать приложение</a>
+            <ul class="install__list">
+              <li class="install__item install__item--apple">
+                <a href="#" class="install__link">
+                  <img src="img/apple-logo-svg.svg" class="install__img" width="47" height="56" alt="Логотип Apple">
+                </a>
+              </li>
+              <li class="install__item install__item--android">
+                <a href="#" class="install__link">
+                  <img src="img/android-logo-svg.svg" class="install__img" width="43" height="47" alt="Логотип Android">
+                </a>
+              </li>
+              <li class="install__item install__item--windows">
+                <a href="#" class="install__link">
+                  <img src="img/microsoft-logo-svg.svg" class="install__img" width="44" height="41"
+                    alt="Логотип Microsoft">
+                </a>
+              </li>
+            </ul>
+            <p class="install__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
         </div>
       </section>
     </div>
@@ -67,27 +69,41 @@
       <p class="page-titles__head page-titles__head--offer">Нам есть, что вам предложить!</p>
     </div>
     <section class="offers">
-      <ul class="offers__list">
-        <li class="offers__item">
-          <h3 class="offers__subtitle">Поднимает настроение</h3>
-          <p class="offers__desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько
-            кликов!</p>
-        </li>
-        <li class="offers__item">
-          <h3 class="offers__subtitle">Меняет мир вокруг</h3>
-          <p class="offers__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
-            эффект
-          </p>
-        </li>
-        <li class="offers__item">
-          <h3 class="offers__subtitle">Заводит новых друзей</h3>
-          <p class="offers__desc">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-        </li>
-      </ul>
-      <div class="offers__container-pic">
-        <div class="offers__pic offers__pic-one"></div>
-        <div class="offers__pic offers__pic-two"></div>
-        <div class="offers__pic offers__pic-three"></div>
+      <div class="offers__container container">
+        <ul class="offers__list">
+          <li class="offers__item">
+            <h3 class="offers__subtitle">Поднимает настроение</h3>
+            <p class="offers__desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько
+              кликов!</p>
+          </li>
+          <li class="offers__item">
+            <h3 class="offers__subtitle">Меняет мир вокруг</h3>
+            <p class="offers__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
+              эффект
+            </p>
+          </li>
+          <li class="offers__item">
+            <h3 class="offers__subtitle">Заводит новых друзей</h3>
+            <p class="offers__desc">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+        <div class="offers__container-pic">
+          <div class="offers__pic offers__pic-one"></div>
+          <div class="offers__pic offers__pic-two"></div>
+          <div class="offers__pic offers__pic-three"></div>
+        </div>
+      </div>
+    </section>
+    <section class="twenty-four-hours">
+      <div class="twenty-four-hours__container container">
+        <div class="twenty-four-hours__pic"></div>
+        <div class="twenty-four-hours__wrapper">
+          <h2 class="twenty-four-hours__head">Эффект<br>на 24 часа!</h2>
+          <p class="twenty-four-hours__desc">Британские ученые провели исследования и доказали, что положительный
+            эффект<br>
+            от использования приложения длится целые сутки!</p>
+          <a href="#" class="twenty-four-hours__link">Узнать больше об исследовании</a>
+        </div>
       </div>
     </section>
     <section class="twenty-four-hours">

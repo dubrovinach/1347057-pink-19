@@ -1,18 +1,27 @@
 .offers {
   background-color: $background-grey;
   text-align: center;
-  padding-left: 30px;
-  padding-right: 30px;
 
   &__list {
-    list-style: none;
-    padding: 0;
     margin: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 45px;
+    list-style: none;
+  }
+
+  &__item {
+    padding-bottom: 40px;
+  }
+
+  &__item:last-child {
+    padding-bottom: 0;
   }
 
   &__subtitle {
     padding: 0;
     margin: 0;
+    padding-bottom: 20px;
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
@@ -20,6 +29,8 @@
   }
 
   &__desc {
+    padding: 0;
+    margin: 0;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
@@ -35,13 +46,14 @@
 }
 
 @media (min-width: $tablet-width) {
-  .offers {
+  .offers__container {
     display: flex;
     flex-direction: row-reverse;
     text-align: left;
   }
 
   .offers__list {
+    padding-right: 0;
     padding-left: 41px;
   }
 
@@ -51,70 +63,65 @@
 
   .offers__pic-one {
     height: 480px;
-    width: 400px;
+    width: 268px;
     background-image: url(../../img/iphone-screen-3-tablet@1x.png);
+    background-repeat: no-repeat;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .offers {
+  .offers__container {
     display: flex;
     flex-direction: column-reverse;
   }
 
   .offers__list {
+    padding: 0;
+    padding-top: 51px;
+    padding-left: 43px;
+    padding-right: 34px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
   }
 
   .offers__item {
-    padding-right: 90px;
+    padding-bottom: 0;
   }
 
   .offers__desc {
     width: 190px;
-    padding-left: 40px;
   }
 
   .offers__subtitle {
     width: 180px;
-    padding-left: 50px;
   }
 
   .offers__container-pic {
-    margin: 0 auto;
     display: flex;
     flex-direction: row-reverse;
-    width: 895px;
+    height: 303px;
+    justify-content: space-between;
   }
 
   .offers__pic {
-    padding-right: 137px;
+    width: 268px;
   }
 
   .offers__pic-one {
-    height: 382px;
-    width: 286px;
+    height: 303px;
     background-image: url(../../img/iphone-screen-3-desktop@1x.png);
     background-repeat: no-repeat;
-    background-position: left 0 top 0;
   }
 
   .offers__pic-two {
-    height: 382px;
-    width: 286px;
     background-image: url(../../img/iphone-screen-2-desktop@1x.png);
     background-repeat: no-repeat;
-    background-position: left 0 top 0;
   }
 
   .offers__pic-three {
-    height: 382px;
-    width: 286px;
     background-image: url(../../img/iphone-screen-1-desktop@1x.png);
     background-repeat: no-repeat;
-    background-position: left 0 top 0;
   }
 }

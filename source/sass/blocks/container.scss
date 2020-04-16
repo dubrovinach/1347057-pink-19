@@ -1,4 +1,16 @@
+@media (min-width: $tablet-width) {
+  .container {
+    width: 620px;
+    margin: 0 auto;
+  }
+}
+
 @media (min-width: $desktop-width) {
+  .header__container {
+    width: 950px;
+    margin: 0 auto;
+  }
+
   .container {
     width: 950px;
     margin: 0 auto;

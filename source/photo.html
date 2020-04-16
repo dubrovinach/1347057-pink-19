@@ -9,12 +9,12 @@
 
 <body>
   <header>
-    <nav class="nav">
+    <nav class="nav nav--closed">
       <div class="nav__wrapper">
         <a href="index.html" class="nav__logo">
-          <img src="img/logo.svg" class="nav__img" alt="Логотип Pink">
+          <img src="img/logo-pink-white-mobile.svg" class="nav__img-mobile" alt="Логотип Pink">
         </a>
-        <button class="nav__close hamburger"></button>
+        <button class="nav__toggle hamburger"></button>
       </div>
       <ul class="nav__list">
         <li class="nav__item">
@@ -54,72 +54,74 @@
             <p class="photo-card__number">Нравится: 215</p>
           </blockquote>
         </li>
-        <li class="photo-card__item">
-          <img src="img/photo-levon.jpg" class="photo-card__img" width="280" height="180" alt="Фото Левона">
-          <blockquote class="photo-card__blockquote">
-            <div class="photo-card__wrapper">
-              <cite class="photo-card__author-name">Левон</cite>
-              <p class="photo-card__time">(5 часов назад)</p>
-            </div>
-            <p class="photo-card__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <p class="photo-card__number">Нравится: 356</p>
-          </blockquote>
-        </li>
-        <li class="photo-card__item">
-          <img src="img/photo-anton.jpg" class="photo-card__img" width="280" height="180" alt="Фото Антона">
-          <blockquote class="photo-card__blockquote">
-            <div class="photo-card__wrapper">
-              <cite class="photo-card__author-name">Антон</cite>
-              <p class="photo-card__time">(12 часов назад)</p>
-            </div>
-            <p class="photo-card__comment">Соседи будут рады!</p>
-            <p class="photo-card__number">Нравится: 666</p>
-          </blockquote>
-        </li>
-        <li class="photo-card__item">
-          <img src="img/photo-boris.jpg" class="photo-card__img" width="280" height="180" alt="Фото Бориса">
-          <blockquote class="photo-card__blockquote">
-            <div class="photo-card__wrapper">
-              <cite class="photo-card__author-name">Борис</cite>
-              <p class="photo-card__time">(20 часов назад)</p>
-            </div>
-            <p class="photo-card__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <p class="photo-card__number">Нравится: 215</p>
-          </blockquote>
-        </li>
-        <li class="photo-card__item">
-          <img src="img/photo-sergey.jpg" class="photo-card__img" width="280" height="180" alt="Фото Сергея">
-          <blockquote class="photo-card__blockquote">
-            <div class="photo-card__wrapper">
-              <cite class="photo-card__author-name">Сергей</cite>
-              <p class="photo-card__time">(25 часов назад)</p>
-            </div>
-            <p class="photo-card__comment">Самая кубанская в мире!</p>
-            <p class="photo-card__number">Нравится: 4</p>
-          </blockquote>
-        </li>
-        <li class="photo-card__item">
-          <img src="img/photo-maxim.jpg" class="photo-card__img" width="280" height="180" alt="Фото Максима">
-          <blockquote class="photo-card__blockquote">
-            <div class="photo-card__wrapper">
-              <cite class="photo-card__author-name">Максим</cite>
-              <p class="photo-card__time">(40 часов назад)</p>
-            </div>
-            <p class="photo-card__comment">Где снег-то?</p>
-            <p class="photo-card__number">Нравится: 150</p>
-          </blockquote>
-        </li>
-        <li class="photo-card__item">
-          <img src="img/photo-nadezhda.jpg" class="photo-card__img" width="280" height="180" alt="Фото Надежды">
-          <blockquote class="photo-card__blockquote">
-            <div class="photo-card__wrapper">
-              <cite class="photo-card__author-name">Надежда</cite>
-              <p class="photo-card__time">(45 часов назад)</p>
-            </div>
-            <p class="photo-card__comment">Всем GM и взаимные лайки!</p>
-            <p class="photo-card__number">Нравится: 2560</p>
-          </blockquote>
-        </li>
+        <div class="photo-card__container container">
+          <li class="photo-card__item">
+            <img src="img/photo-levon.jpg" class="photo-card__img" width="280" height="180" alt="Фото Левона">
+            <blockquote class="photo-card__blockquote">
+              <div class="photo-card__wrapper">
+                <cite class="photo-card__author-name">Левон</cite>
+                <p class="photo-card__time">(5 часов назад)</p>
+              </div>
+              <p class="photo-card__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <p class="photo-card__number">Нравится: 356</p>
+            </blockquote>
+          </li>
+          <li class="photo-card__item">
+            <img src="img/photo-anton.jpg" class="photo-card__img" width="280" height="180" alt="Фото Антона">
+            <blockquote class="photo-card__blockquote">
+              <div class="photo-card__wrapper">
+                <cite class="photo-card__author-name">Антон</cite>
+                <p class="photo-card__time">(12 часов назад)</p>
+              </div>
+              <p class="photo-card__comment">Соседи будут рады!</p>
+              <p class="photo-card__number">Нравится: 666</p>
+            </blockquote>
+          </li>
+          <li class="photo-card__item">
+            <img src="img/photo-boris.jpg" class="photo-card__img" width="280" height="180" alt="Фото Бориса">
+            <blockquote class="photo-card__blockquote">
+              <div class="photo-card__wrapper">
+                <cite class="photo-card__author-name">Борис</cite>
+                <p class="photo-card__time">(20 часов назад)</p>
+              </div>
+              <p class="photo-card__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <p class="photo-card__number">Нравится: 215</p>
+            </blockquote>
+          </li>
+          <li class="photo-card__item">
+            <img src="img/photo-sergey.jpg" class="photo-card__img" width="280" height="180" alt="Фото Сергея">
+            <blockquote class="photo-card__blockquote">
+              <div class="photo-card__wrapper">
+                <cite class="photo-card__author-name">Сергей</cite>
+                <p class="photo-card__time">(25 часов назад)</p>
+              </div>
+              <p class="photo-card__comment">Самая кубанская в мире!</p>
+              <p class="photo-card__number">Нравится: 4</p>
+            </blockquote>
+          </li>
+          <li class="photo-card__item">
+            <img src="img/photo-maxim.jpg" class="photo-card__img" width="280" height="180" alt="Фото Максима">
+            <blockquote class="photo-card__blockquote">
+              <div class="photo-card__wrapper">
+                <cite class="photo-card__author-name">Максим</cite>
+                <p class="photo-card__time">(40 часов назад)</p>
+              </div>
+              <p class="photo-card__comment">Где снег-то?</p>
+              <p class="photo-card__number">Нравится: 150</p>
+            </blockquote>
+          </li>
+          <li class="photo-card__item">
+            <img src="img/photo-nadezhda.jpg" class="photo-card__img" width="280" height="180" alt="Фото Надежды">
+            <blockquote class="photo-card__blockquote">
+              <div class="photo-card__wrapper">
+                <cite class="photo-card__author-name">Надежда</cite>
+                <p class="photo-card__time">(45 часов назад)</p>
+              </div>
+              <p class="photo-card__comment">Всем GM и взаимные лайки!</p>
+              <p class="photo-card__number">Нравится: 2560</p>
+            </blockquote>
+          </li>
+        </div>
       </ul>
       <p class="gallery__recommendation">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
     </section>

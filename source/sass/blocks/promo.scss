@@ -2,18 +2,17 @@
   background-color: $navColor;
 
   &__wrapper {
-    position: relative;
     min-height: 396px;
     background-image: url(../../img/iphone-hand-mobile@1x.png);
     background-repeat: no-repeat;
-    background-position: left 100px bottom 0;
+    background-position: left 0 bottom 0;
   }
 
   &__head {
     padding-top: 29px;
     padding-bottom: 30px;
-    padding-left: 130px;
-    padding-right: 130px;
+    padding-left: 50px;
+    padding-right: 45px;
     margin: 0;
     font-size: 24px;
     font-weight: 200;
@@ -25,20 +24,28 @@
 @media (min-width: $tablet-width) {
   .promo {
     min-height: 530px;
-    background: url(../../img/iphone-hand-tablet@1x.png) no-repeat -25px 84px;
+    background: url(../../img/iphone-hand-tablet@1x.png);
+    background-repeat: no-repeat;
+    background-position: left -40px top 74px;
+    display: flex;
+    flex-direction: column;
     padding-top: 103px;
   }
 
   .promo__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-height: 0;
+    width: 290px;
     background: none;
   }
 
   .promo__head {
-    padding: 0;
-    padding-left: 100px;
+    padding-top: 0;
     padding-bottom: 58px;
-    width: 140px;
+    padding-left: 71px;
+    padding-right: 71px;
   }
 }
 
@@ -49,5 +56,9 @@
     background-image: url(../../img/iphone-hand-desktop@1x.png);
     background-repeat: no-repeat;
     background-position: left 20px bottom 0;
+  }
+
+  .promo__head {
+    font-size: 50px;
   }
 }
