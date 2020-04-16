@@ -107,6 +107,12 @@
     height: 40px;
   }
 
+  .nav__wrapper {
+    width: 200px;
+    border: none;
+    box-shadow: none;
+  }
+
   .nav__list {
     display: flex;
     flex-direction: row;
