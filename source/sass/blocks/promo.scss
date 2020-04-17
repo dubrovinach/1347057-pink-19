@@ -3,7 +3,7 @@
 
   &__wrapper {
     min-height: 396px;
-    background-image: url(../../img/iphone-hand-mobile@1x.png);
+    background-image: url("../../img/iphone-hand-mobile@1x.png");
     background-repeat: no-repeat;
     background-position: left 0 bottom 0;
   }
@@ -24,7 +24,7 @@
 @media (min-width: $tablet-width) {
   .promo {
     min-height: 530px;
-    background: url(../../img/iphone-hand-tablet@1x.png);
+    background: url("../../img/iphone-hand-tablet@1x.png");
     background-repeat: no-repeat;
     background-position: left -40px top 74px;
     display: flex;
@@ -53,7 +53,7 @@
   .promo {
     min-height: 639px;
     background: none;
-    background-image: url(../../img/iphone-hand-desktop@1x.png);
+    background-image: url("../../img/iphone-hand-desktop@1x.png");
     background-repeat: no-repeat;
     background-position: left 20px bottom 0;
   }
