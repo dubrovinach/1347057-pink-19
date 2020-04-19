@@ -1,6 +1,16 @@
 .nav {
   background-color: $navColor;
-  position: relative;
+
+  &__opened {
+    background-color: $navColor;
+  }
+
+  &--closed {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    background: transparent;
+  }
 
   &__toggle {
     position: absolute;
@@ -9,17 +19,17 @@
   }
 
   &__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;
     border-bottom: 1px solid #000000;
     box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.15);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
   }
 
   &__logo {
-    display: inline-block;
     padding-top: 22px;
     padding-bottom: 25px;
   }
@@ -58,26 +68,18 @@
   content: url("../../img/icon-menu-cross.svg");
 }
 
+.nav--closed .nav__wrapper {
+  border: none;
+  box-shadow: none;
+}
+
 @media (min-width: $tablet-width) {
   .nav__wrapper {
     min-height: 110px;
   }
 
-  .nav--closed .nav__wrapper {
-    border: none;
-    box-shadow: none;
-  }
-
   .nav__img-mobile {
     display: none;
-  }
-
-  .nav__logo {
-    background-image: url("../../img/logo-pink-white-tablet.svg");
-    background-repeat: no-repeat;
-    background-position: left 20px top 27px;
-    width: 147px;
-    height: 40px;
   }
 
   .nav__toggle {
@@ -100,16 +102,7 @@
     display: none;
   }
 
-  .nav__logo {
-    background-image: url("../../img/logo-pink-white-desktop.svg");
-    background-repeat: no-repeat;
-    background-position: left 0 top 50%;
-    width: 147px;
-    height: 40px;
-  }
-
   .nav__wrapper {
-    width: 150px;
     border: none;
     box-shadow: none;
   }
@@ -134,10 +127,6 @@
     font-weight: 400;
     line-height: 18px;
     text-transform: none;
-  }
-
-  .nav__close {
-    display: none;
   }
 }
 

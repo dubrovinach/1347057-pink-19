@@ -1,5 +1,10 @@
 .promo {
-  background-color: $navColor;
+  position: relative;
+  padding-top: 65px;
+  color: #283645;
+  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
 
   &__wrapper {
     min-height: 396px;
@@ -29,7 +34,7 @@
     background-position: left -40px top 74px;
     display: flex;
     flex-direction: column;
-    padding-top: 103px;
+    justify-content: center;
   }
 
   .promo__wrapper {
