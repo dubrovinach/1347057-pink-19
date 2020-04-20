@@ -1,0 +1,25 @@
+.publication {
+  background-color: $background-grey;
+  text-align: center;
+  &__img {
+    padding-top: 20px;
+  }
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  &__button {
+    padding-top: 20px;
+    padding-bottom: 21px;
+    padding-left: 91px;
+    padding-right: 91px;
+  }
+  &__button-post {
+    margin-bottom: 12px;
+    color: $pink;
+  }
+  &__button-cancel {
+    margin-bottom: 41px;
+    color: rgba(40, 54, 69, 0.1);
+  }
+}

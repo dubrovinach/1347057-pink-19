@@ -10,64 +10,64 @@
 
 <body>
   <header class="header">
-    <div class="header__container">
-      <nav class="nav nav--opened">
-        <div class="nav__wrapper">
-          <a href="#" class="nav__logo">
-            <img src="img/logo-pink-white-mobile.svg" class="nav__img-mobile" alt="Логотип Pink">
-          </a>
-          <button class="nav__toggle hamburger"></button>
+    <nav class="nav nav--opened">
+      <div class="nav__wrapper">
+        <a href="#" class="nav__logo">
+          <img src="img/logo-pink-white-mobile.svg" class="nav__img-mobile" alt="Логотип Pink">
+        </a>
+        <button class="nav__toggle hamburger"></button>
+      </div>
+      <ul class="nav__list nav__list--active">
+        <li class="nav__item">
+          <a href="#" class="nav__link">Главная</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Фотографии</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Конкурс</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Html Academy</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="promo">
+      <div class="promo__container container">
+        <div class="promo__wrapper">
+          <h1 class="promo__head">Взгляните на жизнь иначе!</h1>
         </div>
-        <ul class="nav__list nav__list--active">
-          <li class="nav__item">
-            <a href="#" class="nav__link">Главная</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Фотографии</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Конкурс</a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">Html Academy</a>
-          </li>
-        </ul>
-      </nav>
-      <section class="promo">
-        <div class="promo__container container">
-          <div class="promo__wrapper">
-            <h1 class="promo__head">Взгляните на жизнь иначе!</h1>
-          </div>
-          <div class="install">
-            <a href="#" class="install__button global-button">Скачать приложение</a>
-            <ul class="install__list">
-              <li class="install__item install__item--apple">
-                <a href="#" class="install__link">
-                  <img src="img/apple-logo-svg.svg" class="install__img" width="47" height="56" alt="Логотип Apple">
-                </a>
-              </li>
-              <li class="install__item install__item--android">
-                <a href="#" class="install__link">
-                  <img src="img/android-logo-svg.svg" class="install__img" width="43" height="47" alt="Логотип Android">
-                </a>
-              </li>
-              <li class="install__item install__item--windows">
-                <a href="#" class="install__link">
-                  <img src="img/microsoft-logo-svg.svg" class="install__img" width="44" height="41"
-                    alt="Логотип Microsoft">
-                </a>
-              </li>
-            </ul>
-            <p class="install__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-          </div>
+        <div class="install">
+          <a href="#" class="install__button global-button">Скачать приложение</a>
+          <ul class="install__list">
+            <li class="install__item install__item--apple">
+              <a href="#" class="install__link">
+                <img src="img/apple-logo-svg.svg" class="install__img" width="47" height="56" alt="Логотип Apple">
+              </a>
+            </li>
+            <li class="install__item install__item--android">
+              <a href="#" class="install__link">
+                <img src="img/android-logo-svg.svg" class="install__img" width="43" height="47" alt="Логотип Android">
+              </a>
+            </li>
+            <li class="install__item install__item--windows">
+              <a href="#" class="install__link">
+                <img src="img/microsoft-logo-svg.svg" class="install__img" width="44" height="41"
+                  alt="Логотип Microsoft">
+              </a>
+            </li>
+          </ul>
+          <p class="install__desc">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </header>
   <main>
-    <div class="page-titles">
-      <p class="page-titles__head page-titles__head--answer">Устали от серости мегаполиса?</p>
-      <p class="page-titles__head page-titles__head--offer">Нам есть, что вам предложить!</p>
+    <div class="container">
+      <div class="page-titles">
+        <p class="page-titles__head page-titles__head--answer">Устали от серости мегаполиса?</p>
+        <p class="page-titles__head page-titles__head--offer">Нам есть, что вам предложить!</p>
+      </div>
     </div>
     <section class="offers">
       <div class="offers__container container">
@@ -128,46 +128,47 @@
       </div>
     </section>
     <section class="tariffs">
-      <table class="tariffs__table">
-        <tr class="tariffs__head">
-          <td class="tariffs__main-cell tariffs__main-cell--empty"></td>
-          <td class="tariffs__main-cell">
-            <h3 class="tariffs__name">База</h3>
-            <p class="tariffs__price">1,99 USD</p>
-          </td>
-          <td class="tariffs__main-cell tariffs__main-cell--standart">
-            <h3 class="tariffs__name">Стандарт</h3>
-            <p class="tariffs__price">3,99 USD</p>
-            <div class="tariffs__hit">Хит</div>
-          </td>
-          <td class="tariffs__main-cell">
-            <h3 class="tariffs__name">Анлим</h3>
-            <p class="tariffs__price">9,99 USD</p>
-          </td>
-        </tr>
-        <tr class="tariffs__row">
-          <td class="tariffs__cell tariffs__cell--first">Розовый фильтр</td>
-          <td class="tariffs__cell">Розовый фильтр</td>
-          <td class="tariffs__cell">Розовый фильтр</td>
-          <td class="tariffs__cell">Розовый фильтр</td>
-        </tr>
-        <tr class="tariffs__row">
-          <td class="tariffs__cell tariffs__cell--first">Смайлики</td>
-          <td class="tariffs__cell">Смайлики</td>
-          <td class="tariffs__cell">Смайлики</td>
-          <td class="tariffs__cell">Смайлики</td>
-        </tr>
-        <tr class="tariffs__row">
-          <td class="tariffs__cell tariffs__cell--first">Комментарии</td>
-          <td class="tariffs__cell">Комментарии</td>
-          <td class="tariffs__cell">Комментарии</td>
-          <td class="tariffs__cell">Комментарии</td>
-        </tr>
-      </table>
-      <div class="tariffs__toggles slider__toggles">
-        <button class="slider__toggle" type="button">1</button>
-        <button class="slider__toggle" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
+      <div class="tariffs__container container">
+        <table class="tariffs__table">
+          <tr class="tariffs__head">
+            <th class="tariffs__main-cell tariffs__main-cell--empty"></th>
+            <th class="tariffs__main-cell">
+              <h3 class="tariffs__name">База</h3>
+              <p class="tariffs__price">1,99 USD</p>
+            </th>
+            <th class="tariffs__main-cell tariffs__main-cell--standart">
+              <h3 class="tariffs__name">Стандарт</h3>
+              <p class="tariffs__price">3,99 USD</p>
+            </th>
+            <th class="tariffs__main-cell">
+              <h3 class="tariffs__name">Анлим</h3>
+              <p class="tariffs__price">9,99 USD</p>
+            </th>
+          </tr>
+          <tr class="tariffs__row">
+            <td class="tariffs__cell tariffs__cell--first">Розовый фильтр</td>
+            <td class="tariffs__cell">Розовый фильтр</td>
+            <td class="tariffs__cell">Розовый фильтр</td>
+            <td class="tariffs__cell">Розовый фильтр</td>
+          </tr>
+          <tr class="tariffs__row">
+            <td class="tariffs__cell tariffs__cell--first">Смайлики</td>
+            <td class="tariffs__cell">Смайлики</td>
+            <td class="tariffs__cell">Смайлики</td>
+            <td class="tariffs__cell">Смайлики</td>
+          </tr>
+          <tr class="tariffs__row">
+            <td class="tariffs__cell tariffs__cell--first">Комментарии</td>
+            <td class="tariffs__cell">Комментарии</td>
+            <td class="tariffs__cell">Комментарии</td>
+            <td class="tariffs__cell">Комментарии</td>
+          </tr>
+        </table>
+        <div class="tariffs__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </div>
       </div>
     </section>
   </main>

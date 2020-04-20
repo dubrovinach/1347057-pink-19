@@ -89,6 +89,11 @@
 
 @media (min-width: $desktop-width) {
   .nav {
+    padding-left: 130px;
+    padding-right: 130px;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
     min-height: 111px;
     display: flex;
     flex-wrap: wrap;
@@ -128,16 +133,14 @@
     line-height: 18px;
     text-transform: none;
   }
-}
 
-@media (max-width: $mobile-tablet-width-only) {
-  .nav--closed .nav__item {
+  .nav__toggle {
     display: none;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .nav__toggle {
+@media (max-width: $mobile-tablet-width-only) {
+  .nav--closed .nav__item {
     display: none;
   }
 }

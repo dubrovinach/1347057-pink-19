@@ -1,6 +1,9 @@
 .offers {
   background-color: $background-grey;
   text-align: center;
+  background-image: url("../../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  padding-top: 150px;
 
   &__list {
     margin: 0;
@@ -11,7 +14,7 @@
   }
 
   &__item {
-    padding-bottom: 40px;
+    padding-bottom: 30px;
   }
 
   &__item:last-child {
@@ -46,6 +49,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .offers {
+    padding-top: 40px;
+  }
+
   .offers__container {
     display: flex;
     flex-direction: row-reverse;
@@ -53,12 +60,10 @@
   }
 
   .offers__list {
+    padding-bottom: 0;
+    padding-top: 70px;
     padding-right: 0;
     padding-left: 41px;
-  }
-
-  .offers__desc {
-    width: 293px;
   }
 
   .offers__pic-one {
@@ -70,6 +75,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .offers {
+    padding-top: 0;
+  }
+
   .offers__container {
     display: flex;
     flex-direction: column-reverse;
