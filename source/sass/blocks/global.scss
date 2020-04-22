@@ -25,3 +25,18 @@
     display: none;
   }
 }
+
+.button-square {
+  padding-top: 23px;
+  padding-bottom: 22px;
+  padding-left: 43px;
+  padding-right: 42px;
+  background-color: $green;
+  color: $text-white;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  border-radius: 2px;
+}

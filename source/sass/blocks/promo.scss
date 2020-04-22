@@ -1,14 +1,9 @@
 .promo {
   position: relative;
-  padding-top: 65px;
   color: #283645;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: top center;
+  background-image: url("../../img/bg-back-mobile@1x.jpg"), url("../../img/iphone-hand-mobile@1x.png");
+  background-position: bottom center;
   background-repeat: no-repeat;
-
-  &__wrapper {
-    min-height: 396px;
-  }
 
   &__head {
     padding-top: 29px;
