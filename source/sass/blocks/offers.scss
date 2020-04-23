@@ -1,16 +1,34 @@
 .offers {
-  background-color: $background-grey;
-  text-align: center;
-  background-image: url("../../img/bg-triangle-white.svg");
-  background-repeat: no-repeat;
-  padding-top: 150px;
+  &__wrapper {
+    padding-top: 46px;
+  }
+
+  &__wrapper-list {
+    background-color: $background-grey;
+    background-image: url("../../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+  }
+
+  &__head {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 200;
+    color: $text-blue;
+    text-align: center;
+  }
+
+  &__head--answer {
+    padding-bottom: 35px;
+  }
 
   &__list {
     margin: 0;
+    padding-top: 150px;
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 45px;
     list-style: none;
+    text-align: center;
   }
 
   &__item {
@@ -53,10 +71,22 @@
     padding-top: 40px;
   }
 
-  .offers__container {
-    display: flex;
-    flex-direction: row-reverse;
-    text-align: left;
+  .offers__wrapper {
+    padding-top: 59px;
+    padding-bottom: 50px;
+  }
+
+  .offers__head {
+    font-size: 40px;
+  }
+
+  .offers__head--answer {
+    padding: 0;
+  }
+
+  .offers__head--offer {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .offers__list {
@@ -64,6 +94,7 @@
     padding-top: 70px;
     padding-right: 0;
     padding-left: 41px;
+    text-align: left;
   }
 
   .offers__pic-one {
@@ -71,6 +102,12 @@
     width: 268px;
     background-image: url("../../img/iphone-screen-3-tablet@1x.png");
     background-repeat: no-repeat;
+  }
+
+  .offers__container {
+    padding-top: 45px;
+    display: flex;
+    flex-direction: row-reverse;
   }
 }
 
@@ -80,8 +117,23 @@
   }
 
   .offers__container {
+    padding-top: 0;
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  .offers__wrapper {
+    padding-top: 78px;
+    padding-bottom: 75px;
+  }
+
+  .offers__head--offer {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+
+  .offers__head {
+    font-size: 50px;
   }
 
   .offers__list {
