@@ -10,32 +10,36 @@
 
 <body>
   <header class="main-header">
-    <nav class="nav nav--closed">
-      <div class="nav__wrapper">
-        <a href="#" class="nav__logo">
-          <img src="img/logo-pink-white-mobile.svg" class="nav__img-mobile" alt="Логотип Pink">
+    <h2 class="visually-hidden">Навигация по сайту</h2>
+    <nav class="main-nav main-nav--opened">
+      <div class="main-nav__wrapper">
+        <a href="#" class="main-nav__logo">
+          <img src="img/logo-pink-white-mobile.svg" class="main-nav__img-mobile" alt="Логотип Pink">
         </a>
-        <button class="nav__toggle hamburger"></button>
+        <button class="main-nav__toggle hamburger"></button>
       </div>
-      <ul class="nav__list nav__list--active">
-        <li class="nav__item">
-          <a href="#" class="nav__link">Главная</a>
+      <ul class="main-nav__list main-nav__list--active">
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Главная</a>
         </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Фотографии</a>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Фотографии</a>
         </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Конкурс</a>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Конкурс</a>
         </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Html Academy</a>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Html Academy</a>
         </li>
       </ul>
     </nav>
+  </header>
+  <main>
     <section class="promo">
-      <div class="promo__container container">
+      <h2 class="visually-hidden">Скачать приложение Pink</h2>
+      <div class="container">
         <div class="promo__wrapper">
-          <h1 class="promo__head">Взгляните на жизнь иначе!</h1>
+          <p class="promo__head">Взгляните на жизнь иначе!</p>
         </div>
         <div class="install">
           <a href="#" class="install__button global-button">Скачать приложение</a>
@@ -61,55 +65,55 @@
         </div>
       </div>
     </section>
-  </header>
-  <main>
-    <div class="container">
-      <div class="page-titles">
-        <p class="page-titles__head page-titles__head--answer">Устали от серости мегаполиса?</p>
-        <p class="page-titles__head page-titles__head--offer">Нам есть, что вам предложить!</p>
-      </div>
-    </div>
     <section class="offers">
-      <div class="offers__container container">
-        <ul class="offers__list">
-          <li class="offers__item">
-            <h3 class="offers__subtitle">Поднимает настроение</h3>
-            <p class="offers__desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько
-              кликов!</p>
-          </li>
-          <li class="offers__item">
-            <h3 class="offers__subtitle">Меняет мир вокруг</h3>
-            <p class="offers__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
-              эффект
-            </p>
-          </li>
-          <li class="offers__item">
-            <h3 class="offers__subtitle">Заводит новых друзей</h3>
-            <p class="offers__desc">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
-        <div class="offers__container-pic">
-          <div class="offers__pic offers__pic-one"></div>
-          <div class="offers__pic offers__pic-two"></div>
-          <div class="offers__pic offers__pic-three"></div>
+      <h2 class="visually-hidden">Преимущества приложения</h2>
+      <div class="offers__wrapper container">
+        <p class="offers__head offers__head--answer">Устали от серости мегаполиса?</p>
+        <p class="offers__head offers__head--offer">Нам есть, что вам предложить!</p>
+      </div>
+      <div class="offers__wrapper-list">
+        <div class="offers__container container">
+          <ul class="offers__list">
+            <li class="offers__item">
+              <h3 class="offers__subtitle">Поднимает настроение</h3>
+              <p class="offers__desc">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько
+                кликов!</p>
+            </li>
+            <li class="offers__item">
+              <h3 class="offers__subtitle">Меняет мир вокруг</h3>
+              <p class="offers__desc">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
+                эффект
+              </p>
+            </li>
+            <li class="offers__item">
+              <h3 class="offers__subtitle">Заводит новых друзей</h3>
+              <p class="offers__desc">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+              </p>
+            </li>
+          </ul>
+          <div class="offers__container-pic">
+            <div class="offers__pic offers__pic-one"></div>
+            <div class="offers__pic offers__pic-two"></div>
+            <div class="offers__pic offers__pic-three"></div>
+          </div>
         </div>
       </div>
-    </section>
-    <section class="twenty-four-hours">
-      <div class="twenty-four-hours__container container">
-        <div class="twenty-four-hours__pic"></div>
-        <div class="twenty-four-hours__wrapper">
-          <h2 class="twenty-four-hours__head">Эффект<br>на 24 часа!</h2>
-          <p class="twenty-four-hours__desc">Британские ученые провели исследования и доказали, что положительный
-            эффект<br>
-            от использования приложения длится целые сутки!</p>
-          <a href="#" class="twenty-four-hours__link">Узнать больше об исследовании</a>
+
+      <div class="twenty-four-hours">
+        <div class="twenty-four-hours__container container">
+          <div class="twenty-four-hours__pic"></div>
+          <div class="twenty-four-hours__wrapper">
+            <h2 class="twenty-four-hours__head">Эффект<br>на 24 часа!</h2>
+            <p class="twenty-four-hours__desc">Британские ученые провели исследования и доказали, что положительный
+              эффект<br>
+              от использования приложения длится целые сутки!</p>
+            <a href="#" class="twenty-four-hours__link">Узнать больше об исследовании</a>
+          </div>
         </div>
-      </div>
     </section>
     <section class="reviews">
       <div class="reviews__wrapper slider">
-        <h2 class="reviews__title visually-hidden">Отзывы о нас</h2>
+        <h2 class="visually-hidden">Отзывы о нас</h2>
         <div class="reviews__list slider__list">
           <blockquote class="reviews__item slider__item">
             <div class="reviews__data">
@@ -128,6 +132,7 @@
       </div>
     </section>
     <section class="tariffs">
+      <h2 class="visually-hidden">Тарифы</h2>
       <div class="tariffs__container container">
         <table class="tariffs__table">
           <tr class="tariffs__head">
@@ -174,20 +179,20 @@
   </main>
   <footer class="main-footer">
     <h2 class="visually-hidden">Наши контакты</h2>
-    <h2 class="footer__head">Остались вопросы? Свяжитесь с нами!</h2>
-    <div class="footer__wrapper">
-      <div class="footer__item footer__item--call">
-        <h3 class="footer__subtitle">Звоните:</h3>
-        <a href="tel:+7 (812) 555-66-66" class="footer__contact">+7 (812) 555-66-66</a>
+    <p class="main-footer__head">Остались вопросы? Свяжитесь с нами!</p>
+    <div class="main-footer__wrapper">
+      <div class="main-footer__item main-footer__item--call">
+        <h3 class="main-footer__subtitle">Звоните:</h3>
+        <a href="tel:+7 (812) 555-66-66" class="main-footer__contact">+7 (812) 555-66-66</a>
       </div>
-      <div class="footer__item footer__item--write">
-        <h3 class="footer__subtitle">Пишите:</h3>
-        <a href="mail@htmlacademy.ru" class="footer__contact">mail@htmlacademy.ru</a>
+      <div class="main-footer__item main-footer__item--write">
+        <h3 class="main-footer__subtitle">Пишите:</h3>
+        <a href="mail@htmlacademy.ru" class="main-footer__contact">mail@htmlacademy.ru</a>
       </div>
-      <div class="footer__item footer__item--come">
-        <h3 class="footer__subtitle">Приезжайте в гости:</h3>
+      <div class="main-footer__item main-footer__item--come">
+        <h3 class="main-footer__subtitle">Приезжайте в гости:</h3>
         <address>
-          <a href="ул. Большая Конюшенная, 19/8" class="footer__contact">ул. Большая Конюшенная, 19/8</a>
+          <a href="ул. Большая Конюшенная, 19/8" class="main-footer__contact">ул. Большая Конюшенная, 19/8</a>
         </address>
       </div>
     </div>
