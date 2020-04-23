@@ -15,6 +15,7 @@
     flex-direction: column;
     align-items: center;
     padding-top: 52px;
+    order: 6;
   }
 
   &__prompt {
@@ -31,15 +32,14 @@
   &__star {
     color: $pink;
   }
+
+  &__hidden {
+    display: none;
+  }
 }
 
 .form-item {
   border: none;
-
-  &--name {
-    padding-bottom: 0;
-    padding-top: 0;
-  }
 
   &__head {
     font-size: 14px;
@@ -110,10 +110,6 @@
     background-color: $background-grey;
   }
 
-  &--text {
-    padding-top: 19px;
-  }
-
   &__textarea {
     box-sizing: border-box;
     width: 100%;
@@ -126,6 +122,31 @@
     font-weight: 400;
     line-height: 30px;
     color: $text-blue;
+  }
+
+  &--name {
+    padding-bottom: 0;
+    padding-top: 0;
+    order: 1;
+  }
+
+  &--checkbox-achievements {
+    order: 2;
+  }
+
+  &--contacts {
+    order: 3;
+  }
+
+  &--checkbox-application {
+    order: 4;
+  }
+
+  &--text {
+    order: 5;
+    padding-top: 19px;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -175,6 +196,8 @@
     order: 5;
     padding-top: 40px;
     padding-bottom: 53px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   .form__button-wrapper {
@@ -223,14 +246,15 @@
     padding-bottom: 56px;
     background-color: $text-white;
   }
-
-  .form-item__textarea {
-    width: 496px;
-    margin-left: 50px;
-  }
 }
 
 @media (min-width: $desktop-width) {
+  .form__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .form-item--contacts {
     display: flex;
     flex-direction: row;
@@ -240,5 +264,9 @@
 
   .form-item__wrapper--contacts {
     padding-bottom: 0;
+  }
+
+  .form__hidden {
+    display: inline;
   }
 }
