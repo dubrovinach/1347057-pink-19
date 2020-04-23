@@ -44,20 +44,44 @@
         вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
       <div class="container">
         <form action="https://echo.htmlacademy.ru" class="form" method="post">
-          <fieldset class="form__fieldset form-item form-item--name">
-            <div class="form-item__wrapper form-item__wrapper--name">
-              <label for="surname" class="form-item__label form-item__label--name">Фамилия:</label>
-              <input class="form-item__input" type="text" name="surname" id="surname" value="Укажите фамилию *">
-            </div>
-            <div class="form-item__wrapper form-item__wrapper--name">
-              <label for="name" class="form-item__label form-item__label--name">Имя:</label>
-              <input class="form-item__input" type="text" name="name" id="name" value="Введите ваше имя *">
-            </div>
-            <div class="form-item__wrapper form-item__wrapper--name">
-              <label for="patronymic" class="form-item__label form-item__label--name">Отчество:</label>
-              <input class="form-item__input" type="text" name="patronymic" id="patronymic" value="Ну и отчество тоже">
-            </div>
-          </fieldset>
+          <div class="form__wrapper">
+            <fieldset class="form__fieldset form-item form-item--name">
+              <div class="form-item__wrapper form-item__wrapper--name">
+                <label for="surname" class="form-item__label form-item__label--name">Фамилия:</label>
+                <input class="form-item__input" type="text" name="surname" id="surname" value="Укажите фамилию *">
+              </div>
+              <div class="form-item__wrapper form-item__wrapper--name">
+                <label for="name" class="form-item__label form-item__label--name">Имя:</label>
+                <input class="form-item__input" type="text" name="name" id="name" value="Введите ваше имя *">
+              </div>
+              <div class="form-item__wrapper form-item__wrapper--name">
+                <label for="patronymic" class="form-item__label form-item__label--name">Отчество:</label>
+                <input class="form-item__input" type="text" name="patronymic" id="patronymic"
+                  value="Ну и отчество тоже">
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset form-item form-item--checkbox form-item--checkbox-application">
+              <legend class="form-item__head">С каким приложением путешествовали?</legend>
+              <div class="form-item__wrapper form-item__wrapper--checkbox">
+                <label for="ios" class="form-item__label form-item__label--checkbox">Pink для iOS</label>
+                <input type="checkbox" name="ios" id="ios" checked>
+                <span class="form-item__checkbox-indicator-application">
+                </span>
+              </div>
+              <div class="form-item__wrapper form-item__wrapper--checkbox">
+                <label for="android" class="form-item__label form-item__label--checkbox">Pink на Android</label>
+                <input type="checkbox" name="android" id="android">
+                <span class="form-item__checkbox-indicator-application">
+                </span>
+              </div>
+              <div class="form-item__wrapper form-item__wrapper--checkbox">
+                <label for="windows" class="form-item__label form-item__label--checkbox">Windows Phone</label>
+                <input type="checkbox" name="windows" id="windows">
+                <span class="form-item__checkbox-indicator-application">
+                </span>
+              </div>
+            </fieldset>
+          </div>
           <fieldset class="form__fieldset form-item form-item--checkbox form-item--checkbox-achievements">
             <legend class="form-item__head">Ваши безбашенные достижения в путешествии</legend>
             <div class="form-item__wrapper form-item__wrapper--checkbox">
@@ -111,27 +135,6 @@
               <input class="form-item__input" type="text" name="e-mail" id="e-mail" value="Введите почту *">
             </div>
           </fieldset>
-          <fieldset class="form__fieldset form-item form-item--checkbox form-item--checkbox-application">
-            <legend class="form-item__head">С каким приложением путешествовали?</legend>
-            <div class="form-item__wrapper form-item__wrapper--checkbox">
-              <label for="ios" class="form-item__label form-item__label--checkbox">Pink для iOS</label>
-              <input type="checkbox" name="ios" id="ios" checked>
-              <span class="form-item__checkbox-indicator-application">
-              </span>
-            </div>
-            <div class="form-item__wrapper form-item__wrapper--checkbox">
-              <label for="android" class="form-item__label form-item__label--checkbox">Pink на Android</label>
-              <input type="checkbox" name="android" id="android">
-              <span class="form-item__checkbox-indicator-application">
-              </span>
-            </div>
-            <div class="form-item__wrapper form-item__wrapper--checkbox">
-              <label for="windows" class="form-item__label form-item__label--checkbox">Windows Phone</label>
-              <input type="checkbox" name="windows" id="windows">
-              <span class="form-item__checkbox-indicator-application">
-              </span>
-            </div>
-          </fieldset>
           <fieldset class="form__fieldset form__fieldset--text form-item form-item--text">
             <legend class="form-item__head">Опишите свои эмоции</legend>
             <textarea class="form-item__textarea" name="reviews" id="reviews" cols="30"
@@ -139,7 +142,8 @@
           </fieldset>
           <div class="form__button-wrapper">
             <button class="form__button button-square" type="submit">Отправить форму</button>
-            <p class="form__prompt"><span class="form__star">*</span> — обязательные поля</p>
+            <p class="form__prompt"><span class="form__star">*</span> — обязательные <span class="form__hidden">для
+                заполнения</span> поля</p>
           </div>
         </form>
       </div>
