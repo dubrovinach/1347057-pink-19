@@ -9,35 +9,37 @@
 </head>
 
 <body>
-  <header>
-    <nav class="nav nav--opened">
-      <div class="nav__wrapper">
-        <a href="#" class="nav__logo">
-          <img src="img/logo-pink-white-mobile.svg" class="nav__img-mobile" alt="Логотип Pink">
+  <header class="main-header">
+    <h2 class="visually-hidden">Навигация по сайту</h2>
+    <nav class="main-nav main-nav--opened">
+      <div class="main-nav__wrapper">
+        <a href="#" class="main-nav__logo">
+          <img src="img/logo-pink-white-mobile.svg" class="main-nav__img-mobile" alt="Логотип Pink">
         </a>
-        <button class="nav__toggle hamburger"></button>
+        <button class="main-nav__toggle hamburger"></button>
       </div>
-      <ul class="nav__list nav__list--active">
-        <li class="nav__item">
-          <a href="#" class="nav__link">Главная</a>
+      <ul class="main-nav__list main-nav__list--active">
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Главная</a>
         </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Фотографии</a>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Фотографии</a>
         </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Конкурс</a>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Конкурс</a>
         </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Html Academy</a>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Html Academy</a>
         </li>
       </ul>
     </nav>
-    <section class="promo promo--height">
-      <h1 class="promo__head">Фотографии пользователей</h1>
-    </section>
   </header>
   <main>
+    <section class="promo promo--height">
+      <h2 class="promo__head">Фотографии пользователей</h2>
+    </section>
     <section class="gallery">
+      <h2 class="visually-hidden">Галерея</h2>
       <p class="gallery__desc">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
       </p>
       <ul class="photo-card">
@@ -127,6 +129,7 @@
       <p class="gallery__recommendation">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
     </section>
     <section class="publication">
+      <h2 class="visually__hidden">Ваша публикация</h2>
       <form action="https://echo.htmlacademy.ru" class="publication__form" method="post">
         <div class="publication__pic">
           <img src="img/photo-publication.jpg" class="publication__img" width="280" height="374" alt="Фото публикация">
@@ -151,8 +154,9 @@
       </form>
     </section>
   </main>
-  <footer class="footer">
-    <div class="footer__wraper">
+  <footer class="main-footer">
+    <h2 class="visually-hidden">Мы в социальных сетях</h2>
+    <div class="main-footer__wrapper">
       <div class="social">
         <ul class="social__list">
           <li class="social__item">
