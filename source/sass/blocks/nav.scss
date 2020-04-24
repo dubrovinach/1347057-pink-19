@@ -16,6 +16,13 @@
     position: absolute;
     top: 21px;
     right: 19px;
+    z-index: 2;
+    display: block;
+    width: 50px;
+    height: 24px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
   }
 
   &__wrapper {
@@ -58,19 +65,73 @@
     font-weight: 700;
     line-height: 30px;
   }
+
+  &__link:hover {
+    color: $pink;
+  }
+
+  &__link:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav--closed .main-nav__toggle::before {
-  content: url("../../img/icon-menu-burger.svg");
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: $text-white;
+  box-shadow: 0 8px 0 0 $text-white, 0 16px 0 0 $text-white;
 }
 
-.main-nav--opened .main-nav__toggle::before {
-  content: url("../../img/icon-menu-cross.svg");
+.main-nav--closed .main-nav__toggle:hover::before {
+  background-color: $pink;
+  box-shadow: 0 8px 0 0 $pink, 0 16px 0 0 $pink;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: rgba(210, 40, 86, 0.3);
+  box-shadow: 0 8px 0 0 rgba(210, 40, 86, 0.3), 0 16px 0 0 rgba(210, 40, 86, 0.3);
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left: 14px;
+    width: 24px;
+    height: 3px;
+    background-color: $text-white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: $pink;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: rgba(210, 40, 86, 0.3);
+  }
 }
 
 .main-nav--closed .main-nav__wrapper {
   border: none;
   box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 @media (min-width: $tablet-width) {
@@ -101,6 +162,7 @@
     align-items: center;
     justify-content: space-between;
     background: transparent;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .main-nav__img-mobile {
@@ -136,6 +198,19 @@
 
   .main-nav__toggle {
     display: none;
+  }
+
+  .main-nav__link:hover {
+    color: $pink;
+  }
+
+  .main-nav__link:active {
+    color: $text-white;
+    opacity: 0.3;
+  }
+
+  .main-nav__link--active {
+    border-bottom: 2px solid;
   }
 }
 
