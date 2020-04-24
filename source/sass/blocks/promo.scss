@@ -1,12 +1,11 @@
 .promo {
   position: relative;
   color: #283645;
-  background-image: url("../../img/bg-back-mobile@1x.jpg"), url("../../img/iphone-hand-mobile@1x.png");
-  background-position: bottom center;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: bottom center;
 
   &__head {
-    padding-top: 29px;
     padding-bottom: 30px;
     padding-left: 50px;
     padding-right: 45px;
