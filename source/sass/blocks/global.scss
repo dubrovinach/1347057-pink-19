@@ -1,8 +1,106 @@
 .global-button {
+  padding-top: 10px;
+  padding-bottom: 9px;
+  padding-left: 40px;
+  padding-right: 40px;
+  color: $text-white;
   text-decoration: none;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
   border: 3px solid;
   border-radius: 50px;
+
+  &:hover {
+    background-color: $text-white;
+    color: $pink;
+    border-color: $text-white;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hamburger {
+    display: none;
+  }
+}
+
+.button-square {
+  padding-top: 23px;
+  padding-bottom: 22px;
+  padding-left: 43px;
+  padding-right: 42px;
+  background-color: $green;
+  color: $text-white;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  border-radius: 2px;
+}
+
+.slider__toggle {
+  width: 6px;
+  height: 6px;
+  margin: 0 10px;
+  padding: 0;
+  background-color: #283645;
+  opacity: 0.3;
+  border-radius: 50%;
+  border: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+
+  &--active {
+    border: 3px solid #283645;
+    opacity: 1;
+    background-color: $text-white;
+    border-radius: 50%;
+    box-sizing: content-box;
+  }
+
+  &--active:hover,
+  :active {
+    opacity: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider__item {
+    position: relative;
+  }
+
+  .slider__item::before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 130px;
+    background-image: url("../../img/icon-review-arrow-left.svg");
+    background-repeat: no-repeat;
+    background-size: 22px auto;
+    width: 22px;
+    height: 41px;
+  }
+
+  .slider__item::after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    right: 130px;
+    background-image: url("../../img/icon-review-arrow-right.svg");
+    background-repeat: no-repeat;
+    background-size: 22px auto;
+    width: 22px;
+    height: 41px;
+  }
 }

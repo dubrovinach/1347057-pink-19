@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Кристина Дубровина](https://up.htmlacademy.ru/adaptive/19/user/1347057).
-* Наставник: [Юрий Белобородов](https://htmlacademy.ru/profile/id514591).
+* Наставник: [Александр Григорьев](https://htmlacademy.ru/profile/fuckhtml).
 
 ---
 

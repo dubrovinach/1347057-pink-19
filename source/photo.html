@@ -4,39 +4,42 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header>
-    <nav class="nav">
-      <div class="nav__wrapper">
-        <a href="index.html" class="nav__logo">
-          <img src="img/logo.svg" class="nav__img" alt="Логотип Pink">
+  <header class="main-header">
+    <h2 class="visually-hidden">Навигация по сайту</h2>
+    <nav class="main-nav main-nav--opened">
+      <div class="main-nav__wrapper">
+        <a href="#" class="main-nav__logo">
+          <img src="img/logo-pink-white-mobile.svg" class="main-nav__img-mobile" alt="Логотип Pink">
         </a>
-        <button class="nav__close hamburger"></button>
+        <button class="main-nav__toggle hamburger"></button>
       </div>
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a href="#" class="nav__link">Главная</a>
+      <ul class="main-nav__list main-nav__list--active">
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Главная</a>
         </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Фотографии</a>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link main-nav__link--active">Фотографии</a>
         </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Конкурс</a>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Конкурс</a>
         </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Html Academy</a>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Html Academy</a>
         </li>
       </ul>
     </nav>
-    <section class="promo promo--height">
-      <h1 class="promo__head">Фотографии пользователей</h1>
-    </section>
   </header>
   <main>
+    <section class="promo promo--height">
+      <h2 class="promo__head">Фотографии пользователей</h2>
+    </section>
     <section class="gallery">
+      <h2 class="visually-hidden">Галерея</h2>
       <p class="gallery__desc">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
       </p>
       <ul class="photo-card">
@@ -54,78 +57,83 @@
             <p class="photo-card__number">Нравится: 215</p>
           </blockquote>
         </li>
-        <li class="photo-card__item">
-          <img src="img/photo-levon.jpg" class="photo-card__img" width="280" height="180" alt="Фото Левона">
-          <blockquote class="photo-card__blockquote">
-            <div class="photo-card__wrapper">
-              <cite class="photo-card__author-name">Левон</cite>
-              <p class="photo-card__time">(5 часов назад)</p>
-            </div>
-            <p class="photo-card__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-            <p class="photo-card__number">Нравится: 356</p>
-          </blockquote>
-        </li>
-        <li class="photo-card__item">
-          <img src="img/photo-anton.jpg" class="photo-card__img" width="280" height="180" alt="Фото Антона">
-          <blockquote class="photo-card__blockquote">
-            <div class="photo-card__wrapper">
-              <cite class="photo-card__author-name">Антон</cite>
-              <p class="photo-card__time">(12 часов назад)</p>
-            </div>
-            <p class="photo-card__comment">Соседи будут рады!</p>
-            <p class="photo-card__number">Нравится: 666</p>
-          </blockquote>
-        </li>
-        <li class="photo-card__item">
-          <img src="img/photo-boris.jpg" class="photo-card__img" width="280" height="180" alt="Фото Бориса">
-          <blockquote class="photo-card__blockquote">
-            <div class="photo-card__wrapper">
-              <cite class="photo-card__author-name">Борис</cite>
-              <p class="photo-card__time">(20 часов назад)</p>
-            </div>
-            <p class="photo-card__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <p class="photo-card__number">Нравится: 215</p>
-          </blockquote>
-        </li>
-        <li class="photo-card__item">
-          <img src="img/photo-sergey.jpg" class="photo-card__img" width="280" height="180" alt="Фото Сергея">
-          <blockquote class="photo-card__blockquote">
-            <div class="photo-card__wrapper">
-              <cite class="photo-card__author-name">Сергей</cite>
-              <p class="photo-card__time">(25 часов назад)</p>
-            </div>
-            <p class="photo-card__comment">Самая кубанская в мире!</p>
-            <p class="photo-card__number">Нравится: 4</p>
-          </blockquote>
-        </li>
-        <li class="photo-card__item">
-          <img src="img/photo-maxim.jpg" class="photo-card__img" width="280" height="180" alt="Фото Максима">
-          <blockquote class="photo-card__blockquote">
-            <div class="photo-card__wrapper">
-              <cite class="photo-card__author-name">Максим</cite>
-              <p class="photo-card__time">(40 часов назад)</p>
-            </div>
-            <p class="photo-card__comment">Где снег-то?</p>
-            <p class="photo-card__number">Нравится: 150</p>
-          </blockquote>
-        </li>
-        <li class="photo-card__item">
-          <img src="img/photo-nadezhda.jpg" class="photo-card__img" width="280" height="180" alt="Фото Надежды">
-          <blockquote class="photo-card__blockquote">
-            <div class="photo-card__wrapper">
-              <cite class="photo-card__author-name">Надежда</cite>
-              <p class="photo-card__time">(45 часов назад)</p>
-            </div>
-            <p class="photo-card__comment">Всем GM и взаимные лайки!</p>
-            <p class="photo-card__number">Нравится: 2560</p>
-          </blockquote>
-        </li>
+        <div class="photo-card__container container">
+          <li class="photo-card__item">
+            <img src="img/photo-levon.jpg" class="photo-card__img" width="280" height="180" alt="Фото Левона">
+            <blockquote class="photo-card__blockquote">
+              <div class="photo-card__wrapper">
+                <cite class="photo-card__author-name">Левон</cite>
+                <p class="photo-card__time">(5 часов назад)</p>
+              </div>
+              <p class="photo-card__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <p class="photo-card__number">Нравится: 356</p>
+            </blockquote>
+          </li>
+          <li class="photo-card__item">
+            <img src="img/photo-anton.jpg" class="photo-card__img" width="280" height="180" alt="Фото Антона">
+            <blockquote class="photo-card__blockquote">
+              <div class="photo-card__wrapper">
+                <cite class="photo-card__author-name">Антон</cite>
+                <p class="photo-card__time">(12 часов назад)</p>
+              </div>
+              <p class="photo-card__comment">Соседи будут рады!</p>
+              <p class="photo-card__number">Нравится: 666</p>
+            </blockquote>
+          </li>
+          <li class="photo-card__item">
+            <img src="img/photo-boris.jpg" class="photo-card__img" width="280" height="180" alt="Фото Бориса">
+            <blockquote class="photo-card__blockquote">
+              <div class="photo-card__wrapper">
+                <cite class="photo-card__author-name">Борис</cite>
+                <p class="photo-card__time">(20 часов назад)</p>
+              </div>
+              <p class="photo-card__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <p class="photo-card__number">Нравится: 215</p>
+            </blockquote>
+          </li>
+          <li class="photo-card__item">
+            <img src="img/photo-sergey.jpg" class="photo-card__img" width="280" height="180" alt="Фото Сергея">
+            <blockquote class="photo-card__blockquote">
+              <div class="photo-card__wrapper">
+                <cite class="photo-card__author-name">Сергей</cite>
+                <p class="photo-card__time">(25 часов назад)</p>
+              </div>
+              <p class="photo-card__comment">Самая кубанская в мире!</p>
+              <p class="photo-card__number">Нравится: 4</p>
+            </blockquote>
+          </li>
+          <li class="photo-card__item">
+            <img src="img/photo-maxim.jpg" class="photo-card__img" width="280" height="180" alt="Фото Максима">
+            <blockquote class="photo-card__blockquote">
+              <div class="photo-card__wrapper">
+                <cite class="photo-card__author-name">Максим</cite>
+                <p class="photo-card__time">(40 часов назад)</p>
+              </div>
+              <p class="photo-card__comment">Где снег-то?</p>
+              <p class="photo-card__number">Нравится: 150</p>
+            </blockquote>
+          </li>
+          <li class="photo-card__item">
+            <img src="img/photo-nadezhda.jpg" class="photo-card__img" width="280" height="180" alt="Фото Надежды">
+            <blockquote class="photo-card__blockquote">
+              <div class="photo-card__wrapper">
+                <cite class="photo-card__author-name">Надежда</cite>
+                <p class="photo-card__time">(45 часов назад)</p>
+              </div>
+              <p class="photo-card__comment">Всем GM и взаимные лайки!</p>
+              <p class="photo-card__number">Нравится: 2560</p>
+            </blockquote>
+          </li>
+        </div>
       </ul>
       <p class="gallery__recommendation">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
     </section>
     <section class="publication">
+      <h2 class="visually__hidden">Ваша публикация</h2>
       <form action="https://echo.htmlacademy.ru" class="publication__form" method="post">
-        <img src="img/photo-publication.jpg" class="publication__img" width="280" height="374" alt="Фото публикация">
+        <div class="publication__pic">
+          <img src="img/photo-publication.jpg" class="publication__img" width="280" height="374" alt="Фото публикация">
+        </div>
         <div class="edit">
           <ul class="edit__list">
             <li class="edit__item">
@@ -138,16 +146,17 @@
               <svg></svg>
             </li>
           </ul>
-        </div>
-        <div class="publication__buttons">
-          <a href="#" class="publication__button publication__button-post global-button">Запостить</a>
-          <a href="#" class="publication__button publication__button-cancel global-button">Отмена</a>
+          <div class="publication__buttons">
+            <a href="#" class="publication__button publication__button-post global-button">Запостить</a>
+            <a href="#" class="publication__button publication__button-cancel global-button">Отмена</a>
+          </div>
         </div>
       </form>
     </section>
   </main>
-  <footer class="footer">
-    <div class="footer__wraper">
+  <footer class="main-footer">
+    <h2 class="visually-hidden">Мы в социальных сетях</h2>
+    <div class="main-footer__wrapper">
       <div class="social">
         <ul class="social__list">
           <li class="social__item">

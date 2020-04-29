@@ -1,59 +1,59 @@
 .promo {
-  background-color: $navColor;
-  background-image: url(../../img/bg-back-mobile@1x.jpg);
-  background-position: left 50% top -70px;
+  position: relative;
+  color: #283645;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-
-  &__wrapper {
-    position: relative;
-    min-height: 396px;
-    background-image: url(../../img/iphone-hand-mobile@1x.png);
-    background-repeat: no-repeat;
-    background-position: left 100px bottom 0;
-  }
+  background-position: bottom center;
 
   &__head {
-    padding-top: 29px;
     padding-bottom: 30px;
-    padding-left: 130px;
-    padding-right: 130px;
+    padding-left: 50px;
+    padding-right: 45px;
     margin: 0;
     font-size: 24px;
     font-weight: 200;
     text-align: center;
     color: $text-white;
   }
+
+  &--height {
+    padding-top: 35px;
+    padding-bottom: 80px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .promo {
-    min-height: 530px;
-    background: url(../../img/iphone-hand-tablet@1x.png) no-repeat -25px 84px,
-      url(../../img/bg-back-tablet@1x.jpg) no-repeat -280px -100px;
+    min-height: 729px;
+    background: url("../../img/bg-back-tablet@1x.jpg") no-repeat top center;
     display: flex;
     flex-direction: column;
-    padding-top: 103px;
+    justify-content: center;
   }
 
   .promo__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-height: 0;
-    background: none;
+    width: 290px;
   }
 
   .promo__head {
-    padding: 0;
-    padding-left: 100px;
+    padding-top: 0;
     padding-bottom: 58px;
-    width: 140px;
+    padding-left: 71px;
+    padding-right: 71px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .promo {
-    min-height: 639px;
-    background: none;
-    background-image: url(../../img/iphone-hand-desktop@1x.png);
-    background-repeat: no-repeat;
-    background-position: left 20px bottom 0;
+    min-height: 729px;
+    background: url("../../img/bg-back-desktop@1x.jpg") no-repeat top 0 left -689px;
+  }
+
+  .promo__head {
+    font-size: 50px;
   }
 }

@@ -1,7 +1,7 @@
 //глобальные стили
 body {
   font-family: $fontFamily;
-  background-color: &text-white;
+  background-color: $text-white;
   min-width: 320px;
   margin: 0 auto;
   padding: 0;
@@ -11,4 +11,14 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }

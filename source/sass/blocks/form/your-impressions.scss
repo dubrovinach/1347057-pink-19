@@ -1,5 +1,6 @@
 .your-impressions {
   &__desc {
+    margin: 0;
     padding-top: 55px;
     padding-bottom: 49px;
     padding-left: 22px;
@@ -9,5 +10,23 @@
     line-height: 30px;
     color: $text-blue;
     text-align: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .your-impressions__desc {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 100px;
+    padding-bottom: 76px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .your-impressions__desc {
+    padding-left: 220px;
+    padding-right: 220px;
+    padding-bottom: 64px;
   }
 }
