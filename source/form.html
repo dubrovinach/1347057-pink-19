@@ -9,35 +9,34 @@
 </head>
 
 <body>
-  <header class="main-header">
-    <h2 class="visually-hidden">Навигация по сайту</h2>
-    <nav class="main-nav main-nav--opened">
-      <div class="main-nav__wrapper">
-        <a href="#" class="main-nav__logo">
-          <img src="img/logo-pink-white-mobile.svg" class="main-nav__img-mobile" alt="Логотип Pink">
+  <header>
+    <nav class="nav nav--opened">
+      <div class="nav__wrapper">
+        <a href="#" class="nav__logo">
+          <img src="img/logo-pink-white-mobile.svg" class="nav__img-mobile" alt="Логотип Pink">
         </a>
-        <button class="main-nav__toggle hamburger"></button>
+        <button class="nav__toggle hamburger"></button>
       </div>
-      <ul class="main-nav__list main-nav__list--active">
-        <li class="main-nav__item">
-          <a href="#" class="main-nav__link">Главная</a>
+      <ul class="nav__list nav__list--active">
+        <li class="nav__item">
+          <a href="#" class="nav__link">Главная</a>
         </li>
-        <li class="main-nav__item">
-          <a href="#" class="main-nav__link">Фотографии</a>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Фотографии</a>
         </li>
-        <li class="main-nav__item">
-          <a href="#" class="main-nav__link">Конкурс</a>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Конкурс</a>
         </li>
-        <li class="main-nav__item">
-          <a href="#" class="main-nav__link">Html Academy</a>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Html Academy</a>
         </li>
       </ul>
     </nav>
+    <section class="promo promo--height">
+      <h1 class="promo__head promo__head--height">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </section>
   </header>
   <main>
-    <section class="promo promo--height">
-      <h2 class="promo__head promo__head--height">Конкурс на самое безбашенное путешествие с Пинк</h2>
-    </section>
     <section class="your-impressions">
       <h2 class="visually-hidden">Заполните форму</h2>
       <p class="your-impressions__desc">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на
@@ -45,112 +44,115 @@
       <div class="container">
         <form action="https://echo.htmlacademy.ru" class="form" method="post">
           <div class="form__wrapper">
-            <fieldset class="form__fieldset form-item form-item--name">
-              <div class="form-item__wrapper form-item__wrapper--name">
-                <label for="surname" class="form-item__label form-item__label--name">Фамилия:</label>
-                <input class="form-item__input" type="text" name="surname" id="surname" value="Укажите фамилию *">
+            <fieldset class="form__fieldset form__fieldset--name">
+              <div class="custom-input custom-input--name">
+                <label for="surname" class="custom-input__label custom-input__label--name">Фамилия:</label>
+                <input class="custom-input__input" type="text" name="surname" id="surname" value="Укажите фамилию *">
               </div>
-              <div class="form-item__wrapper form-item__wrapper--name">
-                <label for="name" class="form-item__label form-item__label--name">Имя:</label>
-                <input class="form-item__input" type="text" name="name" id="name" value="Введите ваше имя *">
+              <div class="custom-input custom-input--name">
+                <label for="name" class="custom-input__label custom-input__label--name">Имя:</label>
+                <input class="custom-input__input" type="text" name="name" id="name" value="Введите ваше имя *">
               </div>
-              <div class="form-item__wrapper form-item__wrapper--name">
-                <label for="patronymic" class="form-item__label form-item__label--name">Отчество:</label>
-                <input class="form-item__input" type="text" name="patronymic" id="patronymic"
+              <div class="custom-input custom-input--name">
+                <label for="patronymic"
+                  class="custom-input__label form-item__label custom-input__label--name">Отчество:</label>
+                <input class="custom-input__input" type="text" name="patronymic" id="patronymic"
                   value="Ну и отчество тоже">
               </div>
             </fieldset>
-            <fieldset class="form__fieldset form-item form-item--checkbox form-item--checkbox-application">
-              <legend class="form-item__head">С каким приложением путешествовали?</legend>
-              <div class="form-item__wrapper form-item__wrapper--checkbox">
-                <label for="ios" class="form-item__label form-item__label--checkbox">Pink для iOS</label>
+            <fieldset class="form__fieldset form__fieldset--checkbox form__fieldset--checkbox-application">
+              <legend class="form__legend">С каким приложением путешествовали?</legend>
+              <div class="custom-input custom-input--checkbox">
+                <label for="ios" class="custom-input__label custom-input__label--checkbox">Pink для
+                  iOS</label>
                 <input type="checkbox" name="ios" id="ios" checked>
-                <span class="form-item__checkbox-indicator-application">
+                <span class="custom-input__checkbox-indicator-application">
                 </span>
               </div>
-              <div class="form-item__wrapper form-item__wrapper--checkbox">
-                <label for="android" class="form-item__label form-item__label--checkbox">Pink на Android</label>
+              <div class="custom-input custom-input--checkbox">
+                <label for="android" class="custom-input__label custom-input__label--checkbox">Pink на
+                  Android</label>
                 <input type="checkbox" name="android" id="android">
-                <span class="form-item__checkbox-indicator-application">
+                <span class="custom-input__checkbox-indicator-application">
                 </span>
               </div>
-              <div class="form-item__wrapper form-item__wrapper--checkbox">
-                <label for="windows" class="form-item__label form-item__label--checkbox">Windows Phone</label>
+              <div class="custom-input custom-input--checkbox">
+                <label for="windows" class="custom-input__label custom-input__label--checkbox">Windows
+                  Phone</label>
                 <input type="checkbox" name="windows" id="windows">
-                <span class="form-item__checkbox-indicator-application">
+                <span class="custom-input__checkbox-indicator-application">
                 </span>
               </div>
             </fieldset>
           </div>
-          <fieldset class="form__fieldset form-item form-item--checkbox form-item--checkbox-achievements">
-            <legend class="form-item__head">Ваши безбашенные достижения в путешествии</legend>
-            <div class="form-item__wrapper form-item__wrapper--checkbox">
-              <label for="shark-selfie" class="form-item__label form-item__label--checkbox">Сделал селфи с
+          <fieldset class="form__fieldset form__fieldset--checkbox form__fieldset--checkbox-achievements">
+            <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+            <div class="custom-input custom-input--checkbox">
+              <label for="shark-selfie" class="custom-input__label custom-input__label--checkbox">Сделал селфи с
                 акулой</label>
               <input type="checkbox" name="shark-selfie" id="shark-selfie" checked>
-              <span class="form-item__checkbox-indicator-achievements">
+              <span class="custom-input__checkbox-indicator-achievements">
               </span>
             </div>
-            <div class="form-item__wrapper form-item__wrapper--checkbox">
-              <label for="burnt" class="form-item__label form-item__label--checkbox">Обгорел на пляже</label>
+            <div class="custom-input custom-input--checkbox">
+              <label for="burnt" class="custom-input__label custom-input__label--checkbox">Обгорел на пляже</label>
               <input type="checkbox" name="burnt" id="burnt" checked>
-              <span class="form-item__checkbox-indicator-achievements">
+              <span class="custom-input__checkbox-indicator-achievements">
               </span>
             </div>
-            <div class="form-item__wrapper form-item__wrapper--checkbox">
-              <label for="saw-chuck-norris" class="form-item__label form-item__label--checkbox">Видел Чака
+            <div class="custom-input custom-input--checkbox">
+              <label for="saw-chuck-norris" class="custom-input__label custom-input__label--checkbox">Видел Чака
                 Норриса</label>
               <input type="checkbox" name="saw-chuck-norris" id="saw-chuck-norris">
-              <span class="form-item__checkbox-indicator-achievements">
+              <span class="custom-input__checkbox-indicator-achievements">
               </span>
             </div>
-            <div class="form-item__wrapper form-item__wrapper--checkbox">
-              <label for="bought-souvenirs" class="form-item__label form-item__label--checkbox">Накупил
+            <div class="custom-input custom-input--checkbox">
+              <label for="bought-souvenirs" class="custom-input__label custom-input__label--checkbox">Накупил
                 сувениров</label>
               <input type="checkbox" name="bought-souvenirs" id="bought-souvenirs">
-              <span class="form-checkbox__checkbox-indicator-achievements">
+              <span class="custom-input__checkbox-indicator-achievements">
               </span>
             </div>
-            <div class="form-item__wrapper form-item__wrapper--checkbox">
-              <label for="held-tower" class="form-item__label form-item__label--checkbox">Удержал башню</label>
+            <div class="custom-input custom-input--checkbox">
+              <label for="held-tower" class="custom-input__label custom-input__label--checkbox">Удержал башню</label>
               <input type="checkbox" name="held-tower" id="held-tower" checked>
-              <span class="form-checkbox__checkbox-indicator-achievements">
+              <span class="custom-input__checkbox-indicator-achievements">
               </span>
             </div>
-            <div class="form-item__wrapper form-item__wrapper--checkbox">
-              <label for="defeated-hotel" class="form-item__label form-item__label--checkbox">Разгромил отель</label>
+            <div class="custom-input custom-input--checkbox">
+              <label for="defeated-hotel" class="custom-input__label custom-input__label--checkbox">Разгромил
+                отель</label>
               <input type="checkbox" name="defeated-hotel" id="defeated-hotel">
-              <span class="form-item__checkbox-indicator-achievements">
+              <span class="custom-input__checkbox-indicator-achievements">
               </span>
             </div>
           </fieldset>
-          <fieldset class="form__fieldset form-item form-item--contacts">
-            <legend class="form-item__head form-item__head--contacts">Контактная информация</legend>
-            <div class="form-item__wrapper form-item__wrapper--contacts">
-              <label for="phone" class="form-item__label form-item__label--contacts">Номер телефона</label>
-              <input class="form-item__input" type="text" name="phone" id="phone" value="Номер, пожалуйста">
+          <fieldset class="form__fieldset form__fieldset--contacts">
+            <legend class="form__legend form__legend--contacts">Контактная информация</legend>
+            <div class="custom-input custom-input--contacts">
+              <label for="phone" class="custom-input__label custom-input__label--contacts">Номер телефона</label>
+              <input class="custom-input__input" type="text" name="phone" id="phone" value="Номер, пожалуйста">
             </div>
-            <div class="form-item__wrapper form-item__wrapper--contacts">
-              <label for="e-mail" class="form-item__label form-item__label--contacts">Адрес почты</label>
-              <input class="form-item__input" type="text" name="e-mail" id="e-mail" value="Введите почту *">
+            <div class="custom-input custom-input--contacts">
+              <label for="e-mail" class="custom-input__label custom-input__label--contacts">Адрес почты</label>
+              <input class="custom-input__input" type="text" name="e-mail" id="e-mail" value="Введите почту *">
             </div>
           </fieldset>
-          <fieldset class="form__fieldset form__fieldset--text form-item form-item--text">
-            <legend class="form-item__head">Опишите свои эмоции</legend>
-            <textarea class="form-item__textarea" name="reviews" id="reviews" cols="30"
+          <fieldset class="form__fieldset form__fieldset--text">
+            <legend class="form__legend">Опишите свои эмоции</legend>
+            <textarea class="custom-textarea" name="reviews" id="reviews" cols="30"
               rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
           </fieldset>
           <div class="form__button-wrapper">
             <button class="form__button button-square" type="submit">Отправить форму</button>
-            <p class="form__prompt"><span class="form__star">*</span> — обязательные <span class="form__hidden">для
-                заполнения</span> поля</p>
+            <p class="form__prompt"><span class="form__star">*</span> — обязательные поля</p>
           </div>
         </form>
       </div>
     </section>
   </main>
   <footer class="footer">
-    <h2 class="visually-hidden">Мы в социальных сетях</h2>
     <div class="footer__wraper">
       <ul class="social">
         <li class="social__item">
