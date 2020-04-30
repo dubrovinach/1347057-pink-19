@@ -1,9 +1,16 @@
 .promo {
   position: relative;
   color: #283645;
+<<<<<<< Updated upstream
   background-image: url("../../img/bg-back-mobile@1x.jpg"), url("../../img/iphone-hand-mobile@1x.png");
   background-position: bottom center;
   background-repeat: no-repeat;
+=======
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+>>>>>>> Stashed changes
 
   &__head {
     padding-top: 29px;
