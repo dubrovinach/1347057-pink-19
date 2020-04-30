@@ -75,39 +75,10 @@
   }
 }
 
-<<<<<<< Updated upstream
-.form-item {
-  border: none;
-
-  &--name {
-    padding-bottom: 0;
-    padding-top: 0;
-  }
-
-  &__head {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-    color: $pink;
-    text-transform: uppercase;
-    text-align: center;
-  }
-
-  &__head--contacts {
-    display: none;
-  }
-
-  &__wrapper {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 29px;
-  }
-=======
 .custom-input {
   display: flex;
   flex-direction: column;
   padding-bottom: 29px;
->>>>>>> Stashed changes
 
   &:last-child {
     padding-bottom: 0;
@@ -145,30 +116,13 @@
     justify-content: flex-end;
   }
 
-<<<<<<< Updated upstream
-  &--text {
-    padding-top: 19px;
-  }
-
-  &__textarea {
-    box-sizing: border-box;
-    width: 100%;
-    height: 197px;
-    padding-top: 23px;
-    padding-left: 19px;
-    padding-right: 28px;
-    border: 2px solid #e5e5e5;
-=======
   &__label--checkbox {
->>>>>>> Stashed changes
     font-size: 18px;
     color: $text-blue;
     padding: 0;
     padding-left: 33px;
     text-transform: none;
   }
-<<<<<<< Updated upstream
-=======
 }
 
 .custom-textarea {
@@ -183,7 +137,6 @@
   font-weight: 400;
   line-height: 30px;
   color: $text-blue;
->>>>>>> Stashed changes
 }
 
 @media (min-width: $tablet-width) {
@@ -284,12 +237,8 @@
   }
 }
 
-<<<<<<< Updated upstream
 @media (min-width: $desktop-width) {
-  .form-item--contacts {
-=======
   .form__fieldset--contacts {
->>>>>>> Stashed changes
     display: flex;
     flex-direction: row;
     justify-content: center;
