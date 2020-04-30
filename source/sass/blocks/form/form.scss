@@ -4,10 +4,52 @@
 
   &__fieldset {
     margin-bottom: 40px;
+    border: none;
+  }
+
+  &__fieldset--checkbox {
+    padding-top: 42px;
+    padding-bottom: 44px;
+    background-color: $background-grey;
+  }
+
+  &__fieldset--name {
+    padding-bottom: 0;
+    padding-top: 0;
+    order: 1;
+  }
+
+  &__fieldset--contacts {
+    order: 3;
+  }
+
+  &__fieldset--checkbox-application {
+    order: 4;
+  }
+
+  &__fieldset--checkbox-achievements {
+    order: 2;
   }
 
   &__fieldset--text {
     margin-bottom: 0;
+    order: 5;
+    padding-top: 19px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__legend {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: $pink;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__legend--contacts {
+    display: none;
   }
 
   &__button-wrapper {
@@ -33,6 +75,7 @@
   }
 }
 
+<<<<<<< Updated upstream
 .form-item {
   border: none;
 
@@ -59,14 +102,15 @@
     flex-direction: column;
     padding-bottom: 29px;
   }
+=======
+.custom-input {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 29px;
+>>>>>>> Stashed changes
 
-  &__wrapper:last-child {
+  &:last-child {
     padding-bottom: 0;
-  }
-
-  &__wrapper--checkbox {
-    flex-direction: row-reverse;
-    justify-content: flex-end;
   }
 
   &__label {
@@ -77,14 +121,6 @@
     line-height: 30px;
     color: $pink;
     text-transform: uppercase;
-  }
-
-  &__label--checkbox {
-    font-size: 18px;
-    color: $text-blue;
-    padding: 0;
-    padding-left: 33px;
-    text-transform: none;
   }
 
   &__input {
@@ -105,11 +141,11 @@
   }
 
   &--checkbox {
-    padding-top: 42px;
-    padding-bottom: 44px;
-    background-color: $background-grey;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
   }
 
+<<<<<<< Updated upstream
   &--text {
     padding-top: 19px;
   }
@@ -122,11 +158,32 @@
     padding-left: 19px;
     padding-right: 28px;
     border: 2px solid #e5e5e5;
+=======
+  &__label--checkbox {
+>>>>>>> Stashed changes
     font-size: 18px;
-    font-weight: 400;
-    line-height: 30px;
     color: $text-blue;
+    padding: 0;
+    padding-left: 33px;
+    text-transform: none;
   }
+<<<<<<< Updated upstream
+=======
+}
+
+.custom-textarea {
+  box-sizing: border-box;
+  width: 100%;
+  height: 197px;
+  padding-top: 23px;
+  padding-left: 19px;
+  padding-right: 28px;
+  border: 2px solid #e5e5e5;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: $text-blue;
+>>>>>>> Stashed changes
 }
 
 @media (min-width: $tablet-width) {
@@ -134,44 +191,41 @@
     margin-bottom: 62px;
   }
 
-  .form__fieldset--text {
-    margin-bottom: 0;
-  }
-
   .form__prompt {
     padding: 0;
   }
 
-  .form-item:not(.form-item--name) {
+  .form__fieldset:not(.form__fieldset--name) {
     border: 2px solid #e5e5e5;
   }
 
-  .form-item__head {
+  .form__legend {
     display: inline;
     padding-left: 32px;
     padding-right: 32px;
     padding-bottom: 0;
   }
 
-  .form-item--name {
+  .form__fieldset--name {
     order: 1;
   }
 
-  .form-item--checkbox-achievements {
+  .form__fieldset--checkbox-achievements {
     order: 4;
   }
 
-  .form-item--contacts {
+  .form__fieldset--contacts {
     order: 3;
     padding-top: 29px;
     padding-bottom: 33px;
   }
 
-  .form-item--checkbox-application {
+  .form__fieldset--checkbox-application {
     order: 2;
   }
 
-  .form-item--text {
+  .form__fieldset--text {
+    margin-bottom: 0;
     order: 5;
     padding-top: 40px;
     padding-bottom: 53px;
@@ -186,39 +240,39 @@
     order: 6;
   }
 
-  .form-item__wrapper--name {
+  .custom-input--name {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding-bottom: 56px;
   }
 
-  .form-item__label--name {
+  .custom-input__label--name {
     padding: 0;
     padding-right: 22px;
   }
 
-  .form-item__label--contacts {
+  .custom-input__label--contacts {
     padding-bottom: 0;
   }
 
-  .form-item__wrapper--contacts {
+  .custom-input--contacts {
     display: flex;
     flex-direction: column-reverse;
     padding-left: 60px;
     padding-right: 60px;
   }
 
-  .form-item__wrapper--checkbox {
+  .custom-input--checkbox {
     padding-bottom: 47px;
     padding-left: 59px;
   }
 
-  .form-item__input {
+  .custom-input__input {
     width: 100%;
   }
 
-  .form-item--checkbox {
+  .form__fieldset--checkbox {
     padding-top: 35px;
     padding-bottom: 56px;
     background-color: $text-white;
@@ -230,15 +284,19 @@
   }
 }
 
+<<<<<<< Updated upstream
 @media (min-width: $desktop-width) {
   .form-item--contacts {
+=======
+  .form__fieldset--contacts {
+>>>>>>> Stashed changes
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
 
-  .form-item__wrapper--contacts {
+  .custom-input--contacts {
     padding-bottom: 0;
   }
 }
