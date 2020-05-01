@@ -1,16 +1,14 @@
-.your-impressions {
-  &__desc {
-    margin: 0;
-    padding-top: 55px;
-    padding-bottom: 49px;
-    padding-left: 22px;
-    padding-right: 22px;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 30px;
-    color: $text-blue;
-    text-align: center;
-  }
+.your-impressions__desc {
+  margin: 0;
+  padding-top: 55px;
+  padding-bottom: 49px;
+  padding-left: 22px;
+  padding-right: 22px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: $text-blue;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {

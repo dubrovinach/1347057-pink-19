@@ -6,10 +6,6 @@
   background-position: left 0 top -440px;
   background-color: $navColor;
 
-  &__pic {
-    border: none;
-  }
-
   &::before {
     position: absolute;
     content: "";
@@ -21,6 +17,10 @@
     background-size: contain;
     background-position: top;
   }
+}
+
+.map__pic {
+  border: none;
 }
 
 @media (min-width: $tablet-width) {

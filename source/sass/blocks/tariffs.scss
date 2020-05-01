@@ -4,43 +4,42 @@
   background-color: $background-grey;
   background-image: url("../../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
+  overflow-x: hidden;
+}
 
-  &__table {
-    position: absolute;
-    top: 150px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-collapse: collapse;
-  }
+.tariffs__table {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-collapse: collapse;
+}
 
-  &__toggles {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+.tariffs__toggles {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
-  &__main-cell {
-    border: none;
-    border-right: 2px solid #e5e5e5;
-    background-color: $text-blue;
-    color: $text-white;
-    padding-top: 23px;
-    padding-bottom: 21px;
-    min-width: 276px;
-  }
+.tariffs__main-cell {
+  border: none;
+  border-right: 2px solid #e5e5e5;
+  background-color: $text-blue;
+  color: $text-white;
+  padding-top: 23px;
+  padding-bottom: 21px;
+  min-width: 276px;
 
-  &__main-cell:last-child {
+  &:last-child {
     border-right: none;
   }
 
-  &__main-cell--standart {
+  &--standart {
     position: relative;
-    background-image: url("../../img/bg-hit.svg");
-    background-repeat: no-repeat;
   }
 
-  &__main-cell--standart::before {
+  &--standart::before {
     position: absolute;
     content: "хит";
     height: 10px;
@@ -50,53 +49,64 @@
     font-size: 14px;
     line-height: 14px;
     text-align: center;
-    vertical-align: center;
     text-transform: uppercase;
     color: #ffffff;
     background-color: #d22856;
     transform: rotate(-45deg);
+    z-index: 2;
+  }
+
+  &--standart::after {
+    position: absolute;
+    content: "";
+    height: 80px;
+    width: 80px;
+    top: 0;
+    left: -1px;
     z-index: 1;
+    background-image: url("../../img/bg-hit.svg");
+    background-repeat: no-repeat;
   }
+}
 
-  &__name {
-    padding-bottom: 12px;
-    margin: 0;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 30px;
-    text-transform: uppercase;
-  }
+.tariffs__name {
+  padding-bottom: 12px;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
 
-  &__price {
-    margin: 0;
-    padding: 0;
-    font-size: 24px;
-    font-weight: 200;
-    line-height: 30px;
-  }
+.tariffs__price {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 30px;
+}
 
-  &__cell {
-    border: 2px solid #e5e5e5;
-    border-top: none;
-    padding-top: 22px;
-    padding-bottom: 22px;
-    padding-left: 22px;
-    padding-right: 124px;
-    background-color: $text-white;
-    color: $text-blue;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 30px;
-    text-transform: uppercase;
-  }
+.tariffs__cell {
+  border: 2px solid #e5e5e5;
+  border-top: none;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 22px;
+  padding-right: 124px;
+  background-color: $text-white;
+  color: $text-blue;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
 
-  &__main-cell--empty {
-    display: none;
-  }
+.tariffs__main-cell--empty {
+  display: none;
+}
 
-  &__cell--first {
-    display: none;
-  }
+.tariffs__cell--first {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {

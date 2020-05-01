@@ -1,0 +1,9 @@
+.social--hidden {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .social--hidden {
+    display: block;
+  }
+}

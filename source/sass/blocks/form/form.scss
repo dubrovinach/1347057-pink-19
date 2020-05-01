@@ -1,78 +1,84 @@
 .form {
   display: flex;
   flex-direction: column;
+}
 
-  &__fieldset {
-    margin-bottom: 40px;
-    border: none;
-  }
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+}
 
-  &__fieldset--checkbox {
+.form__fieldset {
+  margin-bottom: 40px;
+  border: none;
+
+  &--checkbox {
     padding-top: 42px;
     padding-bottom: 44px;
     background-color: $background-grey;
   }
 
-  &__fieldset--name {
+  &--name {
     padding-bottom: 0;
     padding-top: 0;
     order: 1;
   }
 
-  &__fieldset--contacts {
+  &--contacts {
     order: 3;
   }
 
-  &__fieldset--checkbox-application {
+  &--checkbox-application {
     order: 4;
   }
 
-  &__fieldset--checkbox-achievements {
+  &--checkbox-achievements {
     order: 2;
   }
 
-  &__fieldset--text {
+  &--text {
     margin-bottom: 0;
     order: 5;
     padding-top: 19px;
     display: flex;
     justify-content: center;
   }
+}
 
-  &__legend {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-    color: $pink;
-    text-transform: uppercase;
-    text-align: center;
-  }
+.form__legend {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $pink;
+  text-transform: uppercase;
+  text-align: center;
 
-  &__legend--contacts {
+  &--contacts {
     display: none;
   }
+}
 
-  &__button-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 52px;
-  }
+.form__button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 52px;
+  order: 6;
+}
 
-  &__prompt {
-    margin: 0;
-    padding-top: 46px;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 30px;
-    text-transform: uppercase;
-    color: $text-blue;
-  }
+.form__prompt {
+  margin: 0;
+  padding-top: 46px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $text-blue;
+}
 
-  &__star {
-    color: $pink;
-  }
+.form__star {
+  color: $pink;
 }
 
 .custom-input {
@@ -84,44 +90,44 @@
     padding-bottom: 0;
   }
 
-  &__label {
-    padding-bottom: 16px;
-    padding-left: 20px;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 30px;
-    color: $pink;
-    text-transform: uppercase;
-  }
-
-  &__input {
-    margin-bottom: 29px;
-    padding-top: 18px;
-    padding-bottom: 16px;
-    padding-left: 12px;
-    padding-right: 12px;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 30px;
-    color: $text-blue;
-    border: 2px solid #e5e5e5;
-  }
-
-  &__input:last-child {
-    margin-bottom: 0;
-  }
-
   &--checkbox {
     flex-direction: row-reverse;
     justify-content: flex-end;
   }
+}
 
-  &__label--checkbox {
+.custom-input__label {
+  padding-bottom: 16px;
+  padding-left: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: $pink;
+  text-transform: uppercase;
+
+  &--checkbox {
     font-size: 18px;
     color: $text-blue;
     padding: 0;
     padding-left: 33px;
     text-transform: none;
+  }
+}
+
+.custom-input__input {
+  margin-bottom: 29px;
+  padding-top: 18px;
+  padding-bottom: 16px;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: $text-blue;
+  border: 2px solid #e5e5e5;
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -243,6 +249,12 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+  }
+
+  .form__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .custom-input--contacts {
