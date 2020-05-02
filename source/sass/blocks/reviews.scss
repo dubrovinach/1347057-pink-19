@@ -7,9 +7,14 @@
 }
 
 .reviews__item {
+  display: none;
   margin: 0;
   padding-left: 22px;
   padding-right: 20px;
+}
+
+.reviews__item--active {
+  display: block;
 }
 
 .reviews__author-name {
@@ -33,8 +38,12 @@
   display: none;
 }
 
+.reviews__buttons {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
-  .reviews__item {
+  .reviews__item--active {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -87,6 +96,10 @@
 
   .reviews__toggles {
     display: none;
+  }
+
+  .reviews__buttons {
+    display: inline;
   }
 
   .reviews__wrapper {
