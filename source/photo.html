@@ -14,7 +14,11 @@
       <div class="nav-container">
         <div class="main-nav__wrapper">
           <a href="#" class="main-nav__logo">
-            <img src="img/logo-pink-white-mobile.svg" class="main-nav__img-mobile" alt="Логотип Pink">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img src="img/logo-pink-white-mobile.svg" class="main-nav__img-mobile" alt="Логотип Pink">
+            </picture>
           </a>
           <button class="main-nav__toggle hamburger">
             <span class="visually-hidden">Открыть меню</span>
@@ -47,8 +51,12 @@
         ваших?
       </p>
       <div class="photo-card photo-card--panorama">
-        <img src="img/panorama-mobile.jpg" class="photo-card__img photo-card__img--panorama" width="320" height="137"
-          alt="Фото Анны">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg">
+          <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg">
+          <img src="img/panorama-mobile.jpg" srcset="img/panorama-mobile@2x.jpg"
+            class="photo-card__img photo-card__img--panorama" width="320" height="137" alt="Фото Анны">
+        </picture>
         <span class="photo-card__panorama">Панорама дня</span>
         <blockquote class="photo-card__blockquote photo-card__blockquote--panorama">
           <div class="photo-card__wrapper">
