@@ -4,7 +4,7 @@
 
 .offers__wrapper-list {
   background-color: $background-grey;
-  background-image: url("../../img/bg-triangle-white.svg");
+  background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
 }
 
@@ -59,7 +59,7 @@
 
 .offers__pic-one {
   height: 280px;
-  background-image: url("../../img/iphone-screen-mobile@1x.png");
+  background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: 50% 0;
 }
@@ -98,7 +98,7 @@
   .offers__pic-one {
     height: 480px;
     width: 268px;
-    background-image: url("../../img/iphone-screen-3-tablet@1x.png");
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
     background-repeat: no-repeat;
   }
 
@@ -170,17 +170,17 @@
 
   .offers__pic-one {
     height: 303px;
-    background-image: url("../../img/iphone-screen-3-desktop@1x.png");
+    background-image: url("../img/iphone-screen-3-desktop@1x.png");
     background-repeat: no-repeat;
   }
 
   .offers__pic-two {
-    background-image: url("../../img/iphone-screen-2-desktop@1x.png");
+    background-image: url("../img/iphone-screen-2-desktop@1x.png");
     background-repeat: no-repeat;
   }
 
   .offers__pic-three {
-    background-image: url("../../img/iphone-screen-1-desktop@1x.png");
+    background-image: url("../img/iphone-screen-1-desktop@1x.png");
     background-repeat: no-repeat;
   }
 }
