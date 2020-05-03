@@ -74,33 +74,3 @@
     opacity: 1;
   }
 }
-
-@media (min-width: $desktop-width) {
-  .slider__item {
-    position: relative;
-  }
-
-  .slider__item::before {
-    content: "";
-    position: absolute;
-    top: 50px;
-    left: 130px;
-    background-image: url("../../img/icon-review-arrow-left.svg");
-    background-repeat: no-repeat;
-    background-size: 22px auto;
-    width: 22px;
-    height: 41px;
-  }
-
-  .slider__item::after {
-    content: "";
-    position: absolute;
-    top: 50px;
-    right: 130px;
-    background-image: url("../../img/icon-review-arrow-right.svg");
-    background-repeat: no-repeat;
-    background-size: 22px auto;
-    width: 22px;
-    height: 41px;
-  }
-}
