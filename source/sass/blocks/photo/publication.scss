@@ -33,11 +33,32 @@
 .publication__button-post {
   margin-bottom: 12px;
   color: $pink;
+
+  &:hover {
+    background-color: $pink;
+    color: $text-white;
+    border-color: $pink;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .publication__button-cancel {
   margin-bottom: 41px;
   color: rgba(40, 54, 69, 0.1);
+
+  &:hover {
+    background-color: transparent;
+    color: rgba(40, 54, 69, 0.3);
+    border-color: rgba(40, 54, 69, 0.3);
+  }
+
+  &:active {
+    background-color: $navColor;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {

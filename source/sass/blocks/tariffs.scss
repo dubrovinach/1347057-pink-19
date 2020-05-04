@@ -2,7 +2,7 @@
   position: relative;
   min-height: 600px;
   background-color: $background-grey;
-  background-image: url("../../img/bg-triangle-white.svg");
+  background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
   overflow-x: hidden;
 }
@@ -62,9 +62,9 @@
     height: 80px;
     width: 80px;
     top: 0;
-    left: -1px;
+    left: 0;
     z-index: 1;
-    background-image: url("../../img/bg-hit.svg");
+    background-image: url("../img/bg-hit.svg");
     background-repeat: no-repeat;
   }
 }
