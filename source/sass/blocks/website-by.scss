@@ -1,0 +1,21 @@
+.website-by {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.website-by__head {
+  padding-right: 15px;
+}
+
+.website-by__logo-svg {
+  fill: $pink;
+
+  &:hover {
+    fill: $text-black;
+  }
+
+  &:active {
+    fill: rgba(40, 54, 69, 0.3);
+  }
+}

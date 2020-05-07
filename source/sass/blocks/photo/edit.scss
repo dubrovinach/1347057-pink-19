@@ -1,6 +1,36 @@
 .edit {
+  padding-top: 42px;
+  padding-bottom: 41px;
+}
+
+.edit__list {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
+  padding-left: 0;
+  padding-bottom: 33px;
+  margin: 0;
+  list-style: none;
+}
+
+.edit__item {
+  padding-right: 40px;
+}
+
+.edit__item:last-child {
+  padding-right: 0;
+}
+
+.edit__svg {
+  fill: $navColor;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &--active {
+    fill: $pink;
+    opacity: 1;
+  }
 }

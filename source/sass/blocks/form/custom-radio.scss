@@ -1,0 +1,53 @@
+.custom-radio {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  padding-bottom: 39px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.custom-radio__label {
+  position: relative;
+  font-size: 18px;
+  color: $text-blue;
+  padding: 0;
+  padding-left: 55px;
+  text-transform: none;
+}
+
+.custom-radio__label input[type="radio"] + .custom-radio__checkbox-indicator {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  background-color: $text-white;
+
+  &:hover {
+    border-color: $navColor;
+  }
+
+  &:active {
+    border-color: $pink;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .custom-radio {
+    padding-left: 59px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .custom-radio {
+    padding-left: 0;
+    padding-top: 37px;
+    padding-bottom: 0;
+  }
+}

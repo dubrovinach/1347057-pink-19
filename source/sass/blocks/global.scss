@@ -31,6 +31,16 @@
   text-transform: uppercase;
   border: 2px solid transparent;
   border-radius: 2px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #1c9b5e;
+  }
 }
 
 .slider__toggle {
@@ -62,5 +72,40 @@
   &--active:hover,
   :active {
     opacity: 1;
+  }
+}
+
+.slider__button {
+  border: none;
+  background-color: $text-white;
+  cursor: pointer;
+}
+
+.slider__item {
+  position: relative;
+}
+
+.slider__button--left {
+  position: absolute;
+  top: 240px;
+  left: 0;
+}
+
+.slider__button--right {
+  position: absolute;
+  top: 240px;
+  right: 0;
+}
+
+.slider__arrow {
+  fill: $navColor;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
   }
 }

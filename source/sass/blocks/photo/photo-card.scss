@@ -73,12 +73,19 @@
 
 .photo-card__number {
   margin: 0;
+  padding-left: 19px;
   font-size: 12px;
   font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
   color: $pink;
   text-align: left;
+}
+
+.photo-card__like {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 @media (min-width: $tablet-width) {

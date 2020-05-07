@@ -1,0 +1,48 @@
+.filter-range {
+  position: relative;
+  padding-bottom: 30px;
+  margin: 0;
+  padding: 0;
+
+  &--hidden {
+    display: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 36px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: red;
+  }
+}
+
+.filter-range__scale {
+  width: 240px;
+  height: 2px;
+  background: $text-black;
+}
+
+.filter-range__toggle {
+  position: absolute;
+  top: -8px;
+  right: 60px;
+  width: 14px;
+  height: 19px;
+  border: solid 2px #d22856;
+  border-radius: 50%;
+}
+
+@media (min-width: $tablet-width) {
+  .filter-range {
+    position: relative;
+    margin-bottom: 28px;
+    margin-top: 32px;
+
+    &--hidden {
+      display: inline;
+    }
+  }
+}

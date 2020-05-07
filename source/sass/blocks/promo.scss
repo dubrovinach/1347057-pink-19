@@ -126,22 +126,22 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
     }
-  }
 
-  .promo--height {
-    min-height: 394px;
-  }
+    &--height {
+      min-height: 394px;
+    }
 
-  .promo--index::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0;
-    width: 1050px;
-    height: 645px;
-    background-image: url("../img/iphone-hand-desktop@1x.png");
-    background-repeat: no-repeat;
+    &--index::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+      width: 1050px;
+      height: 645px;
+      background-image: url("../img/iphone-hand-desktop@1x.png");
+      background-repeat: no-repeat;
+    }
   }
 
   .promo__head--index {

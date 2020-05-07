@@ -4,10 +4,7 @@
 }
 
 .publication__form {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0;
 }
 
 .publication__pic {
@@ -21,6 +18,7 @@
 .publication__buttons {
   display: flex;
   flex-direction: column;
+  padding-top: 38px;
 }
 
 .publication__button {
@@ -46,7 +44,7 @@
 }
 
 .publication__button-cancel {
-  margin-bottom: 41px;
+  margin: 0;
   color: rgba(40, 54, 69, 0.1);
 
   &:hover {
