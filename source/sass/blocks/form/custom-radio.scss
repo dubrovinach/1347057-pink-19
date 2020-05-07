@@ -18,8 +18,7 @@
   text-transform: none;
 }
 
-.custom-radio__label input[type="radio"] + .custom-radio__checkbox-indicator {
-  content: "";
+.custom-radio__input + .custom-radio__checkbox-indicator {
   position: absolute;
   top: 0;
   left: 0;
@@ -36,6 +35,15 @@
   &:active {
     border-color: $pink;
   }
+}
+
+.custom-radio__input:checked + .custom-radio__checkbox-indicator::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $pink;
+  position: absolute;
 }
 
 @media (min-width: $tablet-width) {

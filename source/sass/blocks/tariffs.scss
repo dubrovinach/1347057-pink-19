@@ -1,5 +1,4 @@
 .tariffs {
-  position: relative;
   min-height: 600px;
   background-color: $background-grey;
   background-image: url("../img/bg-triangle-white.svg");
@@ -12,8 +11,7 @@
 }
 
 .tariffs__table {
-  position: absolute;
-  top: 150px;
+  position: relative;
   left: 50%;
   transform: translateX(-50%);
   border-collapse: collapse;

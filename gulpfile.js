@@ -42,47 +42,47 @@ gulp.task("server", function () {
 var gulp = require("gulp");
 var webp = require("gulp-webp");
 gulp.task("webp", function () {
- return gulp.src("source/img/**/*.{png,jpg}")
- .pipe(webp({quality: 90}))
- .pipe(gulp.dest("source/img"));
+  return gulp.src("source/img/**/*.{png,jpg}")
+    .pipe(webp({ quality: 90 }))
+    .pipe(gulp.dest("source/img"));
 });
 
-var gulp = require("gulp"); 
-var imagemin = require("gulp-imagemin"); 
-gulp.task("images", function () { 
-  return gulp.src("source/img/**/*.{png,jpg,svg}") 
-  .pipe(imagemin([ 
-    imagemin.optipng({optimizationLevel: 3}), 
-    imagemin.mozjpeg({ progressive: true }),
-    imagemin.svgo() 
-    ])) 
-  .pipe(gulp.dest("source/img")); 
-  });
+var gulp = require("gulp");
+var imagemin = require("gulp-imagemin");
+gulp.task("images", function () {
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
+    .pipe(imagemin([
+      imagemin.optipng({ optimizationLevel: 3 }),
+      imagemin.mozjpeg({ progressive: true }),
+      imagemin.svgo()
+    ]))
+    .pipe(gulp.dest("source/img"));
+});
 
 var gulp = require("gulp");
 var rename = require("gulp-rename");
 var svgstore = require("gulp-svgstore");
 
-gulp.task("sprite", function () { 
+gulp.task("sprite", function () {
   return gulp.src("source/img/*.svg")
-  .pipe(svgstore({ 
-    inlineSvg: true 
+    .pipe(svgstore({
+      inlineSvg: true
     }))
-  .pipe(rename("sprite.svg"))
-  .pipe(gulp.dest("source/img"));
-  });
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("source/img"));
+});
 
-var gulp = require("gulp"); 
+var gulp = require("gulp");
 var posthtml = require("gulp-posthtml");
-var include = require("posthtml-include"); 
+var include = require("posthtml-include");
 
-gulp.task("html", function () { 
-  return gulp.src("source/*.html") 
-  .pipe(posthtml([ 
-    include() 
-    ])) 
-  .pipe(gulp.dest("source")); 
-  });
+gulp.task("html", function () {
+  return gulp.src("source/*.html")
+    .pipe(posthtml([
+      include()
+    ]))
+    .pipe(gulp.dest("source"));
+});
 
 gulp.task("build", gulp.series("css", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));
