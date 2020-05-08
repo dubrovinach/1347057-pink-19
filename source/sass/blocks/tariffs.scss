@@ -1,5 +1,6 @@
 .tariffs {
-  min-height: 600px;
+  padding-top: 127px;
+  padding-bottom: 102px;
   background-color: $background-grey;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
@@ -13,6 +14,7 @@
 .tariffs__table {
   position: relative;
   left: 50%;
+  top: 0;
   transform: translateX(-50%);
   border-collapse: collapse;
 }
@@ -124,6 +126,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .tariffs {
+    overflow-x: auto;
+    padding-bottom: 70px;
+  }
+
   .tariffs__main-cell {
     padding-top: 16px;
     padding-bottom: 12px;
@@ -181,6 +188,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .tariffs {
+    padding-bottom: 98px;
+  }
+
   .tariffs__wrapper {
     padding-top: 22px;
     padding-bottom: 18px;

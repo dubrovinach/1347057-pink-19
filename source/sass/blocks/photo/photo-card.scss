@@ -63,7 +63,7 @@
 
 .photo-card__comment {
   margin: 0;
-  min-height: 50px;
+  padding-bottom: 19px;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -101,8 +101,29 @@
   }
 
   .photo-card__blockquote--panorama {
+    position: relative;
     min-height: 121px;
-    width: 600px;
+    width: 620px;
+  }
+
+  .photo-card__comment {
+    padding-bottom: 0;
+    min-height: 70px;
+  }
+
+  .photo-card__like {
+    &--panorama {
+      position: absolute;
+      top: 25px;
+      right: 32px;
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
+
+  .photo-card__number--panorama {
+    padding-left: 0;
+    padding-right: 17px;
   }
 }
 

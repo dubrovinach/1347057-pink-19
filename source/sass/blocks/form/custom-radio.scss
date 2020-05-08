@@ -18,12 +18,12 @@
   text-transform: none;
 }
 
-.custom-radio__input + .custom-radio__checkbox-indicator {
+.custom-radio__input + .custom-radio__indicator {
   position: absolute;
   top: 0;
   left: 0;
-  width: 35px;
-  height: 35px;
+  width: 37px;
+  height: 37px;
   border: 2px solid #e5e5e5;
   border-radius: 50%;
   background-color: $text-white;
@@ -37,13 +37,16 @@
   }
 }
 
-.custom-radio__input:checked + .custom-radio__checkbox-indicator::after {
+.custom-radio__input:checked + .custom-radio__indicator::after {
   content: "";
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   background-color: $pink;
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 9px;
 }
 
 @media (min-width: $tablet-width) {

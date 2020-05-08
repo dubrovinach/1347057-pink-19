@@ -31,6 +31,10 @@
   &:hover {
     border-color: $navColor;
   }
+
+  &:active {
+    border-color: $pink;
+  }
 }
 
 .custom-checkbox__label input[type="checkbox"]:checked + .custom-checkbox__checkbox-indicator {

@@ -26,6 +26,7 @@
   padding-bottom: 21px;
   padding-left: 100px;
   padding-right: 100px;
+  background-color: transparent;
 }
 
 .publication__button-post {
@@ -60,14 +61,22 @@
 }
 
 @media (min-width: $tablet-width) {
+  .publication {
+    padding-top: 57px;
+    padding-bottom: 54px;
+  }
+
   .publication__form {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
   }
 
   .publication__img {
+    padding-top: 0;
+  }
+
+  .publication__buttons {
     padding-top: 0;
   }
 }
@@ -75,9 +84,14 @@
 @media (min-width: $desktop-width) {
   .publication {
     background-color: $text-white;
+    padding: 0;
   }
 
   .publication__form {
+    padding-left: 80px;
+    padding-right: 60px;
+    padding-top: 57px;
+    padding-bottom: 57px;
     background-color: $background-grey;
   }
 

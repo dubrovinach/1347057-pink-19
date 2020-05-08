@@ -41,6 +41,10 @@
     color: rgba(255, 255, 255, 0.3);
     background-color: #1c9b5e;
   }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }
 
 .slider__toggle {
