@@ -1,0 +1,86 @@
+.custom-checkbox {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  padding-bottom: 47px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.custom-checkbox__label {
+  position: relative;
+  font-size: 18px;
+  color: $text-blue;
+  padding: 0;
+  padding-left: 55px;
+  text-transform: none;
+}
+
+.custom-checkbox__label input[type="checkbox"] + .custom-checkbox__checkbox-indicator {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #e5e5e5;
+  background-color: $text-white;
+
+  &:hover {
+    border-color: $navColor;
+  }
+
+  &:active {
+    border-color: $pink;
+  }
+}
+
+.custom-checkbox__label input[type="checkbox"]:checked + .custom-checkbox__checkbox-indicator {
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-width: $tablet-width) {
+  .custom-checkbox {
+    padding-left: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .custom-checkbox {
+    width: 300px;
+    padding-bottom: 47px;
+    padding-left: 40px;
+
+    &:last-child {
+      padding-bottom: 47px;
+    }
+
+    &--selfie {
+      order: 1;
+    }
+
+    &--burnt {
+      order: 4;
+    }
+
+    &--chuck-norris {
+      order: 2;
+    }
+
+    &--souvenirs {
+      order: 5;
+    }
+
+    &--tower {
+      order: 3;
+    }
+
+    &--hotel {
+      order: 6;
+    }
+  }
+}

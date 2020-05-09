@@ -3,6 +3,14 @@
   text-align: center;
 }
 
+.publication__form {
+  padding: 0;
+}
+
+.publication__pic {
+  flex-shrink: 0;
+}
+
 .publication__img {
   padding-top: 20px;
 }
@@ -10,6 +18,7 @@
 .publication__buttons {
   display: flex;
   flex-direction: column;
+  padding-top: 38px;
 }
 
 .publication__button {
@@ -17,27 +26,57 @@
   padding-bottom: 21px;
   padding-left: 100px;
   padding-right: 100px;
+  background-color: transparent;
 }
 
 .publication__button-post {
   margin-bottom: 12px;
   color: $pink;
+
+  &:hover {
+    background-color: $pink;
+    color: $text-white;
+    border-color: $pink;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .publication__button-cancel {
-  margin-bottom: 41px;
+  margin: 0;
   color: rgba(40, 54, 69, 0.1);
+
+  &:hover {
+    background-color: transparent;
+    color: rgba(40, 54, 69, 0.3);
+    border-color: rgba(40, 54, 69, 0.3);
+  }
+
+  &:active {
+    background-color: $navColor;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
+  .publication {
+    padding-top: 57px;
+    padding-bottom: 54px;
+  }
+
   .publication__form {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
   }
 
   .publication__img {
+    padding-top: 0;
+  }
+
+  .publication__buttons {
     padding-top: 0;
   }
 }
@@ -45,9 +84,14 @@
 @media (min-width: $desktop-width) {
   .publication {
     background-color: $text-white;
+    padding: 0;
   }
 
   .publication__form {
+    padding-left: 80px;
+    padding-right: 60px;
+    padding-top: 57px;
+    padding-bottom: 57px;
     background-color: $background-grey;
   }
 

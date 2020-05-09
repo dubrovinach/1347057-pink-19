@@ -1,0 +1,119 @@
+.custom-input {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 29px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.custom-input__label {
+  padding-bottom: 16px;
+  padding-left: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: $pink;
+  text-transform: uppercase;
+}
+
+.custom-input__input {
+  margin-bottom: 29px;
+  padding-top: 18px;
+  padding-bottom: 16px;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: $text-blue;
+  border: 2px solid #e5e5e5;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    border-color: $navColor;
+  }
+
+  &:active {
+    border-color: $pink;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .custom-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 56px;
+  }
+
+  .custom-input__label {
+    padding: 0;
+    padding-right: 22px;
+  }
+
+  .custom-input--contacts {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .custom-input__label--contacts {
+    padding-bottom: 0;
+  }
+
+  .custom-input__input {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .custom-input--contacts {
+    padding-bottom: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 60px;
+      height: 67px;
+      background-color: #e5e5e5;
+    }
+  }
+
+  .custom-input--mobile {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 21px;
+      right: 20px;
+      width: 20px;
+      height: 20px;
+      background-image: url("../img/icon-phone.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .custom-input--mail {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 24px;
+      right: 20px;
+      width: 18px;
+      height: 13px;
+      background-image: url("../img/icon-mail.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}

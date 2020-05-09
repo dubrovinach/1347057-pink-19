@@ -1,0 +1,61 @@
+.filter-range {
+  padding-bottom: 30px;
+  margin: 0;
+  border-bottom: 1px solid #dddfe0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  &--hidden {
+    display: none;
+  }
+}
+
+.filter-range__scale {
+  position: relative;
+  width: 240px;
+  height: 2px;
+  background: $text-black;
+}
+
+.filter-range__toggle {
+  position: absolute;
+  top: -7px;
+  right: 60px;
+  width: 14px;
+  height: 16px;
+  border: solid 2px #d22856;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+
+  &:hover {
+    background-color: $pink;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .filter-range {
+    position: relative;
+    padding-top: 28px;
+    border: none;
+    width: 202px;
+
+    &--hidden {
+      display: flex;
+    }
+
+    &--active {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .filter-range {
+    width: 288px;
+  }
+
+  .filter-range__scale {
+    width: 288px;
+  }
+}
