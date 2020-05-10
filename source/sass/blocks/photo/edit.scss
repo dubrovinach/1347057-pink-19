@@ -19,10 +19,10 @@
 
 .edit__item {
   padding-right: 40px;
-}
 
-.edit__item:last-child {
-  padding-right: 0;
+  &:last-child {
+    padding-right: 0;
+  }
 }
 
 .edit__svg {

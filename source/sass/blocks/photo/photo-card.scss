@@ -1,9 +1,9 @@
 .photo-card {
   margin-bottom: 20px;
-}
 
-.photo-card--panorama {
-  position: relative;
+  &--panorama {
+    position: relative;
+  }
 }
 
 .photo-card__img {

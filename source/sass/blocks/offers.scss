@@ -76,15 +76,15 @@
 
   .offers__head {
     font-size: 40px;
-  }
 
-  .offers__head--answer {
-    padding: 0;
-  }
+    &--answer {
+      padding: 0;
+    }
 
-  .offers__head--offer {
-    padding-left: 30px;
-    padding-right: 30px;
+    &--offer {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
   }
 
   .offers__list {
@@ -125,13 +125,13 @@
     padding-bottom: 75px;
   }
 
-  .offers__head--offer {
-    padding-left: 150px;
-    padding-right: 150px;
-  }
-
   .offers__head {
     font-size: 50px;
+
+    &--offer {
+      padding-left: 150px;
+      padding-right: 150px;
+    }
   }
 
   .offers__list {

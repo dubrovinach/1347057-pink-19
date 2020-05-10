@@ -40,6 +40,18 @@
   font-size: 24px;
   font-weight: 200;
   line-height: 30px;
+
+  &--mail,
+  &--call {
+    &:hover {
+      color: $navColor;
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: rgba(40, 54, 69, 0.3);
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -50,16 +62,18 @@
     justify-content: center;
   }
 
-  .contacts__item--call {
-    flex-grow: 1;
-  }
+  .contacts__item {
+    &--call {
+      flex-grow: 1;
+    }
 
-  .contacts__item--write {
-    flex-grow: 1;
-  }
+    &--write {
+      flex-grow: 1;
+    }
 
-  .contacts__item--come {
-    flex-grow: 0;
+    &--come {
+      flex-grow: 0;
+    }
   }
 }
 
@@ -67,12 +81,12 @@
   .contacts__item {
     padding-right: 100px;
     padding-left: 0;
-  }
 
-  .contacts__item--write {
-    flex-grow: 1;
-    order: 2;
-    padding-right: 0;
+    &--write {
+      flex-grow: 1;
+      order: 2;
+      padding-right: 0;
+    }
   }
 
   .contacts__contact--address {

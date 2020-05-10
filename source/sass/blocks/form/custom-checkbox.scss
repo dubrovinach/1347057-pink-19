@@ -18,7 +18,7 @@
   text-transform: none;
 }
 
-.custom-checkbox__label input[type="checkbox"] + .custom-checkbox__checkbox-indicator {
+.custom-checkbox__input + .custom-checkbox__indicator {
   content: "";
   position: absolute;
   top: 0;
@@ -37,7 +37,7 @@
   }
 }
 
-.custom-checkbox__label input[type="checkbox"]:checked + .custom-checkbox__checkbox-indicator {
+.custom-checkbox__input:checked + .custom-checkbox__indicator {
   background-image: url("../img/icon-yes.svg");
   background-repeat: no-repeat;
   background-position: center;

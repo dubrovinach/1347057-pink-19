@@ -11,10 +11,10 @@
   margin: 0;
   padding-left: 22px;
   padding-right: 20px;
-}
 
-.reviews__item--active {
-  display: block;
+  &--active {
+    display: block;
+  }
 }
 
 .reviews__author-name {
@@ -104,19 +104,19 @@
 
   .reviews__wrapper {
     position: relative;
-  }
 
-  .reviews__wrapper::before {
-    content: "";
-    position: absolute;
-    top: 72px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-    background-image: url("../img/icon-quotes.svg");
-    background-repeat: no-repeat;
-    background-size: 79px auto;
-    width: 79px;
-    height: 65px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 72px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+      background-image: url("../img/icon-quotes.svg");
+      background-repeat: no-repeat;
+      background-size: 79px auto;
+      width: 79px;
+      height: 65px;
+    }
   }
 }

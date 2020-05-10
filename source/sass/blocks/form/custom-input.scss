@@ -49,22 +49,22 @@
     flex-direction: row;
     align-items: center;
     padding-bottom: 56px;
+
+    &--contacts {
+      display: flex;
+      flex-direction: column-reverse;
+      padding-left: 60px;
+      padding-right: 60px;
+    }
   }
 
   .custom-input__label {
     padding: 0;
     padding-right: 22px;
-  }
 
-  .custom-input--contacts {
-    display: flex;
-    flex-direction: column-reverse;
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-
-  .custom-input__label--contacts {
-    padding-bottom: 0;
+    &--contacts {
+      padding-bottom: 0;
+    }
   }
 
   .custom-input__input {

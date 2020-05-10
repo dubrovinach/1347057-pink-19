@@ -23,31 +23,31 @@
     background-size: 238px auto;
     width: 238px;
     height: 277px;
-  }
 
-  .twenty-four-hours__pic::before {
-    position: absolute;
-    top: 55px;
-    left: 18px;
-    content: "";
-    width: 202px;
-    height: 202px;
-    background: transparent;
-    border: 16px solid $pink;
-    border-radius: 50%;
-    z-index: 2;
-  }
+    &::before {
+      position: absolute;
+      top: 55px;
+      left: 18px;
+      content: "";
+      width: 202px;
+      height: 202px;
+      background: transparent;
+      border: 16px solid $pink;
+      border-radius: 50%;
+      z-index: 2;
+    }
 
-  .twenty-four-hours__pic::after {
-    position: absolute;
-    top: 78px;
-    left: 60px;
-    content: "24";
-    color: $pink;
-    font-size: 96px;
-    line-height: 149px;
-    font-weight: 700;
-    z-index: 2;
+    &::after {
+      position: absolute;
+      top: 78px;
+      left: 60px;
+      content: "24";
+      color: $pink;
+      font-size: 96px;
+      line-height: 149px;
+      font-weight: 700;
+      z-index: 2;
+    }
   }
 
   .twenty-four-hours__wrapper {
@@ -110,20 +110,20 @@
     background-size: 298px auto;
     width: 298px;
     height: 345px;
-  }
 
-  .twenty-four-hours__pic::before {
-    top: 70px;
-    left: 22px;
-    width: 253px;
-    height: 253px;
-  }
+    &::before {
+      top: 70px;
+      left: 22px;
+      width: 253px;
+      height: 253px;
+    }
 
-  .twenty-four-hours__pic::after {
-    top: 96px;
-    left: 75px;
-    font-size: 120px;
-    line-height: 187px;
+    &::after {
+      top: 96px;
+      left: 75px;
+      font-size: 120px;
+      line-height: 187px;
+    }
   }
 
   .twenty-four-hours__br-first {
