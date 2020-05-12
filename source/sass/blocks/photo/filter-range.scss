@@ -1,5 +1,5 @@
 .filter-range {
-  padding-bottom: 30px;
+  padding-bottom: 34px;
   margin: 0;
   border-bottom: 1px solid #dddfe0;
   width: 100%;
@@ -21,7 +21,7 @@
 .filter-range__toggle {
   position: absolute;
   top: -7px;
-  right: 60px;
+  right: 32px;
   width: 14px;
   height: 16px;
   border: solid 2px #d22856;
@@ -36,7 +36,7 @@
 @media (min-width: $tablet-width) {
   .filter-range {
     position: relative;
-    padding-top: 28px;
+    padding: 0;
     border: none;
     width: 202px;
 

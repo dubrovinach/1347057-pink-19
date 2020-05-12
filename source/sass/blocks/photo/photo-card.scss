@@ -16,10 +16,10 @@
   position: absolute;
   right: 20px;
   top: 0;
-  padding-top: 13px;
-  padding-left: 20px;
-  padding-bottom: 11px;
-  padding-right: 21px;
+  padding-top: 5px;
+  padding-left: 19px;
+  padding-bottom: 7px;
+  padding-right: 20px;
   background-color: $pink;
   color: $text-white;
   font-size: 12px;
@@ -30,9 +30,9 @@
 
 .photo-card__blockquote {
   padding-left: 17px;
-  padding-right: 13px;
-  padding-top: 25px;
-  padding-bottom: 28px;
+  padding-right: 12px;
+  padding-top: 17px;
+  padding-bottom: 20px;
   margin: 0 auto;
   width: 280px;
   background-color: $background-grey;
@@ -44,7 +44,7 @@
 }
 
 .photo-card__author-name {
-  padding-right: 5px;
+  padding-right: 4px;
   margin: 0;
   font-size: 14px;
   font-weight: 700;
@@ -60,11 +60,13 @@
   font-weight: 200;
   line-height: 24px;
   color: $text-blue;
+  text-transform: uppercase;
 }
 
 .photo-card__comment {
   margin: 0;
-  padding-bottom: 19px;
+  padding-bottom: 11px;
+  min-height: 36px;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -90,13 +92,24 @@
 }
 
 @media (min-width: $tablet-width) {
+  .photo-card__panorama {
+    top: 57px;
+  }
+
+  .photo-card--panorama {
+    padding-bottom: 50px;
+  }
+
   .photo-card__img--panorama {
     width: auto;
-    height: auto;
+    height: 509px;
   }
 
   .photo-card__blockquote {
+    padding-top: 24px;
+    padding-left: 28px;
     padding-bottom: 0;
+    padding-right: 32px;
     min-height: 155px;
     width: 300px;
   }
@@ -109,17 +122,24 @@
 
   .photo-card__comment {
     padding-bottom: 0;
-    min-height: 70px;
+    min-height: 61px;
   }
 
   .photo-card__like {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
     &--panorama {
       position: absolute;
       top: 25px;
-      right: 32px;
+      right: 29px;
       display: flex;
       flex-direction: row-reverse;
     }
+  }
+
+  .photo-card__number {
+    padding-left: 0;
   }
 
   .photo-card__number--panorama {

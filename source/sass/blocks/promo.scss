@@ -26,7 +26,9 @@
 
 .promo__head {
   margin: 0;
+  font-style: 24px;
   font-weight: 200;
+  line-height: 30px;
   text-align: center;
   color: $text-white;
 
@@ -40,10 +42,10 @@
 
   &--photo {
     font-size: 24px;
-    padding-top: 100px;
-    padding-bottom: 87px;
-    padding-left: 76px;
-    padding-right: 76px;
+    padding-top: 104px;
+    padding-bottom: 82px;
+    padding-left: 75px;
+    padding-right: 75px;
   }
 
   &--form {
@@ -70,19 +72,17 @@
     }
 
     &--height {
+      background-size: 1200px auto;
       min-height: 440px;
     }
 
     &--index::after {
-      content: "";
-      position: absolute;
       left: 50%;
       transform: translateX(-53%);
       bottom: 0;
       width: 660px;
       height: 545px;
       background-image: url("../img/iphone-hand-tablet@1x.png");
-      background-repeat: no-repeat;
     }
   }
 
@@ -99,6 +99,8 @@
     }
 
     &--photo {
+      padding-top: 121px;
+      line-height: 60px;
       font-size: 50px;
       width: 370px;
     }
@@ -132,15 +134,12 @@
     }
 
     &--index::after {
-      content: "";
-      position: absolute;
-      left: 56%;
+      right: 50%;
       transform: translateX(-50%);
       bottom: 0;
-      width: 1050px;
+      width: 908px;
       height: 645px;
       background-image: url("../img/iphone-hand-desktop@1x.png");
-      background-repeat: no-repeat;
     }
   }
 

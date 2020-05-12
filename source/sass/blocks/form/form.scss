@@ -36,6 +36,7 @@
 }
 
 .form__legend {
+  margin: 0;
   padding-bottom: 42px;
   padding-left: 20px;
   padding-right: 20px;
@@ -182,11 +183,6 @@
 
     &--checkbox {
       width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
       padding-bottom: 0;
     }
 
@@ -194,6 +190,14 @@
       padding-left: 75px;
       padding-right: 165px;
     }
+  }
+
+  .form__fieldset-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
   }
 
   .form__wrapper {
