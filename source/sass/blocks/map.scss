@@ -44,10 +44,28 @@
     background-repeat: no-repeat;
     background-position: top -360px left 0;
     width: 100%;
-    height: 500px;
+    height: 366px;
+
+    &::before {
+      top: -8px;
+    }
   }
 
   .map__pic {
-    height: 500px;
+    height: 366px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    height: 508px;
+
+    &::before {
+      top: -8px;
+    }
+  }
+
+  .map__pic {
+    height: 508px;
   }
 }

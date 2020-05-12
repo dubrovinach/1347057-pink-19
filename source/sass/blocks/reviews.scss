@@ -3,7 +3,7 @@
 }
 
 .reviews__list {
-  padding-top: 49px;
+  padding-top: 42px;
 }
 
 .reviews__item {
@@ -26,8 +26,8 @@
 }
 
 .reviews__text {
-  padding-top: 25px;
-  padding-bottom: 42px;
+  padding-top: 12px;
+  padding-bottom: 22px;
   margin: 0;
   font-size: 14px;
   font-weight: 400;
@@ -51,6 +51,7 @@
 
   .reviews__list {
     padding-top: 0;
+    padding-bottom: 23px;
   }
 
   .reviews__author-name {
@@ -59,6 +60,7 @@
 
   .reviews__author-data {
     padding: 0;
+    padding-top: 2px;
     margin: 0;
     display: block;
     font-size: 14px;
@@ -70,20 +72,23 @@
   .reviews__text {
     width: 620px;
     font-size: 18px;
+    padding-top: 14px;
+    padding-bottom: 34px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .reviews {
-    padding-bottom: 35px;
+    padding-bottom: 12px;
   }
 
   .reviews__list {
-    padding-top: 193px;
+    padding-top: 171px;
   }
 
   .reviews__text {
     width: 690px;
+    padding-bottom: 36px;
   }
 
   .reviews__author-name {
@@ -110,7 +115,7 @@
       position: absolute;
       top: 72px;
       left: 50%;
-      transform: translateX(-50%);
+      transform: translateX(-47%);
       z-index: 1;
       background-image: url("../img/icon-quotes.svg");
       background-repeat: no-repeat;

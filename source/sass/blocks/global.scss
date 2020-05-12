@@ -14,7 +14,7 @@
   width: 50px;
   height: 3px;
   background-color: $text-white;
-  box-shadow: 0 8px 0 0 $text-white, 0 16px 0 0 $text-white;
+  box-shadow: 0 10px 0 0 $text-white, 0 20px 0 0 $text-white;
 }
 
 .main-nav--closed .hamburger:hover::before {
@@ -60,10 +60,10 @@
 }
 
 .global-button {
-  padding-top: 10px;
-  padding-bottom: 9px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 36px;
+  padding-right: 36px;
   color: $text-white;
   text-decoration: none;
   font-size: 18px;
@@ -73,6 +73,13 @@
   border-radius: 50px;
 }
 
+@media (min-width: $tablet-width) {
+  .global-button {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .hamburger {
     display: none;
@@ -80,6 +87,7 @@
 }
 
 .button-square {
+  width: 296px;
   padding-top: 23px;
   padding-bottom: 22px;
   padding-left: 43px;
@@ -111,7 +119,7 @@
 .slider__toggle {
   width: 6px;
   height: 6px;
-  margin: 0 10px;
+  margin: 0 7px;
   padding: 0;
   background-color: #283645;
   opacity: 0.3;
@@ -147,14 +155,14 @@
 
   &--left {
     position: absolute;
-    top: 240px;
-    left: 0;
+    top: 213px;
+    left: -7px;
   }
 
   &--right {
     position: absolute;
-    top: 240px;
-    right: 0;
+    top: 213px;
+    right: -7px;
   }
 }
 

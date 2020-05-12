@@ -16,8 +16,8 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 21px;
-  right: 19px;
+  top: 25px;
+  right: 20px;
   z-index: 2;
   display: block;
 }
@@ -36,7 +36,7 @@
 
 .main-nav__logo {
   padding-top: 22px;
-  padding-bottom: 25px;
+  padding-bottom: 17px;
 }
 
 .main-nav__img {
@@ -102,8 +102,13 @@
     min-height: 110px;
   }
 
+  .main-nav__logo {
+    padding-top: 0;
+    padding-bottom: 17px;
+  }
+
   .main-nav__toggle {
-    top: 44px;
+    top: 45px;
   }
 
   .main-nav__img {
@@ -137,6 +142,7 @@
   }
 
   .main-nav__wrapper {
+    padding: 0;
     border: none;
     box-shadow: none;
   }
@@ -159,7 +165,7 @@
   .main-nav__item {
     border: none;
     box-shadow: none;
-    padding-right: 60px;
+    padding-right: 80px;
 
     &:last-child {
       padding-right: 0;

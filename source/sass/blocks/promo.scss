@@ -3,7 +3,7 @@
   color: #283645;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: top 0 center;
+  background-position: top 6px center;
   background-size: 320px 462px;
   position: relative;
 
@@ -16,7 +16,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 249px;
+    bottom: 243px;
     width: 320px;
     height: 314px;
     background-image: url("../img/iphone-hand-mobile@1x.png");
@@ -32,10 +32,10 @@
 
   &--index {
     font-size: 24px;
-    padding-top: 95px;
-    padding-bottom: 300px;
-    padding-left: 50px;
-    padding-right: 45px;
+    padding-top: 96px;
+    padding-bottom: 305px;
+    padding-left: 46px;
+    padding-right: 46px;
   }
 
   &--photo {
@@ -77,7 +77,7 @@
       content: "";
       position: absolute;
       left: 50%;
-      transform: translateX(-50%);
+      transform: translateX(-53%);
       bottom: 0;
       width: 660px;
       height: 545px;
@@ -87,16 +87,15 @@
   }
 
   .promo__head {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    line-height: 50px;
 
     &--index {
       font-size: 40px;
-      width: 290px;
-      padding-bottom: 58px;
-      padding-left: 71px;
-      padding-right: 71px;
+      width: 300px;
+      padding-top: 62px;
+      padding-bottom: 26px;
+      padding-left: 55px;
+      padding-right: 55px;
     }
 
     &--photo {
@@ -135,7 +134,7 @@
     &--index::after {
       content: "";
       position: absolute;
-      left: 50%;
+      left: 56%;
       transform: translateX(-50%);
       bottom: 0;
       width: 1050px;
@@ -151,6 +150,7 @@
     }
 
     &--index {
+      width: 325px;
       font-size: 50px;
     }
   }

@@ -4,7 +4,7 @@
   align-items: center;
   background-color: $install-color;
   padding-top: 30px;
-  padding-bottom: 35px;
+  padding-bottom: 30px;
   text-align: center;
 }
 
@@ -14,7 +14,7 @@
   justify-content: center;
   list-style: none;
   padding: 0;
-  padding-bottom: 28px;
+  padding-bottom: 17px;
   margin: 0;
 }
 
@@ -64,8 +64,33 @@
   .install {
     padding: 0;
     background: transparent;
-    width: 290px;
+    width: 300px;
     position: relative;
     z-index: 1;
+  }
+
+  .install__item {
+    padding-right: 34px;
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    &--apple {
+      padding-top: 30px;
+    }
+
+    &--android {
+      padding-top: 39px;
+    }
+
+    &--windows {
+      padding-top: 43px;
+    }
+  }
+
+  .install__desc {
+    font-size: 18px;
+    width: 300px;
   }
 }
