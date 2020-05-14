@@ -56,7 +56,14 @@
 
 @media (min-width: $desktop-width) {
   .gallery__desc {
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 290px;
+    padding-right: 290px;
+    padding-bottom: 87px;
+  }
+
+  .gallery__recommendation {
+    padding-top: 5px;
+    padding-left: 32px;
+    padding-bottom: 66px;
   }
 }

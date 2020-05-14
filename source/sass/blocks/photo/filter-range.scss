@@ -48,6 +48,21 @@
       display: none;
     }
   }
+
+  .filter-range__toggle {
+    &--crop {
+      top: -8px;
+      right: 39px;
+    }
+
+    &--fill {
+      left: 22px;
+    }
+
+    &--contrast {
+      right: 89px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -57,5 +72,20 @@
 
   .filter-range__scale {
     width: 288px;
+  }
+
+  .filter-range__toggle {
+    &--crop {
+      top: -8px;
+      left: 68px;
+    }
+
+    &--fill {
+      right: 24px;
+    }
+
+    &--contrast {
+      right: 111px;
+    }
   }
 }

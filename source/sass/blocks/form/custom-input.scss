@@ -1,7 +1,7 @@
 .custom-input {
   display: flex;
   flex-direction: column;
-  padding-bottom: 29px;
+  padding-bottom: 16px;
 
   &:last-child {
     padding-bottom: 0;
@@ -9,8 +9,8 @@
 }
 
 .custom-input__label {
-  padding-bottom: 16px;
-  padding-left: 20px;
+  padding-bottom: 5px;
+  padding-left: 28px;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
@@ -19,10 +19,12 @@
 }
 
 .custom-input__input {
+  width: 280px;
+  margin-left: 6px;
   margin-bottom: 29px;
-  padding-top: 18px;
-  padding-bottom: 16px;
-  padding-left: 12px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
   padding-right: 12px;
   font-size: 18px;
   font-weight: 400;
@@ -44,57 +46,14 @@
 }
 
 @media (min-width: $tablet-width) {
-  .custom-input {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-bottom: 56px;
-
-    &--contacts {
-      display: flex;
-      flex-direction: column-reverse;
-      padding-left: 60px;
-      padding-right: 60px;
-    }
-  }
-
-  .custom-input__label {
-    padding: 0;
-    padding-right: 22px;
-
-    &--contacts {
-      padding-bottom: 0;
-    }
-  }
-
-  .custom-input__input {
-    width: 100%;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .custom-input--contacts {
-    padding-bottom: 0;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 60px;
-      height: 67px;
-      background-color: #e5e5e5;
-    }
-  }
-
   .custom-input--mobile {
     position: relative;
 
     &::after {
       content: "";
       position: absolute;
-      top: 21px;
-      right: 20px;
+      top: 22px;
+      right: 6px;
       width: 20px;
       height: 20px;
       background-image: url("../img/icon-phone.svg");
@@ -108,12 +67,92 @@
     &::after {
       content: "";
       position: absolute;
-      top: 24px;
-      right: 20px;
+      top: 26px;
+      right: 7px;
       width: 18px;
       height: 13px;
       background-image: url("../img/icon-mail.svg");
       background-repeat: no-repeat;
+    }
+  }
+
+  .custom-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 51px;
+
+    &--contacts {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      margin-left: 45px;
+      margin-right: 60px;
+      padding: 0;
+      padding-bottom: 28px;
+      width: 483px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -15px;
+        width: 60px;
+        height: 64px;
+        background-color: #e5e5e5;
+      }
+    }
+  }
+
+  .custom-input__label {
+    padding: 0;
+    padding-right: 19px;
+
+    &--contacts {
+      padding-bottom: 0;
+      padding-right: 0;
+      padding-top: 10px;
+      padding-left: 18px;
+    }
+  }
+
+  .custom-input__input {
+    width: 100%;
+    margin: 0;
+
+    &--contacts {
+      padding-left: 17px;
+      padding-right: 60px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .custom-input {
+    &--contacts {
+      padding-bottom: 0;
+      width: 350px;
+      margin-left: 35px;
+
+      &::before {
+        right: -24px;
+      }
+    }
+
+    &--mobile {
+      position: relative;
+
+      &::after {
+        right: -3px;
+      }
+    }
+
+    &--mail {
+      position: relative;
+
+      &::after {
+        right: -2px;
+      }
     }
   }
 }

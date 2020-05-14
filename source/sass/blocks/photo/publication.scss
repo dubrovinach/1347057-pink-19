@@ -62,7 +62,7 @@
 
 @media (min-width: $tablet-width) {
   .publication {
-    padding-top: 57px;
+    padding-top: 58px;
     padding-bottom: 49px;
   }
 
@@ -79,6 +79,10 @@
   .publication__buttons {
     padding-top: 0;
   }
+
+  .publication__button-post {
+    margin-bottom: 28px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -90,9 +94,13 @@
   .publication__form {
     padding-left: 80px;
     padding-right: 60px;
-    padding-top: 57px;
-    padding-bottom: 57px;
+    padding-top: 53px;
+    padding-bottom: 52px;
     background-color: $background-grey;
+  }
+
+  .publication__pic {
+    padding-top: 4px;
   }
 
   .publication__buttons {
@@ -102,14 +110,14 @@
 
   .publication__button-post {
     margin-bottom: 0;
-    margin-right: 44px;
-    padding-left: 45px;
-    padding-right: 45px;
+    margin-right: 42px;
+    padding-left: 42px;
+    padding-right: 42px;
   }
 
   .publication__button-cancel {
     margin-bottom: 0;
-    padding-left: 58px;
-    padding-right: 54px;
+    padding-left: 56px;
+    padding-right: 52px;
   }
 }

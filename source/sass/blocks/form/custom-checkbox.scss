@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
-  padding-bottom: 47px;
+  padding-bottom: 50px;
 
   &:last-child {
     padding-bottom: 0;
@@ -14,7 +14,8 @@
   font-size: 18px;
   color: $text-blue;
   padding: 0;
-  padding-left: 55px;
+  padding-left: 75px;
+  padding-top: 7px;
   text-transform: none;
 }
 
@@ -23,10 +24,11 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 35px;
-  height: 35px;
+  width: 39px;
+  height: 39px;
   border: 2px solid #e5e5e5;
   background-color: $text-white;
+  margin-left: 5px;
 
   &:hover {
     border-color: $navColor;
@@ -45,25 +47,31 @@
 
 @media (min-width: $tablet-width) {
   .custom-checkbox {
-    padding-left: 60px;
+    padding-left: 39px;
+  }
+
+  .custom-checkbox__label {
+    padding-left: 64px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .custom-checkbox {
-    width: 300px;
-    padding-bottom: 47px;
-    padding-left: 40px;
+    width: 293px;
+    padding-bottom: 49px;
+    padding-left: 23px;
 
     &:last-child {
       padding-bottom: 47px;
     }
 
     &--selfie {
+      padding-left: 0;
       order: 1;
     }
 
     &--burnt {
+      padding-left: 0;
       order: 4;
     }
 

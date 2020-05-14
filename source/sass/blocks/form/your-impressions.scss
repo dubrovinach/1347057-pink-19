@@ -1,7 +1,7 @@
 .your-impressions__desc {
   margin: 0;
-  padding-top: 55px;
-  padding-bottom: 49px;
+  padding-top: 44px;
+  padding-bottom: 4px;
   padding-left: 22px;
   padding-right: 22px;
   font-size: 14px;
@@ -15,16 +15,18 @@
   .your-impressions__desc {
     padding-left: 80px;
     padding-right: 80px;
-    padding-top: 100px;
-    padding-bottom: 76px;
+    padding-top: 91px;
+    padding-bottom: 71px;
     font-size: 18px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .your-impressions__desc {
-    padding-left: 220px;
-    padding-right: 220px;
-    padding-bottom: 64px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 79px;
+    width: 920px;
+    margin: 0 auto;
   }
 }

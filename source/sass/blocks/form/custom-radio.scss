@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
-  padding-bottom: 39px;
+  padding-bottom: 45px;
 
   &:last-child {
     padding-bottom: 0;
@@ -14,11 +14,13 @@
   font-size: 18px;
   color: $text-blue;
   padding: 0;
-  padding-left: 55px;
+  padding-left: 75px;
+  padding-top: 5px;
   text-transform: none;
 }
 
 .custom-radio__input + .custom-radio__indicator {
+  margin-left: 7px;
   position: absolute;
   top: 0;
   left: 0;
@@ -51,14 +53,29 @@
 
 @media (min-width: $tablet-width) {
   .custom-radio {
-    padding-left: 59px;
+    padding-left: 39px;
+  }
+
+  .custom-radio__label {
+    padding-left: 64px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .custom-radio {
     padding-left: 0;
-    padding-top: 37px;
-    padding-bottom: 0;
+    padding-bottom: 44px;
+  }
+
+  .custom-radio__label {
+    padding-left: 68px;
+  }
+
+  .custom-radio__indicator {
+    margin: 0;
+  }
+
+  .custom-radio__input + .custom-radio__indicator {
+    margin-left: 10px;
   }
 }

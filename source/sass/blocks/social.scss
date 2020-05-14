@@ -130,11 +130,19 @@
     padding-top: 59px;
     padding-bottom: 77px;
     justify-content: space-between;
+
+    &--height {
+      padding-top: 87px;
+    }
   }
 
   .social__list {
     padding-left: 99px;
     padding-right: 94px;
+
+    &--width {
+      padding-left: 108px;
+    }
   }
 
   .social__item {

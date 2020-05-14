@@ -149,8 +149,32 @@
 }
 
 @media (min-width: $desktop-width) {
+  .photo-card {
+    padding-bottom: 54px;
+  }
+
+  .photo-card--panorama {
+    padding-bottom: 50px;
+  }
+
+  .photo-card__panorama {
+    top: 54px;
+    right: 130px;
+  }
+
   .photo-card__blockquote--panorama {
     width: 940px;
-    height: 96px;
+    min-height: 96px;
+  }
+
+  .photo-card__img--panorama {
+    height: 506px;
+  }
+
+  .photo-card__like {
+    &--panorama {
+      top: 24px;
+      right: 31px;
+    }
   }
 }

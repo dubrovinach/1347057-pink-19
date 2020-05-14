@@ -32,11 +32,11 @@
   &::after {
     content: "";
     position: absolute;
-    top: 11px;
-    left: 14px;
-    width: 24px;
-    height: 3px;
-    background-color: $text-white;
+    top: 12px;
+    right: 7px;
+    width: 30px;
+    height: 4px;
+    background-color: #ffffff;
   }
 
   &::before {
@@ -73,25 +73,12 @@
   border-radius: 50px;
 }
 
-@media (min-width: $tablet-width) {
-  .global-button {
-    padding-left: 45px;
-    padding-right: 45px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .hamburger {
-    display: none;
-  }
-}
-
 .button-square {
-  width: 296px;
-  padding-top: 23px;
-  padding-bottom: 22px;
+  width: 281px;
+  padding-top: 15px;
+  padding-bottom: 14px;
   padding-left: 43px;
-  padding-right: 42px;
+  padding-right: 43px;
   background-color: $green;
   color: $text-white;
   font-size: 18px;
@@ -180,5 +167,22 @@
 
   &:active {
     opacity: 0.1;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .global-button {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .button-square {
+    width: 300px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hamburger {
+    display: none;
   }
 }

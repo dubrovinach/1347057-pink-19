@@ -1,8 +1,8 @@
 .popup {
-  position: absolute;
+  position: fixed;
   left: 50%;
+  top: 10%;
   transform: translateX(-50%);
-  top: 1580px;
   width: 320px;
   min-height: 289px;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
@@ -10,10 +10,6 @@
   flex-direction: column;
   z-index: 1;
   background-color: $text-white;
-
-  &--ok {
-    top: 2077px;
-  }
 }
 
 .popup__text {
