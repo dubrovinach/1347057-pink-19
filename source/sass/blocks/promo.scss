@@ -65,7 +65,6 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
@@ -92,21 +91,21 @@
     &--index {
       font-size: 40px;
       width: 300px;
-      padding-top: 62px;
+      padding-top: 200px;
       padding-bottom: 26px;
       padding-left: 55px;
       padding-right: 55px;
     }
 
     &--photo {
-      padding-top: 121px;
+      padding-top: 179px;
       line-height: 60px;
       font-size: 50px;
       width: 515px;
     }
 
     &--form {
-      padding-top: 150px;
+      padding-top: 179px;
       font-size: 50px;
       line-height: 60px;
       width: 600px;
@@ -147,17 +146,22 @@
 
   .promo__head {
     &--form {
-      padding-top: 121px;
+      padding-top: 171px;
       width: 840px;
     }
 
     &--index {
+      padding-top: 216px;
+      padding-left: 26px;
+      padding-right: 51px;
+      padding-bottom: 53px;
       width: 325px;
       font-size: 50px;
+      line-height: 60px;
     }
 
     &--photo {
-      padding-top: 150px;
+      padding-top: 171px;
     }
   }
 }
