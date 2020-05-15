@@ -5,7 +5,15 @@
 }
 
 .website-by__head {
-  padding-right: 15px;
+  margin: 0;
+  padding-right: 14px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.website-by__logo {
+  padding-top: 8px;
 }
 
 .website-by__logo-svg {
@@ -17,5 +25,26 @@
 
   &:active {
     fill: rgba(40, 54, 69, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .website-by {
+    padding-top: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .website-by {
+    padding-top: 12px;
+  }
+
+  .website-by__head {
+    font-size: 18px;
+    padding-right: 14px;
+  }
+
+  .website-by__logo {
+    padding-top: 14px;
   }
 }

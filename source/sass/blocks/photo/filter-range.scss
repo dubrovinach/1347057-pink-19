@@ -1,5 +1,5 @@
 .filter-range {
-  padding-bottom: 30px;
+  padding-bottom: 34px;
   margin: 0;
   border-bottom: 1px solid #dddfe0;
   width: 100%;
@@ -19,11 +19,12 @@
 }
 
 .filter-range__toggle {
+  padding: 0;
   position: absolute;
-  top: -7px;
-  right: 60px;
+  top: -6px;
+  right: 35px;
   width: 14px;
-  height: 16px;
+  height: 14px;
   border: solid 2px #d22856;
   border-radius: 50%;
   background-color: #f2f2f2;
@@ -36,7 +37,7 @@
 @media (min-width: $tablet-width) {
   .filter-range {
     position: relative;
-    padding-top: 28px;
+    padding: 0;
     border: none;
     width: 202px;
 
@@ -48,6 +49,20 @@
       display: none;
     }
   }
+
+  .filter-range__toggle {
+    &--crop {
+      right: 42px;
+    }
+
+    &--fill {
+      left: 25px;
+    }
+
+    &--contrast {
+      right: 92px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -57,5 +72,19 @@
 
   .filter-range__scale {
     width: 288px;
+  }
+
+  .filter-range__toggle {
+    &--crop {
+      left: 72px;
+    }
+
+    &--fill {
+      left: 248px;
+    }
+
+    &--contrast {
+      right: 113px;
+    }
   }
 }
