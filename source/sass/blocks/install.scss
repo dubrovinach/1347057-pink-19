@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   background-color: $install-color;
-  padding-top: 30px;
+  padding-top: 27px;
   padding-bottom: 30px;
   text-align: center;
 }
@@ -14,19 +14,19 @@
   justify-content: center;
   list-style: none;
   padding: 0;
-  padding-bottom: 17px;
+  padding-bottom: 16px;
   margin: 0;
 }
 
 .install__item {
-  padding-right: 34px;
+  padding-right: 36px;
 
   &:last-child {
     padding-right: 0;
   }
 
   &--apple {
-    padding-top: 30px;
+    padding-top: 31px;
   }
 
   &--android {

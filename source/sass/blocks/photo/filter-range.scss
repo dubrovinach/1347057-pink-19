@@ -19,11 +19,12 @@
 }
 
 .filter-range__toggle {
+  padding: 0;
   position: absolute;
-  top: -7px;
-  right: 32px;
+  top: -6px;
+  right: 35px;
   width: 14px;
-  height: 16px;
+  height: 14px;
   border: solid 2px #d22856;
   border-radius: 50%;
   background-color: #f2f2f2;
@@ -51,16 +52,15 @@
 
   .filter-range__toggle {
     &--crop {
-      top: -8px;
-      right: 39px;
+      right: 42px;
     }
 
     &--fill {
-      left: 22px;
+      left: 25px;
     }
 
     &--contrast {
-      right: 89px;
+      right: 92px;
     }
   }
 }
@@ -76,16 +76,15 @@
 
   .filter-range__toggle {
     &--crop {
-      top: -8px;
-      left: 68px;
+      left: 72px;
     }
 
     &--fill {
-      right: 24px;
+      left: 248px;
     }
 
     &--contrast {
-      right: 111px;
+      right: 113px;
     }
   }
 }

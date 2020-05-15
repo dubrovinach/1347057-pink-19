@@ -1,15 +1,13 @@
 .reviews {
   text-align: center;
-}
-
-.reviews__list {
+  padding-bottom: 42px;
   padding-top: 42px;
 }
 
 .reviews__item {
   display: none;
   margin: 0;
-  padding-left: 22px;
+  padding-left: 20px;
   padding-right: 20px;
 
   &--active {
@@ -43,6 +41,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .reviews {
+    padding-bottom: 21px;
+  }
+
   .reviews__item--active {
     display: flex;
     flex-direction: column-reverse;
@@ -79,6 +81,7 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
+    padding-top: 0;
     padding-bottom: 12px;
   }
 

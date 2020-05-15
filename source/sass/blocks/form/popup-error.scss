@@ -1,7 +1,6 @@
 .popup {
   position: fixed;
   left: 50%;
-  top: 10%;
   transform: translateX(-50%);
   width: 320px;
   min-height: 289px;
@@ -90,32 +89,50 @@
 
 @media (min-width: $desktop-width) {
   .popup {
-    top: 180px;
+    top: 10%;
     width: 780px;
-    min-height: 377px;
+    min-height: 370px;
 
-    &--ok {
-      top: 600px;
+    &--error {
+      min-height: 348px;
     }
   }
 
   .popup__text {
-    padding-left: 214px;
-    padding-right: 216px;
+    padding-top: 36px;
+    padding-bottom: 39px;
+    padding-left: 174px;
+    padding-right: 176px;
 
-    &--ok {
-      padding-left: 176px;
-      padding-right: 176px;
+    &--error {
+      padding-left: 185px;
+      padding-right: 190px;
+      padding-bottom: 63px;
     }
   }
 
   .popup__button {
     background-color: $background-grey;
-    padding-top: 50px;
+    padding-top: 48px;
+    padding-bottom: 53px;
   }
 
-  .popup__head--error {
-    padding-left: 0;
-    padding-right: 0;
+  .popup__button-ok {
+    width: 459px;
+    padding-top: 13px;
+    padding-bottom: 15px;
+
+    &--width {
+      width: 300px;
+    }
+  }
+
+  .popup__head {
+    padding-bottom: 23px;
+
+    &--error {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 }

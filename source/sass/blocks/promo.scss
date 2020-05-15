@@ -4,7 +4,7 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top 6px center;
-  background-size: 320px 462px;
+  background-size: 320px 465px;
   position: relative;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -16,9 +16,9 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 243px;
+    bottom: 270px;
     width: 320px;
-    height: 314px;
+    height: 287px;
     background-image: url("../img/iphone-hand-mobile@1x.png");
     background-repeat: no-repeat;
   }
@@ -35,7 +35,7 @@
   &--index {
     font-size: 24px;
     padding-top: 96px;
-    padding-bottom: 305px;
+    padding-bottom: 314px;
     padding-left: 46px;
     padding-right: 46px;
   }
@@ -43,7 +43,7 @@
   &--photo {
     font-size: 24px;
     padding-top: 104px;
-    padding-bottom: 82px;
+    padding-bottom: 81px;
     padding-left: 75px;
     padding-right: 75px;
   }
@@ -102,7 +102,7 @@
       padding-top: 121px;
       line-height: 60px;
       font-size: 50px;
-      width: 370px;
+      width: 515px;
     }
 
     &--form {
@@ -125,7 +125,7 @@
     background: url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: cover;
+    background-size: 2550px auto;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");

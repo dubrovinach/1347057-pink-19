@@ -2,6 +2,10 @@
   padding-bottom: 16px;
 }
 
+.form__span {
+  display: none;
+}
+
 .form__fieldset {
   border: none;
 
@@ -130,7 +134,7 @@
       margin-bottom: 0;
       order: 5;
       padding-top: 45px;
-      padding-bottom: 46px;
+      padding-bottom: 51px;
       padding-left: 56px;
       padding-right: 35px;
     }
@@ -171,12 +175,17 @@
 
 @media (min-width: $desktop-width) {
   .form {
+    padding-bottom: 0;
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
+  }
+
+  .form__span {
+    display: inline;
   }
 
   .form__fieldset {
@@ -190,16 +199,13 @@
       width: 100%;
       padding-top: 41px;
       padding-bottom: 13px;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      flex-grow: 1;
     }
 
     &--text {
       width: 100%;
       flex-grow: 1;
+      padding-top: 41px;
+      padding-bottom: 42px;
     }
 
     &--checkbox {
@@ -222,6 +228,14 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+  }
+
+  .form__fieldset-wrapper-contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
   }
 
   .form__legend {

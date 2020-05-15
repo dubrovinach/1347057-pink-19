@@ -13,11 +13,13 @@
 
 .publication__img {
   padding-top: 20px;
+  padding-right: 4px;
 }
 
 .publication__buttons {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
   padding-top: 38px;
 }
 
@@ -69,19 +71,26 @@
   .publication__form {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
   }
 
   .publication__img {
     padding-top: 0;
+    padding-right: 45px;
   }
 
   .publication__buttons {
-    padding-top: 0;
+    margin: 0;
+    padding-top: 66px;
+  }
+
+  .publication__button {
+    padding-left: 60px;
+    padding-right: 67px;
+    width: 262px;
   }
 
   .publication__button-post {
-    margin-bottom: 28px;
+    margin-bottom: 24px;
   }
 }
 
@@ -94,23 +103,30 @@
   .publication__form {
     padding-left: 80px;
     padding-right: 60px;
-    padding-top: 53px;
-    padding-bottom: 52px;
+    padding-top: 46px;
+    padding-bottom: 51px;
     background-color: $background-grey;
   }
 
-  .publication__pic {
-    padding-top: 4px;
+  .publication__img {
+    padding-right: 81px;
+    padding-top: 11px;
   }
 
   .publication__buttons {
     display: flex;
     flex-direction: row;
+    padding-left: 8px;
+    padding-top: 146px;
+  }
+
+  .publication__button {
+    width: 183px;
   }
 
   .publication__button-post {
     margin-bottom: 0;
-    margin-right: 42px;
+    margin-right: 44px;
     padding-left: 42px;
     padding-right: 42px;
   }
