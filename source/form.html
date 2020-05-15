@@ -9,6 +9,9 @@
 </head>
 
 <body>
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="main-header">
     <nav class="main-nav main-nav--opened">
       <div class="main-nav__container">
@@ -66,7 +69,8 @@
             </div>
             <div class="custom-input">
               <label for="patronymic" class="custom-input__label">Отчество:</label>
-              <input class="custom-input__input" type="text" name="patronymic" id="patronymic" value="Ну и отчество тоже">
+              <input class="custom-input__input" type="text" name="patronymic" id="patronymic"
+                value="Ну и отчество тоже">
             </div>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--checkbox">
@@ -75,14 +79,16 @@
               <div class="custom-checkbox custom-checkbox--selfie">
                 <label for="shark-selfie" class="custom-checkbox__label">Сделал селфи с
                   акулой
-                  <input class="custom-checkbox__input visually-hidden" type="checkbox" name="shark-selfie" id="shark-selfie" checked="">
+                  <input class="custom-checkbox__input visually-hidden" type="checkbox" name="shark-selfie"
+                    id="shark-selfie" checked="">
                   <span class="custom-checkbox__indicator">
                   </span>
                 </label>
               </div>
               <div class="custom-checkbox custom-checkbox--burnt">
                 <label for="burnt" class="custom-checkbox__label">Обгорел на пляже
-                  <input class="custom-checkbox__input visually-hidden" type="checkbox" name="burnt" id="burnt" checked="">
+                  <input class="custom-checkbox__input visually-hidden" type="checkbox" name="burnt" id="burnt"
+                    checked="">
                   <span class="custom-checkbox__indicator">
                   </span>
                 </label>
@@ -90,7 +96,8 @@
               <div class="custom-checkbox custom-checkbox--chuck-norris">
                 <label for="saw-chuck-norris" class="custom-checkbox__label">Видел Чака
                   Норриса
-                  <input class="custom-checkbox__input visually-hidden" type="checkbox" name="saw-chuck-norris" id="saw-chuck-norris">
+                  <input class="custom-checkbox__input visually-hidden" type="checkbox" name="saw-chuck-norris"
+                    id="saw-chuck-norris">
                   <span class="custom-checkbox__indicator">
                   </span>
                 </label>
@@ -98,14 +105,16 @@
               <div class="custom-checkbox custom-checkbox--souvenirs">
                 <label for="bought-souvenirs" class="custom-checkbox__label">Накупил
                   сувениров
-                  <input class="custom-checkbox__input visually-hidden" type="checkbox" name="bought-souvenirs" id="bought-souvenirs">
+                  <input class="custom-checkbox__input visually-hidden" type="checkbox" name="bought-souvenirs"
+                    id="bought-souvenirs">
                   <span class="custom-checkbox__indicator">
                   </span>
                 </label>
               </div>
               <div class="custom-checkbox custom-checkbox--tower">
                 <label for="held-tower" class="custom-checkbox__label">Удержал башню
-                  <input class="custom-checkbox__input visually-hidden" type="checkbox" name="held-tower" id="held-tower" checked="">
+                  <input class="custom-checkbox__input visually-hidden" type="checkbox" name="held-tower"
+                    id="held-tower" checked="">
                   <span class="custom-checkbox__indicator">
                   </span>
                 </label>
@@ -113,7 +122,8 @@
               <div class="custom-checkbox custom-checkbox--hotel">
                 <label for="defeated-hotel" class="custom-checkbox__label">Разгромил
                   отель
-                  <input class="custom-checkbox__input visually-hidden" type="checkbox" name="defeated-hotel" id="defeated-hotel">
+                  <input class="custom-checkbox__input visually-hidden" type="checkbox" name="defeated-hotel"
+                    id="defeated-hotel">
                   <span class="custom-checkbox__indicator">
                   </span>
                 </label>
@@ -125,11 +135,13 @@
               <p class="form__legend form__legend--contacts">Контактная информация</p>
               <div class="custom-input custom-input--contacts custom-input--mobile">
                 <label for="phone" class="custom-input__label custom-input__label--contacts">Номер телефона</label>
-                <input class="custom-input__input custom-input__input--contacts" type="text" name="phone" id="phone" value="Номер, пожалуйста">
+                <input class="custom-input__input custom-input__input--contacts" type="text" name="phone" id="phone"
+                  value="Номер, пожалуйста">
               </div>
               <div class="custom-input custom-input--contacts custom-input--mail">
                 <label for="e-mail" class="custom-input__label custom-input__label--contacts">Адрес почты</label>
-                <input class="custom-input__input custom-input__input--contacts" type="text" name="e-mail" id="e-mail" value="Введите почту *">
+                <input class="custom-input__input custom-input__input--contacts" type="text" name="e-mail" id="e-mail"
+                  value="Введите почту *">
               </div>
             </div>
           </fieldset>
@@ -162,7 +174,8 @@
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--text">
             <p class="form__legend form__legend--text">Опишите свои эмоции</p>
-            <textarea class="custom-textarea" name="reviews" id="reviews" cols="30" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+            <textarea class="custom-textarea" name="reviews" id="reviews" cols="30"
+              rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
           </fieldset>
           <div class="form__button-wrapper">
             <button class="form__button button-square" type="submit">Отправить форму</button>

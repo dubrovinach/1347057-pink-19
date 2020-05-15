@@ -69,28 +69,58 @@
     z-index: 1;
   }
 
+  .install__list {
+    padding-bottom: 30px;
+  }
+
   .install__item {
-    padding-right: 34px;
+    padding-right: 35px;
 
     &:last-child {
       padding-right: 0;
     }
 
     &--apple {
-      padding-top: 30px;
+      padding-top: 45px;
     }
 
     &--android {
-      padding-top: 39px;
+      padding-top: 52px;
     }
 
     &--windows {
-      padding-top: 43px;
+      padding-top: 58px;
     }
   }
 
   .install__desc {
     font-size: 18px;
     width: 300px;
+  }
+
+  .install__button {
+    font-size: 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .install__list {
+    padding-bottom: 50px;
+  }
+
+  .install__item {
+    padding-right: 34px;
+
+    &--apple {
+      padding-top: 65px;
+    }
+
+    &--android {
+      padding-top: 74px;
+    }
+
+    &--windows {
+      padding-top: 77px;
+    }
   }
 }
