@@ -19,12 +19,12 @@
 
 .main-nav--closed .hamburger:hover::before {
   background-color: $pink;
-  box-shadow: 0 8px 0 0 $pink, 0 16px 0 0 $pink;
+  box-shadow: 0 10px 0 0 $pink, 0 20px 0 0 $pink;
 }
 
 .main-nav--closed .hamburger:active::before {
   background-color: rgba(210, 40, 86, 0.3);
-  box-shadow: 0 8px 0 0 rgba(210, 40, 86, 0.3), 0 16px 0 0 rgba(210, 40, 86, 0.3);
+  box-shadow: 0 10px 0 0 rgba(210, 40, 86, 0.3), 0 20px 0 0 rgba(210, 40, 86, 0.3);
 }
 
 .main-nav--opened .hamburger {
