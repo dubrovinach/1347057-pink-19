@@ -108,16 +108,17 @@
   .photo-card__blockquote {
     padding-top: 24px;
     padding-left: 28px;
-    padding-bottom: 0;
+    padding-bottom: 22px;
     padding-right: 32px;
-    min-height: 155px;
+    min-height: 130px;
     width: 300px;
   }
 
   .photo-card__blockquote--panorama {
     position: relative;
-    min-height: 121px;
+    min-height: 80px;
     width: 620px;
+    padding-bottom: 11px;
   }
 
   .photo-card__comment {
@@ -166,9 +167,14 @@
     right: 130px;
   }
 
+  .photo-card__blockquote {
+    padding-bottom: 22px;
+  }
+
   .photo-card__blockquote--panorama {
     width: 940px;
     min-height: 96px;
+    padding-bottom: 0;
   }
 
   .photo-card__img--panorama {

@@ -1,6 +1,6 @@
 .promo {
   margin-top: -80px;
-  color: #283645;
+  background-color: $navColor;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top 6px center;
@@ -42,7 +42,7 @@
 
   &--photo {
     font-size: 24px;
-    padding-top: 104px;
+    padding-top: 109px;
     padding-bottom: 81px;
     padding-left: 75px;
     padding-right: 75px;
@@ -53,7 +53,7 @@
     padding-left: 45px;
     padding-right: 45px;
     padding-bottom: 52px;
-    padding-top: 103px;
+    padding-top: 108px;
   }
 }
 
@@ -61,7 +61,9 @@
   .promo {
     margin-top: -110px;
     min-height: 729px;
-    background: url("../img/bg-back-tablet@1x.jpg") no-repeat top center;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -121,7 +123,7 @@
 @media (min-width: $desktop-width) {
   .promo {
     min-height: 853px;
-    background: url("../img/bg-back-desktop@1x.jpg");
+    background-image: url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 2550px auto;

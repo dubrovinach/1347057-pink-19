@@ -3,6 +3,7 @@
   flex-direction: row-reverse;
   justify-content: flex-end;
   padding-bottom: 50px;
+  width: 275px;
 
   &:last-child {
     padding-bottom: 0;
@@ -48,6 +49,7 @@
 @media (min-width: $tablet-width) {
   .custom-checkbox {
     padding-left: 39px;
+    width: 305px;
   }
 
   .custom-checkbox__label {

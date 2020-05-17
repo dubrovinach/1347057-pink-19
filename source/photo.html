@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
 </head>
 
 <body>
@@ -43,7 +43,7 @@
             <a href="form.html" class="main-nav__link">Конкурс</a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">HTML Academy</a>
+            <a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__link">HTML Academy</a>
           </li>
         </ul>
       </div>
@@ -349,7 +349,8 @@
             </div>
             <div class="publication__buttons">
               <button type="submit" class="publication__button publication__button-post global-button">Запостить
-              </button><button type="reset" class="publication__button publication__button-cancel global-button">Отмена
+              </button>
+              <button type="reset" class="publication__button publication__button-cancel global-button">Отмена
               </button>
             </div>
           </div>
@@ -404,6 +405,7 @@
     </section>
   </footer>
   <script src="js/main-nav.js"></script>
+  <script src="js/picturefill.js"></script>
 </body>
 
 </html>

@@ -6,6 +6,7 @@
   <title>HTML Academy: Пинк</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
 </head>
 
 <body>
@@ -27,7 +28,7 @@
               <use xlink:href="img/sprite.svg#logo-pink-white-desktop"></use>
             </svg>
           </a>
-          <button href="main-menu.html" class="main-nav__toggle hamburger">
+          <button class="main-nav__toggle hamburger">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
@@ -42,7 +43,7 @@
             <a href="form.html" class="main-nav__link">Конкурс</a>
           </li>
           <li class="main-nav__item">
-            <a href="#" class="main-nav__link">HTML Academy</a>
+            <a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__link">HTML Academy</a>
           </li>
         </ul>
       </div>
@@ -167,12 +168,12 @@
             <button class="slider__toggle" type="button" title="3"></button>
           </div>
           <div class="reviews__buttons slider__buttons">
-            <button class="slider__button slider__button--left" type="button" title="1">
+            <button class="slider__button slider__button--left" type="button" title="Предыдущий отзыв">
               <svg class="slider__arrow" width="22" height="41">
                 <use xlink:href="img/sprite.svg#icon-review-arrow-left"></use>
               </svg>
             </button>
-            <button class="slider__button slider__button--right" type="button" title="2">
+            <button class="slider__button slider__button--right" type="button" title="Следующий отзыв">
               <svg class="slider__arrow" width="22" height="41">
                 <use xlink:href="img/sprite.svg#icon-review-arrow-right"></use>
               </svg>
@@ -305,7 +306,7 @@
         </table>
         <div class="tariffs__toggles slider__toggles">
           <button class="slider__toggle" type="button" title="1"></button>
-          <button class="slider__toggle slider__toggle--active" type="button" title="2"></button>
+          <button class="slider__toggle slider__toggle--active" type="button" title="1"></button>
           <button class="slider__toggle" type="button" title="3"></button>
         </div>
       </div>
@@ -382,6 +383,7 @@
     </section>
   </footer>
   <script src="js/main-nav.js"></script>
+  <script src="js/picturefill.js"></script>
 </body>
 
 </html>
