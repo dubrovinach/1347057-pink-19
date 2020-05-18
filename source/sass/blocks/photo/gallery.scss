@@ -6,11 +6,12 @@
 }
 
 .gallery__desc {
-  margin: 0;
+  margin: 0 auto;
   padding-top: 45px;
   padding-bottom: 49px;
   padding-left: 38px;
   padding-right: 39px;
+  width: 321px;
   color: $text-blue;
   font-size: 14px;
   font-weight: 400;
@@ -44,6 +45,7 @@
     padding-left: 57px;
     padding-right: 57px;
     padding-bottom: 76px;
+    width: 560px;
     font-size: 18px;
   }
 
@@ -59,6 +61,7 @@
     padding-left: 290px;
     padding-right: 290px;
     padding-bottom: 87px;
+    width: 1155px;
   }
 
   .gallery__recommendation {

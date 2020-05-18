@@ -132,7 +132,6 @@
 
 @media (min-width: $tablet-width) {
   .tariffs {
-    overflow-x: auto;
     padding-bottom: 68px;
     padding-top: 89px;
   }
@@ -192,6 +191,8 @@
 
   .tariffs__toggles {
     display: none;
+    left: auto;
+    transform: none;
   }
 
   .tariffs__svg--hidden {
