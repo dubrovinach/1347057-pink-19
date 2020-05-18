@@ -195,12 +195,16 @@
     transform: none;
   }
 
-  .tariffs__svg--hidden {
-    display: none;
+  .tariffs__svg {
+    &--hidden {
+      display: none;
+    }
   }
 
-  .tariffs__desc--hidden {
-    display: none;
+  .tariffs__desc {
+    &--hidden {
+      display: none;
+    }
   }
 }
 

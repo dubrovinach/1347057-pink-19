@@ -1,5 +1,9 @@
 .social {
   background-color: $text-white;
+
+  &--hidden {
+    display: none;
+  }
 }
 
 .social__container {
@@ -86,11 +90,13 @@
   }
 }
 
-.social--hidden {
-  display: none;
-}
-
 @media (min-width: $tablet-width) {
+  .social {
+    &--hidden {
+      display: block;
+    }
+  }
+
   .social__container {
     display: flex;
     flex-direction: row;
@@ -118,10 +124,6 @@
     &--fb {
       padding-right: 14px;
     }
-  }
-
-  .social--hidden {
-    display: block;
   }
 }
 
