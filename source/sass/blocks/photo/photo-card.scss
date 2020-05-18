@@ -4,6 +4,8 @@
 
   &--panorama {
     position: relative;
+    width: 320px;
+    margin: 0 auto;
   }
 }
 
@@ -96,13 +98,18 @@
     top: 57px;
   }
 
-  .photo-card--panorama {
-    padding-bottom: 50px;
+  .photo-card {
+    &--panorama {
+      padding-bottom: 50px;
+      width: 660px;
+    }
   }
 
-  .photo-card__img--panorama {
-    width: auto;
-    height: 509px;
+  .photo-card__img {
+    &--panorama {
+      width: auto;
+      height: 509px;
+    }
   }
 
   .photo-card__blockquote {
@@ -112,13 +119,13 @@
     padding-right: 32px;
     min-height: 130px;
     width: 300px;
-  }
 
-  .photo-card__blockquote--panorama {
-    position: relative;
-    min-height: 80px;
-    width: 620px;
-    padding-bottom: 11px;
+    &--panorama {
+      position: relative;
+      min-height: 80px;
+      width: 620px;
+      padding-bottom: 11px;
+    }
   }
 
   .photo-card__comment {
@@ -141,25 +148,32 @@
 
   .photo-card__number {
     padding-left: 0;
-  }
 
-  .photo-card__number--panorama {
-    padding-left: 0;
-    padding-right: 17px;
+    &--panorama {
+      padding-left: 0;
+      padding-right: 17px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .photo-card {
     padding-bottom: 54px;
+
+    &--panorama {
+      margin: 0;
+      padding-bottom: 50px;
+      width: 1200px;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
-  .photo-card__comment--panorama {
-    min-height: 48px;
-  }
-
-  .photo-card--panorama {
-    padding-bottom: 50px;
+  .photo-card__comment {
+    &--panorama {
+      min-height: 48px;
+    }
   }
 
   .photo-card__panorama {
@@ -169,16 +183,18 @@
 
   .photo-card__blockquote {
     padding-bottom: 22px;
+
+    &--panorama {
+      width: 940px;
+      min-height: 96px;
+      padding-bottom: 0;
+    }
   }
 
-  .photo-card__blockquote--panorama {
-    width: 940px;
-    min-height: 96px;
-    padding-bottom: 0;
-  }
-
-  .photo-card__img--panorama {
-    height: 506px;
+  .photo-card__img {
+    &--panorama {
+      height: 506px;
+    }
   }
 
   .photo-card__like {

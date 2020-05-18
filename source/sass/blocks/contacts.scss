@@ -149,7 +149,9 @@
     padding-bottom: 21px;
   }
 
-  .contacts__contact--address {
-    width: 211px;
+  .contacts__contact {
+    &--address {
+      width: 211px;
+    }
   }
 }

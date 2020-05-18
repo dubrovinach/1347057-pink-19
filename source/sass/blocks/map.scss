@@ -3,7 +3,7 @@
   height: 200px;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: left 0 top -440px;
+  background-position: left 50% top -444px;
   background-color: $navColor;
 
   &::before {
@@ -11,7 +11,7 @@
     content: "";
     width: 100%;
     height: 123px;
-    top: -1px;
+    top: 0;
     background-image: url("../img/bg-triangle-white-footer.svg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -27,37 +27,27 @@
   .map {
     background-image: url("../img/bg-map-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: top -400px left 0;
-    width: 100%;
-    height: 377px;
-  }
-
-  .map__pic {
-    width: 100%;
-    height: 377px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .map {
-    background-image: url("../img/bg-map-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: top -360px left 0;
+    background-position: top -355px left 50%;
     width: 100%;
     height: 366px;
 
     &::before {
-      top: -8px;
+      top: -9px;
     }
   }
 
   .map__pic {
+    width: 100%;
     height: 366px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .map {
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top -272px left 50%;
+    width: 100%;
     height: 508px;
 
     &::before {
