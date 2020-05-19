@@ -19,17 +19,16 @@
   list-style: none;
   display: flex;
   flex-direction: row;
-  padding-left: 0;
-  padding-top: 35px;
+  flex-wrap: wrap;
+  width: 189px;
+  padding-top: 15px;
   padding-bottom: 32px;
+  padding-left: 0;
 }
 
 .social__item {
   padding-right: 15px;
-
-  &:last-child {
-    padding-right: 0;
-  }
+  padding-top: 20px;
 }
 
 .social__link {
@@ -109,9 +108,10 @@
     list-style: none;
     display: flex;
     flex-direction: row;
+    width: 400px;
     padding: 0;
-    padding-left: 76px;
-    padding-right: 94px;
+    padding-left: 75px;
+    padding-right: 81px;
   }
 
   .social__item {
@@ -139,11 +139,11 @@
   }
 
   .social__list {
-    padding-left: 100px;
-    padding-right: 94px;
+    padding-left: 116px;
+    padding-right: 90px;
 
     &--width {
-      padding-left: 108px;
+      padding-left: 120px;
     }
   }
 

@@ -12,6 +12,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
   padding-bottom: 16px;
@@ -75,10 +76,6 @@
 
   .install__item {
     padding-right: 35px;
-
-    &:last-child {
-      padding-right: 0;
-    }
 
     &--apple {
       padding-top: 45px;

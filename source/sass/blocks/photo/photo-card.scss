@@ -4,8 +4,19 @@
 
   &--panorama {
     position: relative;
-    width: 320px;
     margin: 0 auto;
+    padding-bottom: 50px;
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+.photo-card__link {
+  display: block;
+  height: 180px;
+
+  &--panorama {
+    height: 137px;
   }
 }
 
@@ -101,7 +112,15 @@
   .photo-card {
     &--panorama {
       padding-bottom: 50px;
-      width: 660px;
+      max-width: 660px;
+    }
+  }
+
+  .photo-card__link {
+    height: 300px;
+
+    &--panorama {
+      height: 509px;
     }
   }
 
@@ -161,12 +180,16 @@
     padding-bottom: 54px;
 
     &--panorama {
-      margin: 0;
       padding-bottom: 50px;
-      width: 1200px;
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
+      max-width: 1200px;
+    }
+  }
+
+  .photo-card__link {
+    height: 400px;
+
+    &--panorama {
+      height: 506px;
     }
   }
 

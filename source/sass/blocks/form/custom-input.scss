@@ -19,6 +19,7 @@
 }
 
 .custom-input__input {
+  height: 64px;
   margin-left: 6px;
   margin-right: 6px;
   margin-bottom: 29px;
@@ -37,11 +38,20 @@
   }
 
   &:hover {
-    border-color: $navColor;
+    border-color: $text-blue;
   }
 
   &:active {
     border-color: $pink;
+  }
+
+  &:focus {
+    outline: 2px solid $navColor;
+  }
+
+  &::placeholder {
+    color: $text-blue;
+    opacity: 1;
   }
 }
 

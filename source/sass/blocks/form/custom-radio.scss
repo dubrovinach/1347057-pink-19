@@ -31,13 +31,21 @@
   border-radius: 50%;
   background-color: $text-white;
 
-  &:hover {
+  &:hover:not(:disabled) {
     border-color: $navColor;
   }
 
   &:active {
     border-color: $pink;
   }
+}
+
+.custom-radio__label input[type="radio"]:focus + .custom-radio__indicator {
+  outline: 2px solid $navColor;
+}
+
+.custom-radio__label input[type="radio"]:disabled + .custom-radio__indicator {
+  opacity: 0.3;
 }
 
 .custom-radio__input:checked + .custom-radio__indicator::after {

@@ -172,6 +172,8 @@
   .main-nav__list {
     display: flex;
     flex-direction: row;
+    padding-left: 170px;
+    flex-wrap: wrap;
   }
 
   .main-nav__item {

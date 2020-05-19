@@ -31,13 +31,21 @@
   background-color: $text-white;
   margin-left: 5px;
 
-  &:hover {
+  &:hover:not(:disabled) {
     border-color: $navColor;
   }
 
   &:active {
     border-color: $pink;
   }
+}
+
+.custom-checkbox__label input[type="checkbox"]:focus + .custom-checkbox__indicator {
+  outline: 2px solid $navColor;
+}
+
+.custom-checkbox__label input[type="checkbox"]:disabled + .custom-checkbox__indicator {
+  opacity: 0.3;
 }
 
 .custom-checkbox__input:checked + .custom-checkbox__indicator {

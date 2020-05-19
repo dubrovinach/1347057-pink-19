@@ -58,6 +58,10 @@
       color: rgba(40, 54, 69, 0.3);
     }
   }
+
+  &--address {
+    width: 250px;
+  }
 }
 
 @media (min-width: $tablet-width) {

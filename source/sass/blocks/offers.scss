@@ -29,17 +29,13 @@
   padding-top: 78px;
   padding-left: 30px;
   padding-right: 30px;
-  padding-bottom: 41px;
+  padding-bottom: 9px;
   list-style: none;
   text-align: center;
 }
 
 .offers__item {
   padding-bottom: 32px;
-
-  &:last-child {
-    padding-bottom: 0;
-  }
 }
 
 .offers__subtitle {
@@ -93,6 +89,10 @@
     }
   }
 
+  .offers__subtitle {
+    width: 250px;
+  }
+
   .offers__list {
     padding-bottom: 0;
     padding-top: 75px;
@@ -141,7 +141,7 @@
   }
 
   .offers__subtitle {
-    width: 240px;
+    width: 230px;
     font-size: 30px;
     line-height: 30px;
     padding-bottom: 25px;
