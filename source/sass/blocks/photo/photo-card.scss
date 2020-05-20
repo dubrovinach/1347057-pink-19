@@ -14,6 +14,7 @@
 .photo-card__link {
   display: block;
   height: 180px;
+  flex-shrink: 0;
 
   &--panorama {
     height: 137px;
