@@ -16,7 +16,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 270px;
+    top: 189px;
     width: 320px;
     height: 287px;
     background-image: url("../img/iphone-hand-mobile@1x.png");
@@ -81,6 +81,7 @@
       left: 50%;
       transform: translateX(-53%);
       bottom: 0;
+      top: auto;
       width: 660px;
       height: 545px;
       background-image: url("../img/iphone-hand-tablet@1x.png");

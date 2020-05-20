@@ -5,7 +5,7 @@
   &--panorama {
     position: relative;
     margin: 0 auto;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     width: 100%;
     max-width: 320px;
   }
@@ -46,6 +46,7 @@
   padding-right: 12px;
   padding-top: 17px;
   padding-bottom: 20px;
+  text-align: left;
   margin: 0 auto;
   width: 280px;
   background-color: $background-grey;
@@ -54,6 +55,7 @@
 .photo-card__wrapper {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .photo-card__author-name {
@@ -110,6 +112,9 @@
   }
 
   .photo-card {
+    display: flex;
+    flex-direction: column;
+
     &--panorama {
       padding-bottom: 50px;
       max-width: 660px;
@@ -137,7 +142,11 @@
     padding-bottom: 22px;
     padding-right: 32px;
     min-height: 130px;
+    height: 100%;
     width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
 
     &--panorama {
       position: relative;
@@ -148,8 +157,8 @@
   }
 
   .photo-card__comment {
-    padding-bottom: 0;
     min-height: 61px;
+    padding-bottom: 13px;
   }
 
   .photo-card__like {

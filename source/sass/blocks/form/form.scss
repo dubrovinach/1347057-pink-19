@@ -13,7 +13,7 @@
 
   &--checkbox {
     padding-top: 38px;
-    padding-bottom: 50px;
+    padding-bottom: 44px;
     margin-bottom: 33px;
     background-color: $background-grey;
   }
@@ -49,8 +49,8 @@
 .form__legend {
   margin: 0;
   padding-bottom: 37px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 26px;
+  padding-right: 26px;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -114,7 +114,7 @@
 
     &--checkbox {
       padding-top: 51px;
-      padding-bottom: 55px;
+      padding-bottom: 54px;
       background-color: $text-white;
       order: 4;
     }
@@ -193,7 +193,7 @@
   .form__fieldset {
     &--name {
       flex-grow: 1;
-      padding-right: 67px;
+      padding-right: 71px;
       padding-top: 5px;
     }
 
@@ -212,7 +212,7 @@
 
     &--checkbox {
       width: 100%;
-      padding-bottom: 14px;
+      padding-bottom: 12px;
       padding-left: 51px;
       padding-right: 0;
     }
@@ -229,7 +229,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .form__fieldset-wrapper-contacts {

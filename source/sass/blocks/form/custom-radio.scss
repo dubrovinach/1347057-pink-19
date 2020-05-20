@@ -15,7 +15,7 @@
   font-size: 18px;
   color: $text-blue;
   padding: 0;
-  padding-left: 75px;
+  padding-left: 77px;
   padding-top: 5px;
   text-transform: none;
 }
@@ -31,7 +31,7 @@
   border-radius: 50%;
   background-color: $text-white;
 
-  &:hover:not(:disabled) {
+  &:hover {
     border-color: $navColor;
   }
 
@@ -46,6 +46,12 @@
 
 .custom-radio__label input[type="radio"]:disabled + .custom-radio__indicator {
   opacity: 0.3;
+
+  &:hover,
+  &:active {
+    border-color: #e5e5e5;
+    opacity: 0.3;
+  }
 }
 
 .custom-radio__input:checked + .custom-radio__indicator::after {
@@ -66,7 +72,7 @@
   }
 
   .custom-radio__label {
-    padding-left: 64px;
+    padding-left: 66px;
   }
 }
 
@@ -86,6 +92,6 @@
   }
 
   .custom-radio__input + .custom-radio__indicator {
-    margin-left: 10px;
+    margin-left: 8px;
   }
 }
